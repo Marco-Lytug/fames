@@ -10,16 +10,41 @@ a {
  /* remove o sublinhado dos links */
  color: rgb(30, 0, 255);
  /* altera a cor de todos os links das páginas */
+
 }
+p{
+color: white;
+}
+/*====TOPO====*/
 header{
     display: flex;
     justify-content: space-between;
     background-color: #561C24;
+    border-bottom: 24px solid #C7B7A3;
+    align-items: center;
 }
 header h1{
     font-size: 2.0rem;
-    padding: 1vw 3vw 1vw 3vw;
+    margin: 0.5vw 0 0.5vw 3vw;
     color: white;
+    width: 8%;
+    height:8% ;
+}
+header div input{
+    margin:0.5vw 0 0.5vw 3vw;
+    
+}
+header div nav ul{
+    display: flex;
+    margin:0.5vw 0 0.5vw 3vw;
+}
+header div nav ul li{
+    padding: 20px;
+}
+/*====Banner====*/
+section.banner{
+    display: flex;
+    background-color: #561C24;   
 }
 
 
