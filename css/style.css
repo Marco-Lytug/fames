@@ -41,10 +41,50 @@ header div nav ul{
 header div nav ul li{
     padding: 20px;
 }
+header input{
+    background-color:beige ;
+    opacity: inherit;
+    border-radius: 30px;
+    padding: 0.4vw 2vw 0 0.5vw;
+}
 /*====Banner====*/
 section.banner{
-    display: flex;
-    background-color: #561C24;   
+    background-color: #561C24;
+    
 }
+section.banner div{
+    display: flex;
 
+}
+section.banner h2{
+    padding:3vw 0 0.5vw 3vw;
+    font-size: 4rem;
+    color: white;
+}
+section.banner div p{
+    margin: 5vw;
+    background-color: white;
+    border-radius: 50px;
+    padding: 2vw 10vw 2vw 10vw;
 
+}
+section.banner div img{
+    
+}
+section.salgados{
+    background: url(/src/pexels-valeriya-1639557.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+section.salgados h2{
+    padding: 2vw 0 40vw 2vw;
+    
+}
+section.gluten{
+    background: url(/src/pexels-nano-erdozain-120534369-29535632.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+section.gluten h2{
+     padding: 2vw 0 40vw 2vw;
+}
