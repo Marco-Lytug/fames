@@ -1,50 +1,69 @@
 root {
- --main-bg-color: brown;
- font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --main-bg-color: brown;
+    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 a {
- text-decoration: none;
- /* remove o sublinhado dos links */
- color: rgb(30, 0, 255);
- /* altera a cor de todos os links das páginas */
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+}
 
+p {
+    color: white;
 }
-p{
-color: white;
-}
+
 /*====TOPO====*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     background-color: #561C24;
     border-bottom: 24px solid #C7B7A3;
     align-items: center;
 }
-header h1{
+
+header h1 {
     font-size: 2.0rem;
-    margin: 0.5vw 0 0.5vw 3vw;
+    margin: 1.5vw 0 1.5vw 3vw;
     color: white;
-    width: 8%;
-    height:8% ;
+    width: 30%;
+    height: 30%;
 }
-header div input{
-    margin:0.5vw 0 0.5vw 3vw;
-    
+
+header div input {
+    margin: 0.5vw 0 0.5vw ;
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, #FA709A, #FEE140);
+    width: 600px;
 }
-header div nav ul{
+input::placeholder {
+    color: black;
     display: flex;
-    margin:0.5vw 0 0.5vw 3vw;
+        
 }
-header div nav ul li{
+
+header div nav ul {
+    display: flex;
+    margin: 0.5vw 0 0.5vw 3vw;
+}
+
+header div nav ul li {
     padding: 20px;
+    color: #C7B7A3;
+    font-size: 20px;
+}
+header div img {
+    width: 4%;
+    height: 4%;
 }
 /*====Banner====*/
-section.banner{
+section.banner {
     display: flex;
-    background-color: #561C24;   
+    background-color: #561C24;
 }
-
-
+section.banner p.fome {
+    font-family: 'Trade Winds', cursive;
+}
