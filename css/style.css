@@ -19,10 +19,17 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #561C24;
-    border-bottom: 24px solid #C7B7A3;
     align-items: center;
 }
-
+header.lasanha {
+    background-color: #F8B259 ;
+    border-bottom: 24px solid #C75D2C;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -55,15 +62,16 @@ header div nav ul li {
     color: #C7B7A3;
     font-size: 20px;
 }
+header.lasanha div nav ul li {
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
 header div img {
     width: 4%;
     height: 4%;
-}
-header input{
-    background-color:beige ;
-    opacity: inherit;
-    border-radius: 30px;
-    padding: 0.4vw 2vw 0 0.5vw;
+    margin: 0 0 0 10px;
 }
 /*====Banner====*/
 section.banner{
@@ -147,4 +155,7 @@ section.doces h2{
 }
 footer{
     background-color: #561C24;
+}
+section.banner p.fome {
+    font-family: 'Trade Winds', cursive;
 }
