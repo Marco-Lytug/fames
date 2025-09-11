@@ -1,0 +1,98 @@
+root {
+    --main-bg-color: brown;
+    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+}
+
+p {
+    color: white;
+}
+
+/*====TOPO====*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#F8B259;
+    border-bottom: 24px solid #C7B7A3;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.0rem;
+    margin: 1.5vw 0 1.5vw 3vw;
+    color: white;
+    width: 30%;
+    height: 30%;
+}
+header div nav{
+    background-color: #C75D2C;
+}
+header div input {
+    margin: 0.5vw 0 0.5vw ;
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, #FA709A, #FEE140);
+    width: 600px;
+}
+input::placeholder {
+    color: black;
+    display: flex;
+        
+}
+
+header div nav ul {
+    display: flex;
+    margin: 0.5vw 0 0.5vw 3vw;
+}
+
+header div nav ul li {
+    padding: 20px;
+    color: #C7B7A3;
+    font-size: 20px;
+}
+header div img {
+    width: 4%;
+    height: 4%;
+}
+header input{
+    background-color:beige ;
+    opacity: inherit;
+    border-radius: 30px;
+    padding: 0.4vw 2vw 0 0.5vw;
+}
+main{
+    background-color: #F8B259;
+    color: #F3E9DC;}
+/*====HEADER====*/
+
+
+
+
+
+
+
+
+
+
+/*====FOOTER====*/
+
+footer{
+    background-color:#D96F32;
+}
+footer p{
+    color: #F3E9DC;
+    text-align: center;
+    padding: 1vw;
+}
+footer img {
+    color: #F3E9DC;
+    font-weight: bolder;
+    text-align: center;
+}
