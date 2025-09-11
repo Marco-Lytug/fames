@@ -31,7 +31,7 @@ header h1 {
     height: 30%;
 }
 header div nav{
-    background-color: #C75D2C;
+    background-color: #F8B259;
 }
 header div input {
     margin: 0.5vw 0 0.5vw ;
@@ -40,6 +40,7 @@ header div input {
     border: none;
     background-image: linear-gradient(to right, #FA709A, #FEE140);
     width: 600px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 input::placeholder {
     color: black;
@@ -54,7 +55,7 @@ header div nav ul {
 
 header div nav ul li {
     padding: 20px;
-    color: #C7B7A3;
+    color: white;
     font-size: 20px;
 }
 header div img {
@@ -192,16 +193,176 @@ section.espe div{
 
 
 /*====|FOOTER|====*/
-footer{
-    background-color:#D96F32;
-}
-footer p{
-    color: #F3E9DC;
-    text-align: center;
-    padding: 1vw;
-}
-footer img {
-    color: #F3E9DC;
-    font-weight: bolder;
-    text-align: center;
-}
+ body {
+
+
+
+            margin: 0;
+
+
+            font-family: Arial, sans-serif;
+
+
+        }
+
+
+        .footer {
+
+
+            background-color: #D96F32; 
+
+
+            color: #ffffff;
+
+
+            padding: 20px 0;
+
+
+            text-align: center;
+
+
+            display: flex;
+
+
+            justify-content: space-around;
+
+
+            align-items: center;
+
+
+            flex-wrap: wrap; 
+
+
+        }
+
+
+        .footer-section {
+
+
+            margin: 10px 20px;
+
+
+            flex: 1; 
+
+
+            min-width: 200px; 
+
+
+            color: #E8D8C4;
+
+
+        }
+
+
+
+
+
+        .footer-section h3 {
+
+
+            margin-top: 0;
+
+
+            margin-bottom: 15px;
+
+
+            font-size: 1.2rem;
+
+
+            color: #E8D8C4;
+
+
+        }
+
+
+        .footer-section p, .footer-section a {
+
+
+            margin: 5px 0;
+
+
+            font-size: 1.2rem;
+
+
+            text-decoration: none;
+
+
+            color: #ffffff;
+
+
+        }
+
+
+        .social-icons img {
+
+
+            width: 30px; 
+
+
+            height: 30px;
+
+
+            margin: 0 5px;
+
+
+            vertical-align: middle;
+
+
+        }
+
+
+        .logo-container {
+
+
+            text-align: center;
+
+
+        }
+
+
+        .logo-container img {
+
+
+            width: 50px ;
+
+
+            height: 50px ;
+
+
+        }
+
+
+        .footer-section p{
+
+
+            color: #E8D8C4;
+
+
+            font-family: 'Trade Winds', cursive;
+
+
+        }
+
+
+        .footer-section p a {
+
+
+            color: #E8D8C4;
+
+
+        }
+
+
+        .copyright {
+
+
+            font-size: 0.8em;
+
+
+            margin-top: 15px;
+
+
+            width: 100%;
+
+
+        }
