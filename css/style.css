@@ -31,19 +31,6 @@ header h1 {
     height: 30%;
 }
 
-header div input {
-    margin: 0.5vw 0 0.5vw ;
-    padding: 10px 30px;
-    border-radius: 100px;
-    border: none;
-    background-image: linear-gradient(to right, #FA709A, #FEE140);
-    width: 600px;
-}
-input::placeholder {
-    color: black;
-    display: flex;
-        
-}
 
 header div nav ul {
     display: flex;
@@ -59,12 +46,7 @@ header div img {
     width: 4%;
     height: 4%;
 }
-header input{
-    background-color:beige ;
-    opacity: inherit;
-    border-radius: 30px;
-    padding: 0.4vw 2vw 0 0.5vw;
-}
+
 /*====Banner====*/
 section.banner{
     background-color: #561C24;

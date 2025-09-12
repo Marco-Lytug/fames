@@ -1,0 +1,50 @@
+root {
+    --main-bg-color: brown;
+    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+}
+
+p {
+    color: white;
+}
+/*TOPO*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #694F8E;
+    border-bottom: 24px solid #B692C2;
+    align-items: center;
+}
+header h1 {
+    font-size: 2.0rem;
+    margin: 1.5vw 0 1.5vw 3vw;
+    color: white;
+    width: 30%;
+    height: 30%;
+}
+header div nav ul {
+    display: flex;
+    margin: 0.5vw 0 0.5vw 3vw;
+}
+header div nav ul li {
+    padding: 20px;
+    color: #C7B7A3;
+    font-size: 20px;
+}
+header div img {
+    width: 4%;
+    height: 4%;
+}
+/*Banner*/
+section.banner{
+    background-color: #FFDFD6;
+}
+section.banner img{
+ margin: 9vw;
+}
