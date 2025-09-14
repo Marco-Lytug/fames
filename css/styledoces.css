@@ -26,11 +26,15 @@ header  nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#C7B7A3;
+    background-color:#B692C2;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
 
+}
+header nav ul li a.atual{
+    border-bottom: 3px solid #B692C2;
+    display: inline-block;
 }
 
 header nav ul li ul li {
@@ -84,26 +88,38 @@ section.banner img{
 section.destaque{
     background-color: #E3A5C7;
     display: flex;
+    border-bottom: 30px solid #F8CABD;
 }
 section.destaque div{
     text-align: center;
+    
 }
 section.destaque h2{
     font-size: 6em;
-    padding: 4vw 0 2vw 5vw;
+
+}
+section.destaque div{
+    padding: 3.5vw;
+    
+}
+section.destaque div h3{
+    font-size: 2.5rem;
+    padding: 1vw;
 }
 section.destaque  ul{
     list-style: disc;
-
+    margin: 13vw 0 0 14vw;
+    font-size: 3rem;
 }
 section.destaque  ul li{
-    margin: 15px 0 0 0;
+    margin: 15px 0 0 0; 
 
 }
 section.destaque div ul li h3{
         font-size: 3rem;
         margin: 0 0 0 15vw;
 }
+
 section.destaque div ul li img{
     margin: 3vw;
 }
@@ -111,15 +127,46 @@ section.doces{
     background-color: #FFDFD6;
 }
 section.doces h2{
-font-size: 5rem;
-padding: 1vw 0;
+font-size: 10rem;
+padding: 2vw 0 6vw 4vw;
+
 }
 
 section.doces ul li{
     position: relative;
     padding: 0 30vw 0 0;
+    text-align: center;
 }
 section.doces ul li img{
     position: absolute;
     right: 0;
+    margin: 0 12vw 10vw 0;
+    width: 25%;
+    height: 90%;
+    
+}
+section.doces ul li h3{
+    margin: 1vw;
+    font-size: 6rem;
+    color: #694F8E;
+    border-bottom: 2px solid #694F8E;
+    display: inline-block;
+    
+}
+section.doces div p{
+    background-color: #694F8E;
+    font-size: 3rem;
+    border-radius: 60px;
+    color: white;
+    margin: 0 2vw 5vw 8vw;
+    padding: 3vw;
+    text-align: left;
+}
+section.doces div p span{
+    background-color: #FFDFD6;
+    border-radius: 13px;
+    padding: 0.5vw;
+    color: #B692C2;
+    line-height: 100px;
+    margin: 0 0 0 2vw;
 }
