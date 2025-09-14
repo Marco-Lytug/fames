@@ -10,10 +10,41 @@ a {
     /* remove o sublinhado dos links */
 }
 
-p {
-    color: white;
-}
+
+    
 /*TOPO*/
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+
+header  nav ul li ul {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color:#C7B7A3;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0.5vw;
+
+}
+
+header nav ul li ul li {
+    margin: 0.5vw;
+    padding: 0.5vw;
+
+}
+
+nav ul li ul li a {
+    color: #561C24;
+}
+header nav ul li a.atual{
+    border-bottom: 3px solid #997C70;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -44,7 +75,51 @@ header div img {
 /*Banner*/
 section.banner{
     background-color: #FFDFD6;
+    border-bottom: 30px solid #EA7AB7;
 }
+
 section.banner img{
  margin: 9vw;
+}
+section.destaque{
+    background-color: #E3A5C7;
+    display: flex;
+}
+section.destaque div{
+    text-align: center;
+}
+section.destaque h2{
+    font-size: 6em;
+    padding: 4vw 0 2vw 5vw;
+}
+section.destaque  ul{
+    list-style: disc;
+
+}
+section.destaque  ul li{
+    margin: 15px 0 0 0;
+
+}
+section.destaque div ul li h3{
+        font-size: 3rem;
+        margin: 0 0 0 15vw;
+}
+section.destaque div ul li img{
+    margin: 3vw;
+}
+section.doces{
+    background-color: #FFDFD6;
+}
+section.doces h2{
+font-size: 5rem;
+padding: 1vw 0;
+}
+
+section.doces ul li{
+    position: relative;
+    padding: 0 30vw 0 0;
+}
+section.doces ul li img{
+    position: absolute;
+    right: 0;
 }
