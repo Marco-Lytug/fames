@@ -52,17 +52,87 @@ section.banner img{
 /*Destaque*/
 section.destaque{
     background-color: #FDF7F4;
+    display: flex;
+    border-bottom: 30px solid #366B2B;
 }
 section.destaque div{
-    display: flex;
-    justify-content: space-between;
-    ;
-}
-section.destaque ul li p{
-    color:black;
-    font-size: 1.5rem;
+    text-align: center;
     
 }
-section.destaque div.imga{
-    margin: 8rem;
+section.destaque h2{
+    font-size: 6em;
+
+}
+section.destaque div{
+    padding: 3.5vw;
+    
+}
+section.destaque div h3{
+    font-size: 2.5rem;
+    padding: 1vw;
+}
+section.destaque  ul{
+    list-style: disc;
+    margin: 13vw 0 0 14vw;
+    font-size: 3rem;
+}
+section.destaque  ul li{
+    margin: 15px 0 0 0; 
+
+}
+section.destaque div ul li h3{
+        font-size: 3rem;
+        margin: 0 0 0 15vw;
+}
+
+section.destaque div ul li img{
+    margin: 3vw;
+}
+/*Vegano*/
+section.vegano{
+    background-color: #8EB486;
+}
+section.vegano h2{
+font-size: 10rem;
+padding: 2vw 0 6vw 4vw;
+color: #FDF7F4;
+font-weight: bold;
+}
+
+section.vegano ul li{
+    position: relative;
+    padding: 0 30vw 0 0;
+    text-align: center;
+}
+section.vegano ul li img{
+    position: absolute;
+    right: 0;
+    margin: 0 12vw 12vw 0;
+    
+}
+section.vegano ul li h3{
+    margin: 1vw;
+    font-size: 6rem;
+    color: #685752;
+    border-bottom: 2px solid #685752;
+    display: inline-block;
+    
+}
+section.vegano div p{
+    background-color: #FDF7F4;
+    font-size: 3rem;
+    border-radius: 60px;
+    color: black;
+    margin: 3vw 2vw 5vw 8vw;
+    padding: 3vw;
+    text-align: left;
+}
+section.vegano div p span{
+    background-color: #685752;
+    border-radius: 13px;
+    padding: 0.5vw;
+    color: #FDF7F4;
+    line-height: 100px;
+    
+    
 }
