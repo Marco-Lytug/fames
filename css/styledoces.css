@@ -140,9 +140,9 @@ section.doces ul li{
 section.doces ul li img{
     position: absolute;
     right: 0;
-    margin: 0 12vw 10vw 0;
-    width: 25%;
-    height: 90%;
+    margin: 0 12vw 10vw 6vw;
+    padding: 0 0 0 2vw;
+    
     
 }
 section.doces ul li h3{
@@ -158,8 +158,8 @@ section.doces div p{
     font-size: 3rem;
     border-radius: 60px;
     color: white;
-    margin: 0 2vw 5vw 8vw;
-    padding: 3vw;
+    margin: 0 0 0 8vw;
+    padding: 5vw;
     text-align: left;
 }
 section.doces div p span{
