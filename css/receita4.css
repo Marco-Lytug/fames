@@ -281,10 +281,10 @@ section.espe div{
         .footer {
 
 
-            background-color: #694F8E; 
+            background-color: #FFDFD6; 
 
 
-            color: #ffffff;
+            color: #694F8E;
 
 
             padding: 20px 0;
@@ -320,7 +320,7 @@ section.espe div{
             min-width: 200px; 
 
 
-            color: #E8D8C4;
+            color: #694F8E;
 
 
         }
@@ -341,7 +341,7 @@ section.espe div{
             font-size: 1.2rem;
 
 
-            color: #E8D8C4;
+            color: #694F8E;
 
 
         }
@@ -359,7 +359,7 @@ section.espe div{
             text-decoration: none;
 
 
-            color: #ffffff;
+            color: #694F8E;
 
 
         }
@@ -407,7 +407,7 @@ section.espe div{
         .footer-section p{
 
 
-            color: #E8D8C4;
+            color: #694F8E;
 
 
             font-family: 'Trade Winds', cursive;
@@ -419,7 +419,7 @@ section.espe div{
         .footer-section p a {
 
 
-            color: #E8D8C4;
+            color: #694F8E;
 
 
         }

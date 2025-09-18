@@ -15,11 +15,52 @@ p {
 }
 
 /*====TOPO====*/
+header nav ul li {
+    position: relative;
+    
+}
+
+header nav ul li:hover ul {
+    display: block;
+    z-index: 1;
+    pointer-events: auto;
+
+}
+
+
+header  nav ul li ul {
+    position: absolute;
+    display: none;
+    left: 0;
+    background-color:#C7B7A3;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0.5vw;
+
+    
+}
+
+header nav ul li ul li:hover {
+    margin: 0.5vw;
+    padding: 0.5vw;
+    border-bottom: 1px solid #FFDFD6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav ul li ul li a {
+    color: #FFDFD6;
+
+}
+
+/*====TOPO====*/
 header {
     display: flex;
     justify-content: space-between;
-    background-color:#F8B259;
-    border-bottom: 24px solid #C7B7A3;
+    background-color: #F8B259;
+    border-bottom: 24px solid #C75D2C;
     align-items: center;
 }
 
@@ -30,17 +71,27 @@ header h1 {
     width: 30%;
     height: 30%;
 }
-header div nav{
-    background-color: #F8B259;
+
+
+header div nav ul {
+    display: flex;
+    margin: 0.5vw 2vw 0.5vw 3vw;
+    
 }
-header div input {
-    margin: 0.5vw 0 0.5vw ;
-    padding: 10px 30px;
-    border-radius: 100px;
-    border: none;
-    background-image: linear-gradient(to right, #FA709A, #FEE140);
-    width: 600px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
+header div nav ul li {
+    padding: 20px;
+    color: #FFDFD6;
+    font-size: 20px;
+}
+header nav ul li a.atual{
+    border-bottom: 3px solid #FFDFD6;
+    display: inline-block;
+}
+
+header div img {
+    width: 4%;
+    height: 4%;
 }
 input::placeholder {
     color: black;
