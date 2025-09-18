@@ -111,6 +111,7 @@ section.destaque  ul{
     margin: 13vw 0 0 14vw;
     font-size: 3rem;
 }
+
 section.destaque  ul li{
     margin: 15px 0 0 0; 
 
@@ -141,13 +142,10 @@ section.doces ul li{
 section.doces ul li img{
     position: absolute;
     right: 0;
-<<<<<<< HEAD
-    margin: 0 12vw 12vw 0;
-=======
     margin: 0 12vw 10vw 6vw;
     padding: 0 0 0 2vw;
     
->>>>>>> 16027a564b808a70f488b1c2291128132ff9262c
+
     
 }
 section.doces ul li h3{
@@ -163,13 +161,8 @@ section.doces div p{
     font-size: 3rem;
     border-radius: 60px;
     color: white;
-<<<<<<< HEAD
     margin: 3vw 2vw 5vw 8vw;
     padding: 3vw;
-=======
-    margin: 0 0 0 8vw;
-    padding: 5vw;
->>>>>>> 16027a564b808a70f488b1c2291128132ff9262c
     text-align: left;
 }
 section.doces div p span{
