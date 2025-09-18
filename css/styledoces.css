@@ -146,7 +146,7 @@ section.doces ul li{
 section.doces ul li img{
     position: absolute;
     right: 0;
-    margin: 0 12vw 10vw 6vw;
+    margin: 0 10.5vw 10.5vw 6vw;
     padding: 0 0 0 2vw;
     
 
@@ -165,7 +165,7 @@ section.doces div p{
     font-size: 3rem;
     border-radius: 60px;
     color: white;
-    margin: 3vw 2vw 5vw 8vw;
+    margin: 3vw 2vw 0 8vw;
     padding: 3vw;
     text-align: left;
 }
