@@ -34,12 +34,15 @@ header  nav ul li ul {
 
 }
 
-header nav ul li ul li {
+header nav ul li ul li:hover {
     margin: 0.5vw;
     padding: 0.5vw;
-
+    border-bottom: 1px solid #561C24;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    text-align: center;
+    transition: 0.3s;
 }
-
 nav ul li ul li a {
     color: #561C24;
 }
