@@ -111,6 +111,7 @@ section.destaque  ul{
     margin: 13vw 0 0 14vw;
     font-size: 3rem;
 }
+
 section.destaque  ul li{
     margin: 15px 0 0 0; 
 
@@ -130,6 +131,7 @@ section.doces h2{
 font-size: 10rem;
 padding: 2vw 0 6vw 4vw;
 
+
 }
 
 section.doces ul li{
@@ -143,6 +145,7 @@ section.doces ul li img{
     margin: 0 12vw 10vw 6vw;
     padding: 0 0 0 2vw;
     
+
     
 }
 section.doces ul li h3{
@@ -158,8 +161,8 @@ section.doces div p{
     font-size: 3rem;
     border-radius: 60px;
     color: white;
-    margin: 0 0 0 8vw;
-    padding: 5vw;
+    margin: 3vw 2vw 5vw 8vw;
+    padding: 3vw;
     text-align: left;
 }
 section.doces div p span{
@@ -168,7 +171,8 @@ section.doces div p span{
     padding: 0.5vw;
     color: #B692C2;
     line-height: 100px;
-    margin: 0 0 0 2vw;
+    
+    
 }
 footer {
     background-color: #561C24;

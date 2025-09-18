@@ -81,11 +81,37 @@ section.banner img{
 /*Destaque*/
 section.destaque{
     background-color: #FDF7F4;
+    display: flex;
+    border-bottom: 30px solid #366B2B;
 }
 section.destaque div{
-    display: flex;
-    justify-content: space-between;
-    ;
+    text-align: center;
+    
+}
+section.destaque h2{
+    font-size: 6em;
+
+}
+section.destaque div{
+    padding: 3.5vw;
+    
+}
+section.destaque div h3{
+    font-size: 2.5rem;
+    padding: 1vw;
+}
+section.destaque  ul{
+    list-style: disc;
+    margin: 13vw 0 0 14vw;
+    font-size: 3rem;
+}
+section.destaque  ul li{
+    margin: 15px 0 0 0; 
+
+}
+section.destaque div ul li h3{
+        font-size: 3rem;
+        margin: 0 0 0 15vw;
 }
 section.destaque ul li p{
     color:black;
@@ -94,182 +120,4 @@ section.destaque ul li p{
 }
 section.destaque div.imga{
     margin: 8rem;
-}
-footer {
-    background-color: #561C24;
-}
-
-body {
-
-
-
-    margin: 0;
-
-
-    font-family: Arial, sans-serif;
-
-
-}
-
-
-.footer {
-
-
-    background-color: #4a2b33;
-
-
-    color: #ffffff;
-
-
-    padding: 20px 0;
-
-
-    text-align: center;
-
-
-    display: flex;
-
-
-    justify-content: space-around;
-
-
-    align-items: center;
-
-
-    flex-wrap: wrap;
-
-
-}
-
-
-.footer-section {
-
-
-    margin: 10px 20px;
-
-
-    flex: 1;
-
-
-    min-width: 200px;
-
-
-    color: #E8D8C4;
-
-
-}
-
-
-
-
-
-.footer-section h3 {
-
-
-    margin-top: 0;
-
-
-    margin-bottom: 15px;
-
-
-    font-size: 1.2rem;
-
-
-    color: #E8D8C4;
-
-
-}
-
-
-.footer-section p,
-.footer-section a {
-
-
-    margin: 5px 0;
-
-
-    font-size: 1.2rem;
-
-
-    text-decoration: none;
-
-
-    color: #ffffff;
-
-
-}
-
-
-.social-icons img {
-
-
-    width: 30px;
-
-
-    height: 30px;
-
-
-    margin: 0 5px;
-
-
-    vertical-align: middle;
-
-
-}
-
-
-.logo-container {
-
-
-    text-align: center;
-
-
-}
-
-
-.logo-container img {
-
-
-    width: 50px;
-
-
-    height: 50px;
-
-
-}
-
-
-.footer-section p {
-
-
-    color: #E8D8C4;
-
-
-    font-family: 'Trade Winds', cursive;
-
-
-}
-
-
-.footer-section p a {
-
-
-    color: #E8D8C4;
-
-
-}
-
-
-.copyright {
-
-
-    font-size: 0.8em;
-
-
-    margin-top: 15px;
-
-
-    width: 100%;
-
-
 }
