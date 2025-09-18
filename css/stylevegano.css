@@ -33,11 +33,16 @@ header  nav ul li ul {
 
 }
 
-header nav ul li ul li {
+header nav ul li ul li:hover {
     margin: 0.5vw;
     padding: 0.5vw;
-
+    border-bottom: 1px solid #561C24;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    text-align: center;
+    transition: 0.3s;
 }
+
 
 nav ul li ul li a {
     color: #FDF7F4;
@@ -60,7 +65,7 @@ header h1 {
 }
 header div nav ul {
     display: flex;
-    margin: 0.5vw 0 0.5vw 3vw;
+    margin: 0.5vw 2vw 0.5vw 3vw;
 }
 header div nav ul li {
     padding: 20px;
@@ -138,7 +143,7 @@ section.vegano ul li{
 section.vegano ul li img{
     position: absolute;
     right: 0;
-    margin: 0 12vw 12vw 0;
+    margin: 0 10.5vw 10.5vw 0;
     
 }
 section.vegano ul li h3{
@@ -154,7 +159,7 @@ section.vegano div p{
     font-size: 3rem;
     border-radius: 60px;
     color: black;
-    margin: 3vw 2vw 5vw 8vw;
+    margin: 3vw 2vw 0    8vw;
     padding: 3vw;
     text-align: left;
 }
@@ -165,4 +170,182 @@ section.vegano div p span{
     color: #FDF7F4;
     line-height: 100px;
     
+}
+footer {
+    background-color: #561C24;
+}
+
+body {
+
+    
+
+    margin: 0;
+
+
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+.footer {
+
+
+    background-color: #4a2b33;
+
+
+    color: #ffffff;
+
+
+    padding: 20px 0;
+
+
+    text-align: center;
+
+
+    display: flex;
+
+
+    justify-content: space-around;
+
+
+    align-items: center;
+
+
+    flex-wrap: wrap;
+
+
+}
+
+
+.footer-section {
+
+
+    margin: 10px 20px;
+
+
+    flex: 1;
+
+
+    min-width: 200px;
+
+
+    color: #E8D8C4;
+
+
+}
+
+
+
+
+
+.footer-section h3 {
+
+
+    margin-top: 0;
+
+
+    margin-bottom: 15px;
+
+
+    font-size: 1.2rem;
+
+
+    color: #E8D8C4;
+
+
+}
+
+
+.footer-section p,
+.footer-section a {
+
+
+    margin: 5px 0;
+
+
+    font-size: 1.2rem;
+
+
+    text-decoration: none;
+
+
+    color: #ffffff;
+
+
+}
+
+
+.social-icons img {
+
+
+    width: 30px;
+
+
+    height: 30px;
+
+
+    margin: 0 5px;
+
+
+    vertical-align: middle;
+
+
+}
+
+
+.logo-container {
+
+
+    text-align: center;
+
+
+}
+
+
+.logo-container img {
+
+
+    width: 50px;
+
+
+    height: 50px;
+
+
+}
+
+
+.footer-section p {
+
+
+    color: #E8D8C4;
+
+
+    font-family: 'Trade Winds', cursive;
+
+
+}
+
+
+.footer-section p a {
+
+
+    color: #E8D8C4;
+
+
+}
+
+
+.copyright {
+
+
+    font-size: 0.8em;
+
+
+    margin-top: 15px;
+
+
+    width: 100%;
+
+
 }
