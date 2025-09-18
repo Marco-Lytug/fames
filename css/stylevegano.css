@@ -33,14 +33,10 @@ header  nav ul li ul {
 
 }
 
-header nav ul li ul li:hover {
+header nav ul li ul li {
     margin: 0.5vw;
     padding: 0.5vw;
-    border-bottom: 1px solid #561C24;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 150px;
-    text-align: center;
-    transition: 0.3s;
+
 }
 
 nav ul li ul li a {
@@ -122,6 +118,51 @@ section.destaque ul li p{
     font-size: 1.5rem;
     
 }
-section.destaque div.imga{
-    margin: 8rem;
+
+/*Gluten*/
+section.vegano{
+    background-color: #8EB486;
+}
+section.vegano h2{
+font-size: 10rem;
+padding: 2vw 0 6vw 4vw;
+color: #FDF7F4;
+font-weight: bold;
+}
+
+section.vegano ul li{
+    position: relative;
+    padding: 0 30vw 0 0;
+    text-align: center;
+}
+section.vegano ul li img{
+    position: absolute;
+    right: 0;
+    margin: 0 12vw 12vw 0;
+    
+}
+section.vegano ul li h3{
+    margin: 1vw;
+    font-size: 6rem;
+    color: #685752;
+    border-bottom: 2px solid #685752;
+    display: inline-block;
+    
+}
+section.vegano div p{
+    background-color: #FDF7F4;
+    font-size: 3rem;
+    border-radius: 60px;
+    color: black;
+    margin: 3vw 2vw 5vw 8vw;
+    padding: 3vw;
+    text-align: left;
+}
+section.vegano div p span{
+    background-color: #685752;
+    border-radius: 13px;
+    padding: 0.5vw;
+    color: #FDF7F4;
+    line-height: 100px;
+    
 }
