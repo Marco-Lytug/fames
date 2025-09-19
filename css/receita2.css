@@ -15,6 +15,22 @@ p {
 }
 
 /*====TOPO====*/
+hroot {
+    --main-bg-color: brown;
+    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    /* remove o sublinhado dos links */
+}
+
+p {
+    color: white;
+}
+
 header nav ul li {
     position: relative;
     
@@ -59,8 +75,8 @@ nav ul li ul li a {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: #F8B259;
-    border-bottom: 24px solid #C75D2C;
+    background-color: #102E50;
+    border-bottom: 24px solid #E78B48;
     align-items: center;
 }
 
@@ -85,7 +101,7 @@ header div nav ul li {
     font-size: 20px;
 }
 header nav ul li a.atual{
-    border-bottom: 3px solid #FFDFD6;
+    border-bottom: 3px solid white;
     display: inline-block;
 }
 
@@ -120,18 +136,18 @@ header input{
     padding: 0.4vw 2vw 0 0.5vw;
 }
 main{
-    background-color: #F8B259;
+    background-color: #F5C45E;
     color: #F3E9DC;
 }
 /*====HEADER====*/
 section.inicio{
-    background-color: #F8B259;
+    background-color: #F5C45E;
     padding: 0 0 0 0;
     margin: 0 -5vw;
 }
 section.inicio h1{
 font-size: 5rem;
-color: #C75D2C;
+color: #BE3D2A;
 text-align: center;
 font-weight: bolder;
 font-style: Wendy One;
@@ -142,7 +158,7 @@ padding: 7vw 0 0 0;
 }
 section.inicio h2{
     font-size: 3.5rem;
-    color: #F1971B;
+    color: #DF6A14;
     text-align: right;
     font-weight: bolder;
     font-style: Wendy One;
@@ -163,7 +179,7 @@ section.inicio div .img{
     
 }
 section.inicio div.texto{
-    background-color: #D96F32;
+    background-color: #102E50;
     background-position: 35% 50%;
     border-radius: 30px;
     padding: 2vw 1vw 2vw 1vw;
@@ -171,9 +187,10 @@ section.inicio div.texto{
     font-size: 2rem;
     margin: 6vw -2vw vw -2vw;
     width: 40%
+    
 }
 section.inicio h3{
-  color: #F09819;
+  color: #DF6A14;
   font-size: 3rem;
     text-align: left; 
     font-weight: bolder;
@@ -186,12 +203,15 @@ section.inicio ul{
     margin: 0vw 3vw 3vw 7vw;
     font-weight: bold;
 }
+section.inicio ul li p{
+    color: #FFFFFF;
+}
 section.preparo{
- background-color: #D96F32;
+ background-color: #102E50;
  padding: 2vw;
 }
 section.preparo h2{
-    color: #F3E9DC;
+    color: white;
     font-size: 2.8rem;
     font-weight: bolder;
     font-style: Wendy One;
@@ -218,31 +238,22 @@ section.preparo p{
     font-weight: bold;
     font-style: Wendy One;
     margin: 0vw 3vw 0vw 0vw;
+    color: white;
 }
 section.espe{
-    background-color: #F8B259;
+    background-color: #E3A5C7;
     padding: 2vw;
 }
 section.espe h2{
-    color: #C75D2C;
+    color: #FFDFD6;
     font-size: 2.8rem;
     font-weight: bold;
     font-style: Wendy One;
     margin: 0vw 0vw 2vw 0vw;
 }
 section.espe div{
-    background-color: #F3E9DC;
+    background-color: #BE3D2A;
 }
-    
-
-
-
-
-
-
-
-
-
 /*====|FOOTER|====*/
  body {
 
@@ -260,10 +271,10 @@ section.espe div{
         .footer {
 
 
-            background-color: #D96F32; 
+            background-color: #BE3D2A; 
 
 
-            color: #ffffff;
+            color: #102E50;
 
 
             padding: 20px 0;
@@ -299,7 +310,7 @@ section.espe div{
             min-width: 200px; 
 
 
-            color: #E8D8C4;
+            color: #102E50;
 
 
         }
@@ -320,7 +331,7 @@ section.espe div{
             font-size: 1.2rem;
 
 
-            color: #E8D8C4;
+            color: #102E50;
 
 
         }
@@ -338,7 +349,7 @@ section.espe div{
             text-decoration: none;
 
 
-            color: #ffffff;
+            color: #102E50;
 
 
         }
@@ -386,7 +397,7 @@ section.espe div{
         .footer-section p{
 
 
-            color: #E8D8C4;
+            color: #102E50;
 
 
             font-family: 'Trade Winds', cursive;
@@ -398,7 +409,7 @@ section.espe div{
         .footer-section p a {
 
 
-            color: #E8D8C4;
+            color: #102E50;
 
 
         }
