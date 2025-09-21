@@ -119,4 +119,139 @@ https://www.chinainbox.com.br/tabs/home
 
 China inBox:As cores os efeitos as animações todas elas prendem o usuário e isso pode ser algo que iremos adicionar
 
-acho que tudo nesse site é muito bom visualmente e bem distribuído                            
+acho que tudo nesse site é muito bom visualmente e bem distribuído   
+
+
+<h1>ATA</h1>
+
+
+Grupo: Renato Batista Pereira (renatobpereira100@gmail.com)
+ 	 Miguel Arcanjo (arcanjomiguelbbs12@gmail.com)
+ 	 Miguel Andrade (miguelandradedesouzaifc@gmail.com)
+ 	 Pedro Gabriel Banfi (pedrogabrielbanfi@gmail.com)
+ 	 Arthur Prants (prantsarthur2010@gmail.com)
+ Carlos Miguel Oliveira (carloslvr09@gmail.com)
+ 	 Marco Antonio (marcoanthonyo.hy@gmail.com)
+
+Ceo da equipe: Renato Batista Pereira;
+secretário da equipe: Marco Anthonyo.
+
+Tema: Alimentação equilibrada.
+
+4 de jul. de 2025 | projeto integrador
+
+04/07/2025 a 11/07/2025*
+
+Anotações: Durante esse período, decidimos em grupo qual seria nosso tema e além disso o nome de nosso site que se deu como Fames, escolhemos esse nome pois ele tem como origem o nome da deusa da fome “Fames”. Em relação às nossas pesquisas, foram tomadas as seguintes deliberações:
+
+Pesquisa sobre alimentação saudável e de pessoas com alergias a certas comidas;
+Pesquisa de cardápios para referências:(https://www.swift.com.br/pratos-prontos?&O=OrderByTopSaleDESC, https://cumbucaboa.com.br/?srsltid=AfmBOoqFsHtdkOSi23ALQdKCN3jVxuzzrx6FNiXmO5JgQ6Me35Bir7Hj, https://www.receiteria.com.br).
+Montagem de pratos especiais como, sem glúten,intolerantes à lactose, veganos e para alérgicos.
+	
+	Itens prontos:
+   
+Nome do site;
+Pesquisa de referência;
+Ideias de pratos.
+
+
+Dia 04/07/2025
+Primeira reunião do grupo em sala de aula, com todos os integrantes presentes 
+Discutimos sobre qual seria o tema, conversamos com o professor para ver ideais de temas e por fim decidimos que o tema seria sobre alimentação equilibrada.
+
+
+Dia 11/07/2025
+Segunda reunião do nosso grupo em sala de aula, escolhemos em grupo qual seria o nome do nosso site e demos início às pesquisas.
+
+
+
+11 de jul. de 2025 |
+
+
+11/07/2025 a 20/07/2025*
+
+Anotações: Com as pesquisas prontas, começamos a rabiscar no figma, site está cerca de 15% pronto, com o cabeçalho página inicial concluída. Nesse período também escolhemos as cores que usaremos em nosso site, puxando para cores mais quentes.
+
+  	Itens prontos:
+Cores do site selecionadas;
+cabeçalho concluído;
+
+
+
+Dia 11/07/2025
+
+Terceira reunião do grupo de desenvolvimento do site
+integrantes presentes: Renato Batista Pereira, Miguel Arcanjo, Pedro Gabriel Banfi e Arthur Prants.
+assunto: Definição do layout do site e escolha de paletas de cores.
+Foi discutido e iniciado o planejamento do layout geral do site, priorizando a simplicidade e a boa navegabilidade.
+Foram levantadas ideias de cores, sendo sugerido que o design utilize tons mais quentes para transmitir modernidade e acessibilidade.
+
+
+Dia 18/07/2025
+
+Quarta reunião em sala de aula, com todos integrantes presentes.
+Assunto: criação do E-mail do site(famesflames751@gmail.com) e o e-mail de contato(fames.contato@gmail.com).
+Criação das redes sociais instagram(@fames.fames) e o X()
+e por fim a conclusão do cabeçalho. 
+
+
+
+
+
+
+
+
+20 de jul. de 2025|
+20/07/2025*
+
+Anotações:
+Finalizamos a página de login.
+Tutorial de como mexer no figma(Para aprimorar o que nós já sabemos)
+Fizemos a primeira página das receitas (uma ideia inicial).
+Decidimos quantas receitas teremos e as variações de uma mesma receita.
+Iniciamos o repositório no GitHub.
+Por fim, começamos a rabiscar a logo do Fames.
+Finalizamos nossa logo
+Conseguimos deixar o site mais ou  menos 40% pronto.
+Dia 20/07/2025
+"Nesse dia, um de nossos líderes (Marco Anthonyo de Oliveira Dias) nos enviou um vídeo sobre como usar o Figma, para que todos pudessem assistir e entender melhor como utilizá-lo com mais agilidade."
+
+1 de ago. de 2025|29 de ago. de 2025
+01/08/2025 a 29/08/2025*
+
+Anotações: Durante todo esse período de Agosto, conseguimos finalizar nosso figma, podendo focar em nossos códigos html e css.
+
+Todos os integrantes da equipe a todo vapor!
+8 de set. de 2025
+
+ 08/09/2025 | 17/09/2025
+
+Anotações: Nesta 2 semanas finalizamos em 100% nosso código html e css.
+E agora dando um trato final, adicionando mais itens animados, vídeos e etc…
+Animações com Css;
+Link para redes sociais ativas;
+Receitas completas no site, com imagens e descrição.
+
+
+Site 100% funcional e responsivo;
+
+
+Figma finalizado;
+ 
+HTML e CSS completos com elementos interativos;
+
+
+Página de receitas com filtros (ex: veganas, sem glúten etc.);
+
+
+Formulário de contato funcionando;
+
+
+Redes sociais e e-mails operantes;
+
+
+Roteiro da apresentação em andamento.
+
+
+LINK DOCS COM A ATA: https://docs.google.com/document/d/1BYXz0_RXpHc73yxyBCOHvSsiqGP_6XCC2SMxRL9755s/edit?usp=sharing
+
