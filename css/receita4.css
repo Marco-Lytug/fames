@@ -15,21 +15,7 @@ p {
 }
 
 /*====TOPO====*/
-hroot {
-    --main-bg-color: brown;
-    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-
-a {
-    text-decoration: none;
-    /* remove o sublinhado dos links */
-}
-
-p {
-    color: white;
-}
 
 header nav ul li {
     position: relative;
@@ -109,11 +95,7 @@ header div img {
     width: 4%;
     height: 4%;
 }
-input::placeholder {
-    color: black;
-    display: flex;
-        
-}
+
 
 header div nav ul {
     display: flex;
@@ -129,131 +111,10 @@ header div img {
     width: 4%;
     height: 4%;
 }
-header input{
-    background-color:beige ;
-    opacity: inherit;
-    border-radius: 30px;
-    padding: 0.4vw 2vw 0 0.5vw;
-}
-main{
-    background-color: #694F8E;
-    color: #F3E9DC;
-}
+
+
 /*====HEADER====*/
-section.inicio{
-    background-color: #E3A5C7;
-    padding: 0 0 0 0;
-    margin: 0 -5vw;
-}
-section.inicio h1{
-font-size: 5rem;
-color: #694F8E;
-text-align: center;
-font-weight: bolder;
-font-style: Wendy One;
-padding: 7vw 0 0 0;
-
-
-
-}
-section.inicio h2{
-    font-size: 3.5rem;
-    color: #694F8E;
-    text-align: right;
-    font-weight: bolder;
-    font-style: Wendy One;
-    margin: 8vw 18vw 3vw 5vw;
-    line-height: 8rem;
-}
-section.inicio div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
-    margin: 0.7vw -2vw 0vw 0vw;
-}
-section.inicio div .img{
-    width: 35%;
-    height: 3%;
-    margin: 0vw -2vw 0vw -7vw;
-    
-}
-section.inicio div.texto{
-    background-color: #FFDFD6;
-    background-position: 35% 50%;
-    border-radius: 30px;
-    padding: 2vw 1vw 2vw 1vw;
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 6vw -2vw vw -2vw;
-    width: 40%
-    
-}
-section.inicio h3{
-  color: #694F8E;
-  font-size: 3rem;
-    text-align: left; 
-    font-weight: bolder;
-    font-style: Wendy One;
-    margin: 3vw 0vw 3vw 17vw;
-}
-section.inicio ul{
-    line-height: 2rem;
-    font-size: 1.8rem;
-    margin: 0vw 3vw 3vw 7vw;
-    font-weight: bold;
-}
-section.inicio ul li p{
-    color: #694F8E;
-}
-section.preparo{
- background-color: #694F8E;
- padding: 2vw;
-}
-section.preparo h2{
-    color: #FFDFD6;
-    font-size: 2.8rem;
-    font-weight: bolder;
-    font-style: Wendy One;
-    margin: 0vw 0vw 2vw 0vw;
-}
-section.preparo h3{
-    font-size: 2.2rem;
-    line-height: 3rem;
-    font-weight: bold;
-    font-style: Wendy One;
-    margin: 0vw 0vw 0.8vw 0vw;
-}
-section.preparo ul{
-    font-size: 1.3rem;
-    line-height: 2rem;
-    font-weight: bold;
-    font-style: Wendy One;
-    margin: 0vw 3vw 0vw 0vw;
-}
-
-section.preparo p{
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-    font-weight: bold;
-    font-style: Wendy One;
-    margin: 0vw 3vw 0vw 0vw;
-    color: #FFDFD6;
-}
-section.espe{
-    background-color: #E3A5C7;
-    padding: 2vw;
-}
-section.espe h2{
-    color: #FFDFD6;
-    font-size: 2.8rem;
-    font-weight: bold;
-    font-style: Wendy One;
-    margin: 0vw 0vw 2vw 0vw;
-}
-section.espe div{
-    background-color: #E3A5C7;
-}
+ 
     
 
 

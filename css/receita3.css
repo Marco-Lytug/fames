@@ -22,15 +22,6 @@ hroot {
 }
 
 
-a {
-    text-decoration: none;
-    /* remove o sublinhado dos links */
-}
-
-p {
-    color: white;
-}
-
 header nav ul li {
     position: relative;
     
@@ -265,176 +256,179 @@ section.espe div{
 
 
 /*====|FOOTER|====*/
- body {
+.footer {
 
 
+    background-color: #4a2b33;
 
-            margin: 0;
 
+    color: #ffffff;
 
-            font-family: Arial, sans-serif;
 
+    padding: 20px 0;
 
-        }
 
+    text-align: center;
 
-        .footer {
 
+    display: flex;
 
-            background-color: #FDF7F4; 
 
+    justify-content: space-around;
 
-            color: #685752;
 
+    align-items: center;
 
-            padding: 20px 0;
 
+    flex-wrap: wrap;
 
-            text-align: center;
 
+}
 
-            display: flex;
 
+.footer-section {
 
-            justify-content: space-around;
 
+    margin: 10px 20px;
 
-            align-items: center;
 
+    flex: 1;
 
-            flex-wrap: wrap; 
 
+    min-width: 200px;
 
-        }
 
+    color: #E8D8C4;
 
-        .footer-section {
 
+}
 
-            margin: 10px 20px;
 
 
-            flex: 1; 
 
 
-            min-width: 200px; 
+.footer-section h3 {
 
 
-            color: #685752;
+    margin-top: 0;
 
 
-        }
+    margin-bottom: 15px;
 
 
+    font-size: 1.2rem;
 
 
+    color: #E8D8C4;
 
-        .footer-section h3 {
 
+}
 
-            margin-top: 0;
 
+.footer-section p,
+.footer-section a {
 
-            margin-bottom: 15px;
 
+    margin: 5px 0;
 
-            font-size: 1.2rem;
 
+    font-size: 1.2rem;
 
-            color: #685752;
 
+    text-decoration: none;
 
-        }
 
+    color: #ffffff;
 
-        .footer-section p, .footer-section a {
 
+}
 
-            margin: 5px 0;
 
+.social-icons img {
 
-            font-size: 1.2rem;
 
+    width: 30px;
 
-            text-decoration: none;
 
+    height: 30px;
 
-            color: #685752;
 
+    margin: 0 5px;
 
-        }
 
+    vertical-align: middle;
 
-        .social-icons img {
 
+}
 
-            width: 30px; 
 
+.logo-container {
 
-            height: 30px;
 
+    text-align: center;
 
-            margin: 0 5px;
 
+}
 
-            vertical-align: middle;
 
+.logo-container img {
 
-        }
 
+    width: 50px;
 
-        .logo-container {
 
+    height: 50px;
 
-            text-align: center;
 
+}
 
-        }
 
+.footer-section p {
 
-        .logo-container img {
 
+    color: #E8D8C4;
 
-            width: 50px ;
 
+    font-family: 'Trade Winds', cursive;
 
-            height: 50px ;
 
+}
 
-        }
 
+.footer-section p a {
 
-        .footer-section p{
 
+    color: #E8D8C4;
 
-            color: #685752;
 
+}
 
-            font-family: 'Trade Winds', cursive;
 
+.copyright {
 
-        }
 
+    font-size: 0.8em;
 
-        .footer-section p a {
 
+    margin-top: 15px;
 
-            color: #685752;
 
+    width: 100%;
 
-        }
 
+}
+footer {
+    background-color: #561C24;
+}
 
-        .copyright {
+body {
 
+    
 
-            font-size: 0.8em;
+    margin: 0;
 
 
-            margin-top: 15px;
+    font-family: Arial, sans-serif;
 
 
-            width: 100%;
-
-
-        }
+}
