@@ -133,8 +133,7 @@ Grupo: Renato Batista Pereira (renatobpereira100@gmail.com)
  Carlos Miguel Oliveira (carloslvr09@gmail.com)
  	 Marco Antonio (marcoanthonyo.hy@gmail.com)
 
-Ceo da equipe: Renato Batista Pereira;
-secretário da equipe: Marco Anthonyo.
+Secretário: Renato Batista Pereira;
 
 Tema: Alimentação equilibrada.
 
