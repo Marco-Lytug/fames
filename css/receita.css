@@ -13,18 +13,12 @@ a {
 p {
     color: white;
 }
-
-/*====TOPO====*/
 header nav ul li {
     position: relative;
-    
 }
 
 header nav ul li:hover ul {
     display: block;
-    z-index: 1;
-    pointer-events: auto;
-
 }
 
 
@@ -32,18 +26,21 @@ header  nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#C7B7A3;
+    background-color:#D96F32;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
 
-    
+}
+header nav ul li a.atual{
+    border-bottom: 3px solid #B692C2;
+    display: inline-block;
 }
 
 header nav ul li ul li:hover {
     margin: 0.5vw;
     padding: 0.5vw;
-    border-bottom: 1px solid #FFDFD6;
+    border-bottom: 1px solid #561C24;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 150px;
     text-align: center;
@@ -51,19 +48,18 @@ header nav ul li ul li:hover {
 }
 
 nav ul li ul li a {
-    color: #FFDFD6;
-
+    color: #561C24;
 }
-
-/*====TOPO====*/
-header {
+header nav ul li a.atual{
+    border-bottom: 3px solid #997C70;
+}
+header{
     display: flex;
     justify-content: space-between;
-    background-color: #F8B259;
-    border-bottom: 24px solid #C75D2C;
+    background-color: #694F8E;
+    border-bottom: 24px solid #B692C2;
     align-items: center;
 }
-
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -71,226 +67,285 @@ header h1 {
     width: 30%;
     height: 30%;
 }
-
-
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
-    
 }
-
 header div nav ul li {
     padding: 20px;
-    color: #FFDFD6;
+    color: #C7B7A3;
     font-size: 20px;
 }
-header nav ul li a.atual{
-    border-bottom: 3px solid #FFDFD6;
-    display: inline-block;
-}
-
 header div img {
     width: 4%;
     height: 4%;
 }
-input::placeholder {
-    color: black;
+/*TOPO*/
+header{
     display: flex;
-        
+    justify-content: space-between;
+    background-color: #F8B259;
+    border-bottom: 24px solid #F3E9DC;
+    align-items: center;
 }
-
+header h1 {
+    font-size: 2.0rem;
+    margin: 1.5vw 0 1.5vw 3vw;
+    color: white;
+    width: 30%;
+    height: 30%;
+}
 header div nav ul {
     display: flex;
-    margin: 0.5vw 0 0.5vw 3vw;
+    margin: 0.5vw 2vw 0.5vw 3vw;
 }
-
 header div nav ul li {
     padding: 20px;
-    color: white;
+    color: #F3E9DC;
     font-size: 20px;
 }
 header div img {
     width: 4%;
     height: 4%;
 }
+section.inicio{
+    background-color: #D96F32;
+}
+section.inicio h2{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+section.inicio h3{
+    text-align: right;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 0 3vw 0 0 ;
+}
+section.inicio div{
+    display: flex;
+    justify-content: space-between;
+}
+section.inicio div.texto{
+    padding: 3vw;
+}
+section.inicio div.texto ul{
+    background-color: #F8B259;
+    line-height: 3vw;
+    padding: 4vw;
+    font-size: 2rem;
+    border-radius: 3vw;
+    list-style: disc;
+}
+section.inicio div.img{
+    padding: 2vw 0 2vw 2vw;
+  
+}
+section.preparo{
+    background-color: #D96F32;
+    padding: 6vw;
+}
+section.preparo h2{
+    font-size: 4rem;
+    padding: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+section.preparo ul{
+    font-size: 1.5rem;
+    padding: 2vw;
+    background-color: #F8B259;
+    border-radius: 3vw;
+    margin: 2vw 4vw 0 4vw;
+}
+section.preparo ul li{
+    line-height: 2vw;
+}
+section.espe{
+    background-color: #D96F32;
+    padding: 6vw;
+}
+section.espe h2{
+    font-size: 4rem;
+    padding: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+footer {
+    background-color: #561C24;
+}
 
+body {
 
 
 
+    margin: 0;
 
 
-/*====|FOOTER|====*/
- body {
+    font-family: Arial, sans-serif;
 
 
+}
 
-            margin: 0;
+.footer {
 
 
-            font-family: Arial, sans-serif;
+    background-color: #4a2b33;
 
 
-        }
+    color: #ffffff;
 
 
-        .footer {
+    padding: 20px 0;
 
 
-            background-color: #D96F32; 
+    text-align: center;
 
 
-            color: #ffffff;
+    display: flex;
 
 
-            padding: 20px 0;
+    justify-content: space-around;
 
 
-            text-align: center;
+    align-items: center;
 
 
-            display: flex;
+    flex-wrap: wrap;
 
 
-            justify-content: space-around;
+}
 
 
-            align-items: center;
+.footer-section {
 
 
-            flex-wrap: wrap; 
+    margin: 10px 20px;
 
 
-        }
+    flex: 1;
 
 
-        .footer-section {
+    min-width: 200px;
 
 
-            margin: 10px 20px;
+    color: #E8D8C4;
 
 
-            flex: 1; 
+}
 
 
-            min-width: 200px; 
 
 
-            color: #E8D8C4;
 
+.footer-section h3 {
 
-        }
 
+    margin-top: 0;
 
 
+    margin-bottom: 15px;
 
 
-        .footer-section h3 {
+    font-size: 1.2rem;
 
 
-            margin-top: 0;
+    color: #E8D8C4;
 
 
-            margin-bottom: 15px;
+}
 
 
-            font-size: 1.2rem;
+.footer-section p,
+.footer-section a {
 
 
-            color: #E8D8C4;
+    margin: 5px 0;
 
 
-        }
+    font-size: 1.2rem;
 
 
-        .footer-section p, .footer-section a {
+    text-decoration: none;
 
 
-            margin: 5px 0;
+    color: #ffffff;
 
 
-            font-size: 1.2rem;
+}
 
 
-            text-decoration: none;
+.social-icons img {
 
 
-            color: #ffffff;
+    width: 30px;
 
 
-        }
+    height: 30px;
 
 
-        .social-icons img {
+    margin: 0 5px;
 
 
-            width: 30px; 
+    vertical-align: middle;
 
 
-            height: 30px;
+}
 
 
-            margin: 0 5px;
+.logo-container {
 
 
-            vertical-align: middle;
+    text-align: center;
 
 
-        }
+}
 
 
-        .logo-container {
+.logo-container img {
 
 
-            text-align: center;
+    width: 50px;
 
 
-        }
+    height: 50px;
 
 
-        .logo-container img {
+}
 
 
-            width: 50px ;
+.footer-section p {
 
 
-            height: 50px ;
+    color: #E8D8C4;
 
 
-        }
+    font-family: 'Trade Winds', cursive;
 
 
-        .footer-section p{
+}
 
 
-            color: #E8D8C4;
+.footer-section p a {
 
 
-            font-family: 'Trade Winds', cursive;
+    color: #E8D8C4;
 
 
-        }
+}
 
 
-        .footer-section p a {
+.copyright {
 
 
-            color: #E8D8C4;
+    font-size: 0.8em;
 
 
-        }
+    margin-top: 15px;
 
 
-        .copyright {
+    width: 100%;
 
 
-            font-size: 0.8em;
-
-
-            margin-top: 15px;
-
-
-            width: 100%;
-
-
-        }
+}   

@@ -127,6 +127,7 @@ section.destaque ul li p{
 /*Gluten*/
 section.vegano{
     background-color: #8EB486;
+    padding: 6vw;
 }
 section.vegano h2{
 font-size: 10rem;

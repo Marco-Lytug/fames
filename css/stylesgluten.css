@@ -127,6 +127,7 @@ section.destaque div ul li img{
 /*Gluten*/
 section.gluten{
     background-color: #102E50;
+    padding: 6vw;
 }
 section.gluten h2{
 font-size: 10rem;

@@ -93,6 +93,7 @@ section.destaque{
     background-color: #E3A5C7;
     display: flex;
     border-bottom: 30px solid #F8CABD;
+    
 }
 section.destaque div{
     text-align: center;
@@ -130,6 +131,7 @@ section.destaque div ul li img{
 }
 section.doces{
     background-color: #FFDFD6;
+    padding: 6vw;
 }
 section.doces h2{
 font-size: 10rem;
