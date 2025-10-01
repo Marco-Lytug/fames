@@ -156,7 +156,7 @@ section.foods ul li.bege:hover {
 }
 
 section.salgados {
-    background: url(/src/pexels-valeriya-1639557.jpg);
+    background: url(../src/pexels-valeriya-1639557.jpg);
     background-position: center;
     background-size: 100%;
 }
@@ -167,7 +167,7 @@ section.salgados h2 {
 }
 
 section.gluten {
-    background: url(/src/pexels-nano-erdozain-120534369-29535632.jpg);
+    background: url(../src/pexels-nano-erdozain-120534369-29535632.jpg);
     background-position: center;
     background-size: 100%;
 }
@@ -177,7 +177,7 @@ section.gluten h2 {
 }
 
 section.vegano {
-    background: url(/src/pexels-daniela-elena-tentis-118658-1213710.jpg);
+    background: url(../src/pexels-daniela-elena-tentis-118658-1213710.jpg);
     background-position: center;
     background-size: 100%;
 }
@@ -187,7 +187,7 @@ section.vegano h2 {
 }
 
 section.doces {
-    background: url(/src/pexels-ana-lobo-415020529-15033482.jpg);
+    background: url(../src/pexels-ana-lobo-415020529-15033482.jpg);
     background-position: center;
     background-size: 100%;
 }
