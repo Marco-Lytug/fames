@@ -139,6 +139,13 @@ section.inicio div.texto ul{
     border-radius: 3vw;
     list-style: disc;
 }
+section.inicio ul{
+    background-color: #F8B259;
+    line-height: 3vw;
+    padding: 4vw;
+    font-size: 2rem;
+    list-style: disc;
+}
 section.inicio div.img{
     padding: 2vw 0 2vw 2vw;
   
