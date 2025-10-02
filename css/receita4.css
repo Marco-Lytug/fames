@@ -26,21 +26,21 @@ header  nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#D96F32;
+    background-color:#FFDFD6;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
 
 }
 header nav ul li a.atual{
-    border-bottom: 3px solid #B692C2;
+    border-bottom: 3px solid #694F8E;
     display: inline-block;
 }
 
 header nav ul li ul li:hover {
     margin: 0.5vw;
     padding: 0.5vw;
-    border-bottom: 1px solid #561C24;
+    border-bottom: 1px solid #694F8E;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 150px;
     text-align: center;
@@ -48,7 +48,7 @@ header nav ul li ul li:hover {
 }
 
 nav ul li ul li a {
-    color: #561C24;
+    color: #694F8E;
 }
 header nav ul li a.atual{
     border-bottom: 3px solid #997C70;
@@ -84,8 +84,8 @@ header div img {
 header{
     display: flex;
     justify-content: space-between;
-    background-color: #102E50;
-    border-bottom: 24px solid #E78B48;
+    background-color: #694F8E;
+    border-bottom: 24px solid #FFDFD6;
     align-items: center;
 }
 header h1 {
@@ -109,20 +109,28 @@ header div img {
     height: 4%;
 }
 section.inicio{
-    background-color: #F5C45E;
+    background-color: #E3A5C7;
 }
 section.inicio h2{
     text-align: center;
     font-size: 5rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    color: #694F8E;
 }
 section.inicio h3{
     text-align: right;
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: #694F8E;
     padding: 0 3vw 0 0 ;
+}
+section.inicio h3.esquerda{
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #694F8E;
+    padding: 0 0 0 3vw ;
 }
 section.inicio div{
     display: flex;
@@ -132,12 +140,16 @@ section.inicio div.texto{
     padding: 3vw;
 }
 section.inicio div.texto ul{
-    background-color: #102E50   ;
+    background-color: #FFDFD6   ;
     line-height: 3vw;
     padding: 4vw;
     font-size: 2rem;
     border-radius: 3vw;
     list-style: disc;
+  
+}
+section.inicio div.texto ul li p{
+    color: #694F8E;
 }
 section.inicio ul{
     background-color: #F8B259;
@@ -158,6 +170,7 @@ section.preparo h2{
     font-size: 4rem;
     padding: 2vw;
     font-family: 'Courier New', Courier, monospace;
+    color: #694F8E;
 }
 section.preparo ul{
     font-size: 1.5rem;
