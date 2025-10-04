@@ -152,7 +152,7 @@ section.inicio div.texto ul li p{
     color: #694F8E;
 }
 section.inicio ul{
-    background-color: #F8B259;
+    background-color: #E3A5C7;
     line-height: 3vw;
     padding: 4vw;
     font-size: 2rem;
@@ -163,19 +163,19 @@ section.inicio div.img{
   
 }
 section.preparo{
-    background-color: #F5C45E;
+    background-color: #694F8E;
     padding: 6vw;
 }
 section.preparo h2{
     font-size: 4rem;
     padding: 2vw;
     font-family: 'Courier New', Courier, monospace;
-    color: #694F8E;
+    color: #FFDFD6;
 }
 section.preparo ul{
     font-size: 1.5rem;
     padding: 2vw 2vw 0 2vw;
-    background-color: #102E50;
+    background-color: #B692C2;
     border-radius: 3vw;
     margin: 2vw 4vw 0 4vw;
 }
@@ -183,7 +183,7 @@ section.preparo ul li{
     line-height: 2vw;
 }
 section.espe{
-    background-color: #F5C45E;
+    background-color: #FFDFD6;
     padding: 6vw;
 }
 section.espe h2{
@@ -211,7 +211,7 @@ body {
 .footer {
 
 
-    background-color: #4a2b33;
+    background-color: #694F8E;
 
 
     color: #ffffff;
