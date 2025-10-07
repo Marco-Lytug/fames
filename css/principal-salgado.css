@@ -114,6 +114,9 @@ section.banner{
 }
 section.banner img{
  margin: 9vw;
+ background-color:#F8B259 ;
+ padding: 3vw;
+    border-radius: 20px;
 }
 section.destaque{
     background-color: #F3E9DC;
@@ -126,7 +129,7 @@ section.destaque div{
 }
 section.destaque h2{
     font-size: 6em;
-
+  font-family: "Wendy One", sans-serif;
 }
 section.destaque div{
     padding: 3.5vw;
@@ -161,6 +164,7 @@ section.salgado{
 section.salgado h2{
 font-size: 10rem;
 padding: 2vw 0 6vw 4vw;
+  font-family: "Wendy One", sans-serif;
 
 
 }
@@ -171,11 +175,11 @@ section.salgado ul li{
     text-align: center;
 }
 section.salgado ul li img{
-    position: absolute;
+     position: absolute;
     right: 0;
-    margin: 0 10.5vw 10.5vw 6vw;
-    padding: 0 0 0 2vw;
-    
+    margin: 0 3vw 0 0;
+    width: 30%;
+    height: 60%;
 
     
 }
@@ -185,6 +189,7 @@ section.salgado ul li h3{
     color: #F3E9DC;
     border-bottom: 2px solid #F3E9DC;
     display: inline-block;
+    font-family: "ZCOOL KuaiLe", sans-serif;
     
 }
 section.salgado div p{
@@ -196,12 +201,13 @@ section.salgado div p{
     padding: 3vw;
     text-align: left;
 }
-section.salgado div p span{
+section.salgado div p span:hover{
     background-color: #F8B259;
     border-radius: 13px;
     padding: 0.5vw;
     color: #F3E9DC;
     line-height: 100px;
+    transition: 0.3s;
     
     
 }

@@ -88,6 +88,10 @@ section.banner{
 
 section.banner img{
  margin: 9vw;
+ background-color:#EA7AB7 ;
+ padding: 3vw;
+    border-radius: 20px;
+ 
 }
 section.destaque{
     background-color: #E3A5C7;
@@ -101,6 +105,7 @@ section.destaque div{
 }
 section.destaque h2{
     font-size: 6em;
+      font-family: "Wendy One", sans-serif;
 
 }
 section.destaque div{
@@ -136,7 +141,7 @@ section.doces{
 section.doces h2{
 font-size: 10rem;
 padding: 2vw 0 6vw 4vw;
-
+  font-family: "Wendy One", sans-serif;
 
 }
 
@@ -146,11 +151,11 @@ section.doces ul li{
     text-align: center;
 }
 section.doces ul li img{
-    position: absolute;
+      position: absolute;
     right: 0;
-    margin: 0 9.5vw 9.5vw 6vw;
-    padding: 0 0 0 2vw;
-        
+    margin: 0 3vw 0 0;
+    width: 30%;
+    height: 60%;
 
     
 }
@@ -160,6 +165,7 @@ section.doces ul li h3{
     color: #694F8E;
     border-bottom: 2px solid #694F8E;
     display: inline-block;
+    font-family: "ZCOOL KuaiLe", sans-serif;
     
 }
 section.doces div p{
@@ -171,13 +177,13 @@ section.doces div p{
     padding: 3vw;
     text-align: left;
 }
-section.doces div p span{
+section.doces div p span:hover{
     background-color: #FFDFD6;
     border-radius: 13px;
     padding: 0.5vw;
     color: #B692C2;
     line-height: 100px;
-    
+    transition: 0.3s;
     
 }
 footer {
@@ -200,7 +206,7 @@ body {
 .footer {
 
 
-    background-color: #4a2b33;
+    background-color: #694F8E;
 
 
     color: #ffffff;
