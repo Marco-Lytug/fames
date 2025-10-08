@@ -172,13 +172,25 @@ section.preparo ul li{
     line-height: 2vw;
 }
 section.espe{
-    background-color: #F5C45E;
+    background-color: #FFDFD6;
     padding: 6vw;
+}
+section.espe p{
+    color: black;
+    padding: 1vw;
+    font-size: 1.5rem;
 }
 section.espe h2{
     font-size: 4rem;
     padding: 2vw;
     font-family: 'Courier New', Courier, monospace;
+}
+section.espe ul{
+    font-size: 1.5rem;
+    padding: 2vw 2vw 2vw 2vw;
+    background-color: #F8B259;
+    border-radius: 3vw;
+    margin: 2vw 4vw 0 4vw;
 }
 
 footer {
