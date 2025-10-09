@@ -325,3 +325,101 @@ body {
 
 
 }
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vw;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin: 2vw 0 2vw 2vw;
+        width: 100%;
+    }
+
+    header div nav ul {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    header div nav ul li {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    header div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    section.banner h2 {
+        font-size: 2rem;
+        padding: 2vw 0 2vw 0;
+        text-align: center;
+    }
+
+    section.banner div.nos h3,
+    section.banner div.receitas h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    section.banner div.nos p,
+    section.banner div.receitas p {
+        font-size: 1rem;
+        margin: 2vw 0;
+        padding: 2vw;
+        text-align: left;
+    }
+
+    section.membros h2 {
+        font-size: 2rem;
+        padding: 2vw 0 2vw 0;
+        border-bottom: 10px solid #561C24;
+        text-align: center;
+    }
+
+    section.membros ul li h3 {
+        font-size: 1.2rem;
+        margin: 2vw 0;
+        padding: 2vw;
+        border-radius: 15px;
+    }
+
+    section.membros ul li p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 1vw;
+    }
+
+    section.membros ul li p img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 0;
+    }
+
+    .footer-section {
+        min-width: unset;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}

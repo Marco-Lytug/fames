@@ -369,3 +369,128 @@ body {
 
 
 }   
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vw;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin: 2vw 0 2vw 2vw;
+        width: 100%;
+    }
+
+    header div nav ul {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    header div nav ul li {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    header div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    section.inicio h2 {
+        font-size: 2rem;
+        padding: 2vw 0;
+    }
+
+    section.inicio h3 {
+        font-size: 1.2rem;
+        padding: 2vw 0;
+        text-align: center;
+    }
+
+    section.inicio div {
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    section.inicio div.texto ul,
+    section.inicio ul {
+        font-size: 1rem;
+        padding: 2vw;
+        border-radius: 2vw;
+        line-height: 1.5;
+    }
+
+    section.inicio div.img {
+        padding: 2vw 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.preparo {
+        padding: 3vw;
+    }
+
+    section.preparo h2 {
+        font-size: 1.5rem;
+        padding: 2vw 0;
+    }
+
+    section.preparo ul {
+        font-size: 1rem;
+        padding: 2vw;
+        margin: 2vw 0;
+    }
+
+    section.preparo ul li {
+        line-height: 1.5;
+    }
+
+    section.espe {
+        padding: 3vw;
+    }
+
+    section.espe h2 {
+        font-size: 1.5rem;
+        padding: 2vw 0;
+    }
+
+    section.espe ul {
+        font-size: 1rem;
+        padding: 2vw;
+        margin: 2vw 0;
+    }
+
+    section.espe ul li {
+        line-height: 1.5;
+    }
+
+    section.espe p {
+        font-size: 1rem;
+        padding: 2vw 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 0;
+    }
+
+    .footer-section {
+        min-width: unset;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}

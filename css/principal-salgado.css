@@ -388,3 +388,133 @@ body {
 
 
 }   
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vw;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin: 2vw 0 2vw 2vw;
+        width: 100%;
+    }
+
+    header div nav ul {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    header div nav ul li {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    header div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    section.banner img {
+        margin: 3vw;
+        padding: 1vw;
+        width: 90vw;
+        max-width: 100%;
+    }
+
+    section.destaque {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    section.destaque h2 {
+        font-size: 2.5rem;
+    }
+
+    section.destaque div h3 {
+        font-size: 1.2rem;
+        padding: 2vw 0;
+    }
+
+    section.destaque ul {
+        margin: 4vw 0 0 4vw;
+        font-size: 1.2rem;
+    }
+
+    section.destaque ul li {
+        margin: 10px 0 0 0;
+    }
+
+    section.destaque div ul li h3 {
+        font-size: 1.2rem;
+        margin: 0 0 0 4vw;
+    }
+
+    section.destaque div ul li img {
+        margin: 2vw;
+        width: 60vw;
+        max-width: 100%;
+    }
+
+    section.salgado {
+        padding: 3vw;
+    }
+
+    section.salgado h2 {
+        font-size: 2rem;
+        padding: 2vw 0 2vw 2vw;
+    }
+
+    section.salgado ul li {
+        padding: 0;
+        text-align: center;
+        display: block;
+    }
+
+    section.salgado ul li img {
+        position: static;
+        margin: 2vw auto;
+        width: 80vw;
+        height: auto;
+        display: block;
+    }
+
+    section.salgado ul li h3 {
+        margin: 2vw 0;
+        font-size: 2rem;
+        border-bottom: 1px solid #F3E9DC;
+    }
+
+    section.salgado div p {
+        font-size: 1rem;
+        border-radius: 20px;
+        margin: 2vw 1vw 0 1vw;
+        padding: 2vw;
+        text-align: left;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 0;
+    }
+
+    .footer-section {
+        min-width: unset;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
