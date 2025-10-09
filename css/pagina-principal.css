@@ -132,6 +132,61 @@ section.banner div a:hover {
     
 
 }
+.quiz-container {
+    text-align: center;
+    margin: 50px auto;
+    background: #fff8f0;
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#options button {
+    background-color: #ffb347;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.3s;
+}
+
+#options button:hover {
+    background-color: #ff8c42;
+    color: white;
+}
+
+#result .botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff7300;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#result .botao:hover {
+    background-color: #e55e00;
+}
+
+#refazer, #fecharQuiz {
+    background-color: #ccc;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#refazer:hover, #fecharQuiz:hover {
+    background-color: #aaa;
+}
 
 
 

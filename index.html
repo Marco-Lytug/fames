@@ -12,11 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kdam+Thmor+Pro&family=Trade+Winds&family=Unbounded:wght@200..900&family=Wendy+One&family=ZCOOL+KuaiLe&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="src/Icone Fames transparente 14.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/Icone Fames transparente 14.png" type="image/x-icon">
 </head>
 
 <body>
-    
+
     <header>
         <h1><a href=""><img src="src/Fames.png" alt=""></a></h1>
 
@@ -80,11 +80,28 @@
 
         <div>
             <img src="src/Icone Fames transparente 13.png" alt="">
-            
-                <a href="#"><img src="src/BotaoCardapio.png" alt=""></a>
-            
+
+            <a href="#" id="abrirQuiz">
+                <img src="src/BotaoCardapio.png" alt="Descubra sua Receita Ideal">
+            </a>
+
         </div>
     </section>
+    <section class="quiz-container" id="quiz-section" style="display: none;">
+    <div id="quiz">
+        <h2 id="question">Pergunta aparecerá aqui</h2>
+        <div id="options"></div>
+    </div>
+
+    <div id="result" style="display: none;">
+        <h2>🍽️ Sua Receita Ideal</h2>
+        <div id="recipe-result"></div>
+        <button id="refazer">Refazer Quiz</button>
+        <button id="fecharQuiz">Fechar</button>
+    </div>
+</section>
+
+<script src="js/index.js"></script>
     <section class="foods">
         <ul>
             <li class="laranja">
