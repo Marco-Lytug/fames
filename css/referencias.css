@@ -122,6 +122,10 @@ section.banner ul li div a img{
 section.banner ul li div img{
     margin: 0 0 0 6vw;
 }
+video{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
     
 
 

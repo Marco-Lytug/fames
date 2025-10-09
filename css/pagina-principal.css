@@ -111,19 +111,29 @@ section.banner h2 {
      font-family: 'Trade Winds', cursive;
 }
 
-section.banner div p {
+section.banner div a {
     margin: 5vw;
-    background-color: white;
     border-radius: 50px;
     padding: 2vw 10vw 2vw 10vw;
     
 
 }
-
-section.foods {
-
+section.banner div a:hover {
+    margin: 5vw;
+    border-radius: 50px;
+    padding: 2vw 10vw 2vw 10vw;
+    background-color: #ffffff;
+    transition: 0.3s;
+    color: #561C24;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
+    
+    
+
 }
+
+
 
 section.foods ul {
     display: flex;

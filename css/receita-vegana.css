@@ -149,7 +149,7 @@ section.inicio ul{
 }
 section.inicio div.img{
     padding: 2vw 0 2vw 2vw;
-        width: 40
+    width: 40
   
 }
 section.preparo{
@@ -163,7 +163,7 @@ section.preparo h2{
 }
 section.preparo ul{
     font-size: 1.5rem;
-    padding: 2vw 2vw 0 2vw;
+    padding: 2vw 2vw 2vw 2vw;
     background-color: #685752;
     border-radius: 3vw;
     margin: 2vw 4vw 0 4vw;
@@ -188,7 +188,7 @@ section.espe h2{
 section.espe ul{
     font-size: 1.5rem;
     padding: 2vw 2vw 2vw 2vw;
-    background-color: #685752;
+    background-color: #8EB486;
     border-radius: 3vw;
     margin: 2vw 4vw 0 4vw;
 }
