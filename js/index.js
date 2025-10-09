@@ -1,92 +1,323 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const botaoQuiz = document.getElementById("abrirQuiz");
-  const quizSection = document.getElementById("quiz-section");
+  const abrirQuiz = document.getElementById("abrirQuiz");
+  const quizContainer = document.getElementById("quiz-container");
+  const questionEl = document.getElementById("quiz-question");
+  const optionsEl = document.getElementById("quiz-options");
+  const resultBox = document.getElementById("quiz-result");
+  const recipeResult = document.getElementById("recipe-result");
   const refazerBtn = document.getElementById("refazer");
   const fecharBtn = document.getElementById("fecharQuiz");
 
-  botaoQuiz.addEventListener("click", (e) => {
+  const perguntas = [
+    {
+      pergunta: "Que tipo de comida você quer?",
+      opcoes: ["Salgado", "Sem Glúten", "Vegano", "Doce"],
+    },
+    {
+      pergunta: "Quanto tempo você quer gastar?",
+      opcoes: ["Até 15 minutos","20 minutos","30 minutos", "40 minutos","1 hora ou mais" ]
+    },
+    {
+      pergunta: "Qual o nível de dificuldade que prefere?",
+      opcoes: ["Fácil", "Médio", "Difícil"],
+    },
+  ];
+
+  const receitas = [
+  // SALGADOS
+  {
+    tipo: "Salgado",
+    tempo: "1 hora ou mais",
+    dificuldade: "Médio",
+    nome: "Feijoada",
+    link: "feijoada.html",
+  },
+  {
+    tipo: "Salgado",
+    tempo: "30 minutos",
+    dificuldade: "Médio",
+    nome: "Pizza de Calabresa",
+    link: "pizza-calabresa.html",
+  },
+  {
+    tipo: "Salgado",
+    tempo: "20 minutos",
+    dificuldade: "Fácil",
+    nome: "Hambúrguer Caseiro",
+    link: "hamburguer.html",
+  },
+  {
+    tipo: "Salgado",
+    tempo: "30 minutos",
+    dificuldade: "Médio",
+    nome: "Empadão de Frango",
+    link: "empadao.html",
+  },
+  {
+    tipo: "Salgado",
+    tempo: "25 minutos",
+    dificuldade: "Médio",
+    nome: "Bife à Parmegiana",
+    link: "parmediana-de-carne.html",
+  },
+  {
+    tipo: "Salgado",
+    tempo: "15 minutos",
+    dificuldade: "Médio",
+    nome: "Pão de Queijo",
+    link: "pao-de-queijo.html",
+  },
+  {
+    tipo: "Salgado",
+    tempo: "20 minutos",
+    dificuldade: "Médio",
+    nome: "Macarrão Carbonara",
+    link: "carbonara.html",
+  },
+
+  // SEM GLÚTEN / SEM LACTOSE
+  {
+    tipo: "Sem Glúten",
+    tempo: "40 minutos",
+    dificuldade: "Médio",
+    nome: "Coxinha de Mandioca sem Glúten",
+    link: "coxinha-sem-gluten.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "20 minutos",
+    dificuldade: "Fácil",
+    nome: "Bombom de Morango sem Glúten",
+    link: "bombom-morango.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "10 minutos",
+    dificuldade: "Fácil",
+    nome: "Torta Salgada sem Glúten",
+    link: "torta-salgada.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "5 minutos",
+    dificuldade: "Fácil",
+    nome: "Pão de Queijo sem Lactose e Sem Glúten",
+    link: "pao-queijo-sem-lactose.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "10 minutos",
+    dificuldade: "Fácil",
+    nome: "Torta de Banana sem Glúten",
+    link: "torta-banana.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "10 minutos",
+    dificuldade: "Fácil",
+    nome: "Bolo de Laranja sem Glúten",
+    link: "bolo-laranja.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "25 minutos",
+    dificuldade: "Médio",
+    nome: "Red Velvet sem Glúten",
+    link: "red-velvet.html",
+  },
+  {
+    tipo: "Sem Glúten",
+    tempo: "40 minutos",
+    dificuldade: "Médio",
+    nome: "Pão sem Glúten",
+    link: "pao-sem-gluten.html",
+  },
+
+  // VEGANAS
+  {
+    tipo: "Vegano",
+    tempo: "20 minutos",
+    dificuldade: "Médio",
+    nome: "Bife à Milanesa Vegano",
+    link: "bife-vegano.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "20 minutos",
+    dificuldade: "Médio",
+    nome: "Sushi Vegano",
+    link: "sushi-vegano.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "40 minutos",
+    dificuldade: "Médio",
+    nome: "Lasanha Vegana",
+    link: "lasanha-vegana.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Torta Vegana de Brócolis",
+    link: "torta-vegana.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "20 minutos",
+    dificuldade: "Médio",
+    nome: "Sonho Vegano",
+    link: "sonho-vegano.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "10 minutos",
+    dificuldade: "Fácil",
+    nome: "Bolo de Chocolate Vegano",
+    link: "bolo-chocolate-vegano.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Cookie de Amendoim Vegano",
+    link: "cookie-vegano.html",
+  },
+  {
+    tipo: "Vegano",
+    tempo: "30 minutos",
+    dificuldade: "Médio",
+    nome: "Iogurte de Coco Vegano",
+    link: "iogurte-coco.html",
+  },
+
+  // DOCES
+  {
+    tipo: "Doce",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Bolo de Chocolate",
+    link: "bolo-chocolate.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Cookie Tradicional",
+    link: "cookie.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "30 minutos",
+    dificuldade: "Fácil",
+    nome: "Torta de Limão",
+    link: "torta-de-limao.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Pudim de Leite",
+    link: "pudim.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Brigadeiro",
+    link: "brigadeiro.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "30 minutos",
+    dificuldade: "Fácil",
+    nome: "Pavê de Chocolate",
+    link: "pave.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "15 minutos",
+    dificuldade: "Fácil",
+    nome: "Palha Italiana",
+    link: "palha.html",
+  },
+  {
+    tipo: "Doce",
+    tempo: "10 minutos",
+    dificuldade: "Fácil",
+    nome: "Brownie",
+    link: "brownie.html",
+  },
+];
+
+  let respostas = [];
+  let indice = 0;
+
+  abrirQuiz.addEventListener("click", (e) => {
     e.preventDefault();
-    quizSection.style.display = "block";
-    window.scrollTo({ top: quizSection.offsetTop, behavior: "smooth" });
+    abrirQuiz.style.display = "none";
+    quizContainer.style.display = "block";
     mostrarPergunta();
   });
 
+  function mostrarPergunta() {
+    if (indice < perguntas.length) {
+      const p = perguntas[indice];
+      questionEl.textContent = p.pergunta;
+      optionsEl.innerHTML = "";
+
+      p.opcoes.forEach((op) => {
+        const btn = document.createElement("button");
+        btn.textContent = op;
+        btn.classList.add("quiz-option");
+        btn.addEventListener("click", () => responder(op));
+        optionsEl.appendChild(btn);
+      });
+    } else {
+      mostrarResultado();
+    }
+  }
+
+  function responder(opcao) {
+    respostas.push(opcao);
+    indice++;
+    setTimeout(mostrarPergunta, 200);
+  }
+
+  function mostrarResultado() {
+    const [tipo, tempo, dificuldade] = respostas;
+    const receita = receitas.find(
+      (r) => r.tipo === tipo && r.tempo === tempo && r.dificuldade === dificuldade
+    );
+
+    questionEl.textContent = "Quiz finalizado!";
+    optionsEl.innerHTML = "";
+    resultBox.style.display = "block";
+
+    if (receita) {
+      recipeResult.innerHTML = `
+        <h3>🍴 Recomendamos: ${receita.nome}</h3>
+        <a href="${receita.link}" class="botao">Ver receita completa</a>
+      `;
+    } else {
+      recipeResult.innerHTML = `
+        <h3>😔 Não encontramos uma receita que combine com suas escolhas.</h3>
+      `;
+    }
+  }
+
   refazerBtn.addEventListener("click", () => {
-    restartQuiz();
+    respostas = [];
+    indice = 0;
+    resultBox.style.display = "none";
+    mostrarPergunta();
   });
 
   fecharBtn.addEventListener("click", () => {
-    quizSection.style.display = "none";
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    quizContainer.style.display = "none";
+    abrirQuiz.style.display = "inline-block";
+    respostas = [];
+    indice = 0;
+    resultBox.style.display = "none";
   });
 });
-
-const receitas = [
-  { nome: "Pizza de Calabresa", categoria: "Salgado", tempo: "30 a 60 minutos", dificuldade: "Média", destaque: "Sabor clássico e irresistível, perfeita para compartilhar.", ingredientes: "Farinha, fermento, molho de tomate, calabresa, queijo e orégano.", calorias: 280, link: "pizza-calabresa.html" },
-  { nome: "Pão sem Glúten", categoria: "Sem Glúten", tempo: "30 a 60 minutos", dificuldade: "Média", destaque: "Alternativa saudável e saborosa para intolerantes ao glúten.", ingredientes: "Farinha de arroz, polvilho, ovos, fermento e azeite.", calorias: 190, link: "pao-sem-gluten.html" },
-  { nome: "Lasanha Vegana", categoria: "Vegano", tempo: "Mais de 1 hora", dificuldade: "Difícil", destaque: "Camadas de sabor 100% vegetal, com molho e legumes frescos.", ingredientes: "Massa sem ovos, legumes, molho de tomate, azeite e tofu.", calorias: 350, link: "torta-de-liquidificador.html" },
-  { nome: "Bombom de Morango sem Glúten", categoria: "Doce", tempo: "Até 30 minutos", dificuldade: "Fácil", destaque: "Refrescante e leve, ideal para sobremesa rápida.", ingredientes: "Morango, chocolate meio amargo e creme de leite.", calorias: 180, link: "bombom-de-morango-semGluten.html" },
-  { nome: "Brigadeiro Tradicional", categoria: "Doce", tempo: "Até 30 minutos", dificuldade: "Fácil", destaque: "O doce brasileiro mais amado, simples e delicioso.", ingredientes: "Leite condensado, chocolate em pó, manteiga e granulado.", calorias: 150, link: "brigadeiro.html" }
-];
-
-const perguntas = [
-  { pergunta: "🍽️ Que tipo de receita você quer?", opcoes: ["Salgado", "Doce", "Vegano", "Sem Glúten"] },
-  { pergunta: "⏱️ Quanto tempo você tem para cozinhar?", opcoes: ["Até 30 minutos", "30 a 60 minutos", "Mais de 1 hora"] },
-  { pergunta: "🧑‍🍳 Qual nível de dificuldade prefere?", opcoes: ["Fácil", "Média", "Difícil"] }
-];
-
-let respostas = {};
-let perguntaAtual = 0;
-
-function mostrarPergunta() {
-  const quizDiv = document.getElementById("quiz");
-  const resultDiv = document.getElementById("result");
-
-  if (perguntaAtual < perguntas.length) {
-    const q = perguntas[perguntaAtual];
-    document.getElementById("question").textContent = q.pergunta;
-    const optionsDiv = document.getElementById("options");
-    optionsDiv.innerHTML = "";
-    q.opcoes.forEach(op => {
-      const btn = document.createElement("button");
-      btn.textContent = op;
-      btn.onclick = () => {
-        respostas[perguntaAtual] = op;
-        perguntaAtual++;
-        mostrarPergunta();
-      };
-      optionsDiv.appendChild(btn);
-    });
-  } else {
-    mostrarResultado();
-  }
-
-  quizDiv.style.display = "block";
-  resultDiv.style.display = "none";
-}
-
-function mostrarResultado() {
-  const [cat, tempo, dif] = [respostas[0], respostas[1], respostas[2]];
-  let melhor = receitas.find(r => r.categoria === cat && r.tempo === tempo && r.dificuldade === dif);
-  if (!melhor) melhor = receitas.find(r => r.categoria === cat);
-
-  document.getElementById("quiz").style.display = "none";
-  document.getElementById("result").style.display = "block";
-
-  document.getElementById("recipe-result").innerHTML = `
-    <h3>${melhor.nome}</h3>
-    <p><strong>Categoria:</strong> ${melhor.categoria}</p>
-    <p><strong>Destaque:</strong> ${melhor.destaque}</p>
-    <p><strong>Ingredientes:</strong> ${melhor.ingredientes}</p>
-    <p><strong>Tempo:</strong> ${melhor.tempo}</p>
-    <p><strong>Dificuldade:</strong> ${melhor.dificuldade}</p>
-    <p><strong>Calorias:</strong> ${melhor.calorias} kcal</p>
-    <a class="botao" href="${melhor.link}">🍴 Ver receita completa</a>
-  `;
-}
-
-function restartQuiz() {
-  perguntaAtual = 0;
-  respostas = {};
-  mostrarPergunta();
-}

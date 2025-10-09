@@ -132,60 +132,144 @@ section.banner div a:hover {
     
 
 }
+/* =========================================================
+   QUIZ - CONTAINER PRINCIPAL
+   ========================================================= */
 .quiz-container {
-    text-align: center;
-    margin: 50px auto;
-    background: #fff8f0;
-    padding: 30px;
-    border-radius: 25px;
-    max-width: 600px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: aparecer 0.4s ease;
 }
 
-#options button {
-    background-color: #ffb347;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    transition: 0.3s;
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#options button:hover {
-    background-color: #ff8c42;
-    color: white;
+#quiz h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #444;
 }
 
-#result .botao {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #ff7300;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+#quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-#result .botao:hover {
-    background-color: #e55e00;
+.quiz-option {
+  background-color: #ffb347;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
-#refazer, #fecharQuiz {
-    background-color: #ccc;
-    border: none;
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s;
+.quiz-option:hover {
+  background-color: #ff9800;
+  transform: scale(1.03);
 }
 
-#refazer:hover, #fecharQuiz:hover {
-    background-color: #aaa;
+/* =========================================================
+   RESULTADO DO QUIZ
+   ========================================================= */
+#quiz-result {
+  text-align: center;
+  margin-top: 20px;
+  animation: aparecer 0.4s ease;
+}
+
+#quiz-result h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#recipe-result {
+  background: #fff7e6;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+#recipe-result h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+#recipe-result a {
+  display: inline-block;
+  background: #ffb347;
+  color: white;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+#recipe-result a:hover {
+  background: #ff9800;
+}
+
+/* =========================================================
+   BOTÕES DE REFAZER E FECHAR
+   ========================================================= */
+#refazer,
+#fecharQuiz {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#refazer:hover,
+#fecharQuiz:hover {
+  background: #222;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+@media (max-width: 600px) {
+  .quiz-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .quiz-option {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  #recipe-result a {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
 }
 
 
