@@ -171,7 +171,7 @@ section.banner div a:hover {
 }
 
 .quiz-option {
-  background-color: #ffb347;
+  background-color: #561C24;
   border: none;
   border-radius: 12px;
   padding: 12px 18px;
@@ -184,7 +184,7 @@ section.banner div a:hover {
 }
 
 .quiz-option:hover {
-  background-color: #ff9800;
+  background-color: #4a2b33;
   transform: scale(1.03);
 }
 
@@ -203,6 +203,14 @@ section.banner div a:hover {
   margin-bottom: 10px;
 }
 
+.recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 50px;
+}
+
 #recipe-result {
   background: #fff7e6;
   border-radius: 10px;
@@ -218,7 +226,7 @@ section.banner div a:hover {
 
 #recipe-result a {
   display: inline-block;
-  background: #ffb347;
+  background: #8B3A3F;
   color: white;
   font-weight: bold;
   padding: 10px 18px;
@@ -228,7 +236,7 @@ section.banner div a:hover {
 }
 
 #recipe-result a:hover {
-  background: #ff9800;
+  background: #561C24;
 }
 
 /* =========================================================
@@ -236,7 +244,7 @@ section.banner div a:hover {
    ========================================================= */
 #refazer,
 #fecharQuiz {
-  background: #444;
+  background: #4a2b33;
   color: #fff;
   border: none;
   border-radius: 10px;
