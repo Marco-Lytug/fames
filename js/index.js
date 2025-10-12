@@ -184,11 +184,9 @@ document.addEventListener("DOMContentLoaded", () => {
     link: "cookie-de-amendoim.html",
   },
   {
-    tipo: "Vegano",
-    tempo: "30 minutos",
     dificuldade: "Médio",
     nome: "Iogurte de Coco Vegano",
-    link: "iogurte-de-coco.html",
+    link: "iogurte-de-coco-vegano.html",
   },
 
   // DOCES
