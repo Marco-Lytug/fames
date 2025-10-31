@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let opcoes = [];
+        let qtdPerguntas = 3;
+        function analisarResposta(pergunta, resposta) {
+            let itemMostrar = "pergunta" + (pergunta + 1);
+            document.getElementById("pergunta" + pergunta).style.display = "none";
+            opcoes.push(resposta);
+            if (pergunta + 1 > qtdPerguntas) {
+                itemMostrar = "feedback";
+
+
+                mensagem = "<p>Na pergunta 1, você respondeu a opção " + opcoes[0] + "</p>";
+                mensagem += "<p>Na pergunta 2, você respondeu a opção " + opcoes[1] + "</p>";
+                mensagem += "<p>Na pergunta 3, você respondeu a opção " + opcoes[2] + "</p>";
+
+
+                if (opcoes[0] == 2 && opcoes[2] == 1) {
+                    mensagem += "<h3>Você está comendo saudável!</h3>";
+                }
+
+                document.getElementById("resumo").innerHTML = mensagem;
+            }
+            document.getElementById(itemMostrar).style.display = "block";
+
+
+
+
+            console.log(opcoes);
+            //console.log("foi");
+
+
+
+        }
+
+        function esconderItem(item){
+            document.getElementById(item).style.display = "none";
+        }
+
+
+    </script>
+
+    <main>
+        <div onclick="analisarResposta();">Teste</div>
+        <section id="pergunta1">
+            <h2>Pergunta 1?</h2>
+            <ul>
+                <li onclick="analisarResposta(1,1);">Resposta 1</li>
+                <li onclick="analisarResposta(1,2);">Resposta 2</li>
+                <li onclick="analisarResposta(1,3);">Resposta 3</li>
+                <li onclick="analisarResposta(1,4);">Resposta 4</li>
+            </ul>
+        </section>
+
+        <section id="pergunta2">
+            <h2>Pergunta 2?</h2>
+            <ul>
+                <li onclick="analisarResposta(2,1);">Resposta 1</li>
+                <li onclick="analisarResposta(2,2);">Resposta 2</li>
+                <li onclick="analisarResposta(2,3);">Resposta 3</li>
+                <li onclick="analisarResposta(2,4);">Resposta 4</li>
+            </ul>
+        </section>
+
+        <section id="pergunta3">
+            <h2>Pergunta 3?</h2>
+            <ul>
+                <li onclick="analisarResposta(3,1);">Resposta 1</li>
+                <li onclick="analisarResposta(3,2);">Resposta 2</li>
+                <li onclick="analisarResposta(3,3);">Resposta 3</li>
+                <li onclick="analisarResposta(3,4);">Resposta 4</li>
+            </ul>
+        </section>
+
+        <section id="feedback" onclick="esconderItem('feedback');">
+            <div>
+                <h2>Suas resposta</h2>
+                <div id="resumo"></div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <style>
+        main section {
+            display: none;
+        }
+
+        main section#pergunta1 {
+            display: block;
+        }
+
+
+        #feedback{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0,0,0.5);
+        }
+
+        #feedback > div{
+            background: white;
+            height: 30vh;
+            width: 50vh;
+            margin: 35vh auto 0 auto;
+        }
+
+    </style>
+
+
+</body>
+
+</html>
