@@ -1,6 +1,6 @@
 root {
     --main-bg-color: brown;
-    font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-size: clamp(0.9375rem, calc(0.9119rem + 1.5vw), 4rem);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -556,64 +556,24 @@ body {
         font-size: 1rem;
         width: 100%;
     }
-
-    section.banner h2 {
-        font-size: 2rem;
-        padding: 5vw 0 2vw 2vw;
-    }
-
-    section.banner div {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    section.banner div a,
-    section.banner div a:hover {
-        margin: 3vw 0;
-        padding: 3vw 0;
-        width: 90%;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    section.foods ul {
-        flex-direction: column;
-        margin: 2vw 2vw;
-        gap: 2vw;
-    }
-
-    section.foods ul li {
-        width: 100%;
-        margin-bottom: 2vw;
-    }
-
-    section.salgados h2,
-    section.gluten h2,
-    section.vegano h2,
-    section.doces h2 {
-        padding: 2vw 0 20vw 2vw;
+    section.banner h2{
         font-size: 1.5rem;
+        
+    }
+    section.banner img{
+        width: 100%;
+        height: 100%;
+    }
+    section.banner div a{
+        width: 10vw;
+    }
+    section.foods ul{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px 0;
-    }
 
-    .footer-section {
-        min-width: unset;
-        margin: 10px 0;
-        font-size: 1rem;
-    }
 
-    .logo-container img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .social-icons img {
-        width: 24px;
-        height: 24px;
-    }
+    
 }
