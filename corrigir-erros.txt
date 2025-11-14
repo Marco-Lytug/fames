@@ -1,32 +1,32 @@
 Erros de Css nas paginas de comida:
-Bolo-Chocolate-vegano.html X
-Bolo-Chocolate.html
-bolo-de-laranja-semGluten.html
-brigadeiro.html
-brownie.html
-carbonara.html
-cookie-de-amendoim-vegano.html
-cookie.html
-coxinha-de-mandioca-semGluten.html
-empadao.html
-feijoada.html
-hamburguer.html
-iogurte-de-coco-vegano.html
-lasanha-de-carne.html
-lasanha-vegana.html
-milanesa-de-soja-vegano.html
-palha-italiana.html
-pao-de-queijo-semGluten.html
-pao-de-queijo-salgado.html
-pao-sem-gluten.html
-parmediana-de-carne.html
-pave-de-chocolate.html
-pizza-de-calabresa.html
-pudim-de-leite.html
-red-velvet-semGluten.html
-sonho-vegano.html
-sushi-sem-peixe-vegano.html
-torta-de-banan-semGluten.html
-torta-de-limao.html
-torta-de-liquidificador-vegano.html
-torta-salgada-semGluten.html
+Bolo-Chocolate-vegano.html X 
+Bolo-Chocolate.html X 
+bolo-de-laranja-semGluten.html X 
+brigadeiro.html X 
+brownie.html X 
+carbonara.html X 
+cookie-de-amendoim-vegano.html X 
+cookie.html X 
+coxinha-de-mandioca-semGluten.html X 
+empadao.html X 
+feijoada.html X 
+hamburguer.html X 
+iogurte-de-coco-vegano.html X 
+lasanha-de-carne.html X 
+lasanha-vegana.html X 
+milanesa-de-soja-vegano.html X 
+palha-italiana.html X 
+pao-de-queijo-semGluten.html X 
+pao-de-queijo-salgado.html X 
+pao-sem-gluten.html X 
+parmediana-de-carne.html X 
+pave-de-chocolate.html X 
+pizza-de-calabresa.html X 
+pudim-de-leite.html X 
+red-velvet-semGluten.html X 
+sonho-vegano.html X 
+sushi-sem-peixe-vegano.html X 
+torta-de-banan-semGluten.html X 
+torta-de-limao.html X 
+torta-de-liquidificador-vegano.html X 
+torta-salgada-semGluten.html X 
