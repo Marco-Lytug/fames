@@ -117,6 +117,7 @@ section.inicio h2{
     font-family: "Wendy One", sans-serif;
     font-weight: bold;
     color: #F3E9DC;
+    padding: 1vw 0 0 0;
 }
 section.inicio h3{
     text-align: right;
@@ -130,7 +131,7 @@ section.inicio div{
     justify-content: space-between;
 }
 section.inicio div.texto{
-    padding: 3vw;
+    padding: 1vw 0 0 0;
 }
 section.inicio div.texto ul{
     background-color: #997C70   ;
@@ -149,9 +150,8 @@ section.inicio ul{
     list-style: disc;
 }
 section.inicio div.img{
-    padding: 2vw 0 2vw 2vw;
+    padding: 2vw 0 2vw 10vw;
     width: 40
-  
 }
 section.preparo{
     background-color: #FDF7F4;

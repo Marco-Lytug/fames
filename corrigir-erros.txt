@@ -1,4 +1,7 @@
 Erros de Css nas paginas de comida:
+
+//============ TEXTOS ============//
+
 Bolo-Chocolate-vegano.html X 
 Bolo-Chocolate.html X 
 bolo-de-laranja-semGluten.html X 
@@ -30,3 +33,37 @@ torta-de-banan-semGluten.html X
 torta-de-limao.html X 
 torta-de-liquidificador-vegano.html X 
 torta-salgada-semGluten.html X 
+
+//============ ESPAÇO ============//
+
+Bolo-Chocolate-vegano.html 
+Bolo-Chocolate.html 
+bolo-de-laranja-semGluten.html 
+brigadeiro.html 
+brownie.html 
+carbonara.html 
+cookie-de-amendoim-vegano.html 
+cookie.html 
+coxinha-de-mandioca-semGluten.html 
+empadao.html 
+feijoada.html 
+hamburguer.html 
+iogurte-de-coco-vegano.html 
+lasanha-de-carne.html 
+lasanha-vegana.html 
+milanesa-de-soja-vegano.html 
+palha-italiana.html 
+pao-de-queijo-semGluten.html 
+pao-de-queijo-salgado.html 
+pao-sem-gluten.html 
+parmediana-de-carne.html 
+pave-de-chocolate.html 
+pizza-de-calabresa.html 
+pudim-de-leite.html 
+red-velvet-semGluten.html 
+sonho-vegano.html 
+sushi-sem-peixe-vegano.html 
+torta-de-banan-semGluten.html 
+torta-de-limao.html 
+torta-de-liquidificador-vegano.html 
+torta-salgada-semGluten.html 
