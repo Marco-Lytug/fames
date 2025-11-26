@@ -4,40 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        h2 {
-            text-align: center;
-        }
-        input[type="number"], button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .result {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/testeIMC.css">
 </head>
 <body>
 
@@ -56,20 +23,16 @@
 
 <script>
     function calcularIMC() {
-        // Obter os valores de peso e altura
-        const peso = parseFloat(document.getElementById('weight').value);
-        const altura = parseFloat(document.getElementById('height').value);
+        const peso = Number(document.getElementById('weight').value);
+        const altura = Number(document.getElementById('height').value);
         
-        // Verificar se os valores são válidos
         if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
             document.getElementById('result').innerText = "Por favor, insira valores válidos.";
             return;
         }
 
-        // Calcular o IMC
         const imc = peso / (altura * altura);
         
-        // Definir a classificação com base no IMC
         let classificacao = '';
         if (imc < 18.5) {
             classificacao = 'Abaixo do peso';
@@ -81,7 +44,6 @@
             classificacao = 'Obesidade';
         }
 
-        // Exibir o resultado
         document.getElementById('result').innerHTML = `Seu IMC é: ${imc.toFixed(2)} <br> Classificação: ${classificacao}`;
     }
 </script>

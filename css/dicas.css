@@ -23,11 +23,11 @@ header nav ul li:hover ul {
 }
 
 
-header  nav ul li ul {
+header nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#777C6D;
+    background-color: #777C6D;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
@@ -47,19 +47,21 @@ header nav ul li ul li:hover {
 nav ul li ul li a {
     color: #F3E9DC;
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #997C70;
 }
 
 /*TOPO*/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     background-color: #777C6D;
     border-bottom: 24px solid #CBCBCB;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -67,56 +69,60 @@ header h1 {
     width: 30%;
     height: 30%;
 }
+
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
 }
+
 header div nav ul li {
     padding: 20px;
     color: #F3E9DC;
     font-size: 20px;
 }
+
 header div img {
     width: 4%;
     height: 4%;
 }
 
 /*MAIN*/
-.saudavel{
+.saudavel {
     margin: 6vw;
 }
-.saudavel h2{
+
+.saudavel h2 {
     color: #777C6D;
     font-size: 4rem;
     text-align: center;
     margin: 5vw;
 }
 
-.saudavel div{
+.saudavel div {
     background-color: #B7B89F;
     border-radius: 3vw;
     margin: 20px;
     font-weight: bold;
 }
 
-.saudavel div h3{
+.saudavel div h3 {
     color: #EEEEEE;
     text-align: center;
     margin: 2vw;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     font-size: 3rem;
     padding: 0.7rem;
     font-weight: bold;
 }
 
-.saudavel div p{
+.saudavel div p {
     color: #EEEEEE;
     text-align: center;
     padding: 2.5vw;
     font-size: 2vw;
 }
 
-.calculo h2{
+.calculo h2 {
     color: #777C6D;
     text-align: center;
     font-size: 4rem;
@@ -124,7 +130,7 @@ header div img {
     font-weight: bolder;
 }
 
-.calculo div p{
+.calculo div p {
     text-align: center;
     background-color: #B7B89F;
     color: #EEEEEE;
@@ -133,6 +139,157 @@ header div img {
     border-radius: 3vw;
     font-size: 2rem;
     font-weight: bold;
-    
 
+
+}
+
+/*IMC*/
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 600px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+label {
+    font-size: 1.3em;
+    display: block;
+    margin-top: 15px;
+}
+
+input[type="number"],
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.2em;
+}
+
+button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.result {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.calculadoraIMC {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/*ÁGUA*/
+
+.calculadoraAgua {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.calculadoraAgua {
+    margin-top: 40px;
+}
+
+/*PROTEÍNAS*/
+
+.calculadoraProteina {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.calculadoraProteina {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*FOOTER*/
+
+
+.footer {
+    background-color: #777C6D;
+    color: #F3E9DC;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-section {
+    margin: 10px 20px;
+    flex: 1;
+    min-width: 200px;
+    color: #F3E9DC;
+}
+
+
+.footer-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #F3E9DC;
+}
+
+
+.footer-section p,
+.footer-section a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #F3E9DC;
+}
+
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+
+.logo-container {
+    text-align: center;
+}
+
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.footer-section p {
+    color: #F3E9DC;
+    font-family: 'Trade Winds', cursive;
+}
+
+
+.footer-section p a {
+    color: #F3E9DC;
+}
+
+
+.copyright {
+    font-size: 0.8em;
+    margin-top: 15px;
+    width: 100%;
 }
