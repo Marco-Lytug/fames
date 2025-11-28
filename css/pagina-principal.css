@@ -537,6 +537,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         padding: 1vw;
+        
     }
 
     header h1 {
@@ -546,15 +547,20 @@ body {
     }
 
     header div nav ul {
-        flex-direction: column;
-        margin: 0;
+       display: grid;
         width: 100%;
+        margin: 0;
+
+
     }
+    header nav ul li:hover ul {
+        position: static;
+
+}
 
     header div nav ul li {
         padding: 10px;
-        font-size: 1rem;
-        width: 100%;
+        font-size: 1.2rem;        
     }
     section.banner h2{
         font-size: 1.5rem;
@@ -576,6 +582,27 @@ body {
         align-items: center;
         gap: 2vw;
         margin: 2vw 0 2vw 0;
+    }
+  
+    section.gluten h2 a img {
+        width: 80vw;
+        height: auto;
+       
+    }
+     section.vegano h2 a img {
+        width: 80vw;
+        height: auto;
+       
+    }
+     section.doces h2 a img {
+        width: 80vw;
+        height: auto;
+       
+    }
+     section.salgados h2 a img {
+        width: 80vw;
+        height: auto;
+       
     }
 
 

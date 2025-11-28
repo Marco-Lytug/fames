@@ -348,6 +348,10 @@ body {
         font-size: 1rem;
         width: 100%;
     }
+     header nav ul li:hover ul {
+        position: static;
+
+}
 
     header div img {
         width: 40px;

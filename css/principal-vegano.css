@@ -172,7 +172,7 @@ section.vegano div p{
     padding: 3vw;
     text-align: left;
 }
-section.vegano div p span:hover{
+section.vegano div p span{
     background-color: #685752;
     border-radius: 13px;
     padding: 0.5vw;
@@ -370,7 +370,10 @@ body {
         margin: 2vw 0 2vw 2vw;
         width: 100%;
     }
+ header nav ul li:hover ul {
+        position: static;
 
+}
     header div nav ul {
         flex-direction: column;
         margin: 0;
@@ -450,7 +453,11 @@ body {
         height: auto;
         display: block;
     }
-
+     section.vegano div p span{
+    line-height: 2vw;
+    padding: 3px;
+    
+}
     section.vegano ul li h3 {
         margin: 2vw 0;
         font-size: 2rem;

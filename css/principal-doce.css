@@ -177,13 +177,12 @@ section.doces div p{
     padding: 3vw;
     text-align: left;
 }
-section.doces div p span:hover{
+section.doces div p span{
     background-color: #FFDFD6;
     border-radius: 13px;
     padding: 0.5vw;
     color: #B692C2;
     line-height: 100px;
-    transition: 0.3s;
     
 }
 footer {
@@ -382,7 +381,10 @@ body {
         margin: 0;
         width: 100%;
     }
+     header nav ul li:hover ul {
+        position: static;
 
+}
     header div nav ul li {
         padding: 10px;
         font-size: 1rem;
@@ -449,6 +451,11 @@ body {
         text-align: center;
         display: block;
     }
+     section.doces div p span{
+    line-height: 2vw;
+    padding: 3px;
+    
+}
 
     section.doces ul li img {
         position: static;

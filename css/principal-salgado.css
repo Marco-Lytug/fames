@@ -201,13 +201,12 @@ section.salgado div p{
     padding: 3vw;
     text-align: left;
 }
-section.salgado div p span:hover{
+section.salgado div p span{
     background-color: #F8B259;
     border-radius: 13px;
     padding: 0.5vw;
     color: #F3E9DC;
     line-height: 100px;
-    transition: 0.3s;
     
     
 }
@@ -406,7 +405,10 @@ body {
         margin: 0;
         width: 100%;
     }
+ header nav ul li:hover ul {
+        position: static;
 
+}
     header div nav ul li {
         padding: 10px;
         font-size: 1rem;
@@ -495,6 +497,11 @@ body {
         padding: 2vw;
         text-align: left;
     }
+    section.salgado div p span{
+    line-height: 2vw;
+    padding: 3px;
+    
+}
 
     .footer {
         flex-direction: column;

@@ -108,6 +108,10 @@ section.banner h2{
         padding: 2vw;
     }
 
+    header nav ul li:hover ul {
+        position: static;
+    }
+
     header h1 {
         font-size: 1.5rem;
         margin: 2vw 0 2vw 2vw;
