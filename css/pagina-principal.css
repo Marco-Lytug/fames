@@ -292,7 +292,7 @@ section.foods ul {
     margin: 2vw 10vw 2vw 10vw;
 }
 
-section.foods ul li.laranja:hover {
+section.foods ul li.laranja:hover{
     background-color: #C75D2C;
     padding: 1vw;
     transition: 0.3s;
