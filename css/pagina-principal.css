@@ -553,7 +553,8 @@ body {
 
 
     }
-    header nav ul li:hover ul {
+    header nav ul li ul {
+        display: block;
         position: static;
 
 }
@@ -567,14 +568,15 @@ body {
         
     }
     section.banner div img{
-        width: 30vw;
+        width: 100%;
         height: auto;
+
     }
     section.banner div a{
         padding: 2vw 6vw 2vw 6vw;
         font-size: 1rem;
         margin: 3vw;
-    
+        
     }
     section.foods ul{
         

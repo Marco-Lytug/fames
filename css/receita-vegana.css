@@ -13,6 +13,7 @@ a {
 p {
     color: white;
 }
+
 header nav ul li {
     position: relative;
 }
@@ -22,17 +23,18 @@ header nav ul li:hover ul {
 }
 
 
-header  nav ul li ul {
+header nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#FDF7F4;
+    background-color: #FDF7F4;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
 
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #FDF7F4;
     display: inline-block;
 }
@@ -50,16 +52,19 @@ header nav ul li ul li:hover {
 nav ul li ul li a {
     color: #685752;
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #997C70;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     background-color: #FDF7F4;
     border-bottom: 24px solid #FDF7F4;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -67,27 +72,32 @@ header h1 {
     width: 30%;
     height: 30%;
 }
+
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
 }
+
 header div nav ul li {
     padding: 20px;
     color: #FDF7F4;
     font-size: 20px;
 }
+
 header div img {
     width: 4%;
     height: 4%;
 }
+
 /*TOPO*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     background-color: #8EB486;
     border-bottom: 24px solid #685752;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -95,23 +105,28 @@ header h1 {
     width: 30%;
     height: 30%;
 }
+
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
 }
+
 header div nav ul li {
     padding: 20px;
     color: #F3E9DC;
     font-size: 20px;
 }
+
 header div img {
     width: 4%;
     height: 4%;
 }
-section.inicio{
+
+section.inicio {
     background-color: #8EB486;
 }
-section.inicio h2{
+
+section.inicio h2 {
     text-align: center;
     font-size: 5rem;
     font-family: "Wendy One", sans-serif;
@@ -119,22 +134,26 @@ section.inicio h2{
     color: #F3E9DC;
     padding: 1vw 0 0 0;
 }
-section.inicio h3{
+
+section.inicio h3 {
     text-align: right;
     font-size: 3rem;
     font-family: "Wendy One", sans-serif;
     color: white;
-    padding: 0 3vw 0 0 ;
+    padding: 0 3vw 0 0;
 }
-section.inicio div{
+
+section.inicio div {
     display: flex;
     justify-content: space-between;
 }
-section.inicio div.texto{
+
+section.inicio div.texto {
     padding: 1vw 0 0 0;
 }
-section.inicio div.texto ul{
-    background-color: #997C70   ;
+
+section.inicio div.texto ul {
+    background-color: #997C70;
     line-height: 3vw;
     padding: 4vw;
     font-size: 2rem;
@@ -142,27 +161,32 @@ section.inicio div.texto ul{
     list-style: disc;
     font-family: "Wendy One", sans-serif;
 }
-section.inicio ul{
+
+section.inicio ul {
     background-color: #685752;
     line-height: 3vw;
     padding: 4vw;
     font-size: 2rem;
     list-style: disc;
 }
-section.inicio div.img{
+
+section.inicio div.img {
     padding: 2vw 0 2vw 10vw;
     width: 40
 }
-section.preparo{
+
+section.preparo {
     background-color: #FDF7F4;
     padding: 6vw;
 }
-section.preparo h2{
+
+section.preparo h2 {
     font-size: 4rem;
     padding: 2vw;
     font-family: "Wendy One", sans-serif;
 }
-section.preparo ul{
+
+section.preparo ul {
     font-size: 1.5rem;
     padding: 2vw 2vw 2vw 2vw;
     background-color: #685752;
@@ -170,37 +194,45 @@ section.preparo ul{
     margin: 2vw 4vw 0 4vw;
     font-family: "Wendy One", sans-serif;
 }
-section.preparo ul li{
+
+section.preparo ul li {
     line-height: 2vw;
 }
-section.espe{
+
+section.espe {
     background-color: #FFDFD6;
     padding: 6vw;
 }
-section.espe p{
+
+section.espe p {
     color: black;
     padding: 1vw;
     font-size: 1.5rem;
 }
-section.espe h2{
+
+section.espe h2 {
     font-size: 4rem;
     padding: 2vw;
-    font-family: "Wendy One", sans-serif;   
+    font-family: "Wendy One", sans-serif;
 }
-section.espe ul{
+
+section.espe ul {
     font-size: 1.5rem;
     padding: 2vw 2vw 2vw 2vw;
     background-color: #8EB486;
     border-radius: 3vw;
     margin: 2vw 4vw 0 4vw;
 }
-section.espe div div.esquerda{
+
+section.espe div div.esquerda {
     font-family: "Wendy One", sans-serif;
 }
-section.espe div div.direita1{
+
+section.espe div div.direita1 {
     font-family: "Wendy One", sans-serif;
 }
-section.espe div div.direita2{
+
+section.espe div div.direita2 {
     font-family: "Wendy One", sans-serif;
 }
 
@@ -380,17 +412,22 @@ body {
     width: 100%;
 
 
-}   
+}
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
         padding: 2vw;
     }
-     header nav ul li:hover ul {
+
+    header nav ul li ul {
+        display: block;
+
         position: static;
 
-}
+    }
+
     header h1 {
         font-size: 1.2rem;
         margin: 2vw 0 2vw 2vw;
