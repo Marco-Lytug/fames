@@ -22,153 +22,130 @@
 
 
                 //====================SALGADOS===========================
-                if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    perguntas[2] == 3 &&
-                    perguntas[3] == 2 &&
-                    perguntas[4] == 3 &&
-                    (perguntas[5] == 3 || perguntas[5] == 4) &&
-                    perguntas[6] == 3 &&
-                    (perguntas[7] == 2 || perguntas[7] == 3) &&
-                    perguntas[8] == 1
-                ) {
-                    mensagem = "<h2>Feijoada</h2>";
-                    mensagem += "<p>A feijoada é um prato completo e cheio de sabor, muito apreciado em todo o Brasil. Com acompanhamentos como arroz, couve, farofa, laranja e torresmo, ela é ideal para reunir a família ou amigos em uma refeição especial.</p>";
-                    mensagem += "<a href=feijoada.html>Ver mais</a>";
-                }
-                else if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    perguntas[2] == 3 &&
-                    (perguntas[3] == 2 || perguntas[3] == 3) &&
-                    (perguntas[4] == 3 || perguntas[4] == 2) &&
-                    (perguntas[5] == 3 || perguntas[5] == 4 || perguntas[5] == 2) &&
-                    perguntas[6] == 1 &&
-                    (perguntas[7] == 1 || perguntas[7] == 3) &&
-                    perguntas[8] == 1
-                ) {
-                    mensagem = "<h2>Pizza de calabresa</h2>";
-                    mensagem += "<p>A pizza é uma das opções mais versáteis e adoradas, perfeita para qualquer ocasião, seja um jantarem família, encontro comamigos ou um lanche especial. Com infinitas combinações de massas, molhos erecheios, ela agrada a todos os gostos e é sempre uma escolha certeira.</p>";
-                    mensagem += "<a href=pizza-de-calabresa.html>Ver mais</a>";
-                }
-                else if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    (perguntas[2] == 2 || perguntas[2] == 1) &&
-                    (perguntas[3] == 2 || perguntas[3] == 1) &&
-                    (perguntas[4] == 1 || perguntas[4] == 2) &&
-                    (perguntas[5] == 3 || perguntas[5] == 4 || perguntas[5] == 2) &&
-                    perguntas[6] == 1 &&
-                    (perguntas[7] == 2 || perguntas[7] == 3) &&
-                    perguntas[8] == 1
-                ) {
-                    mensagem = "<h2>Hambúrguer Caseiro</h2>";
-                    mensagem += "<p>O hambúrguer é uma escolha prática, saborosa e sempre irresistível, ideal para um almoço rápido, um jantar descontraído ou até um lanche especial com amigos. Com diversas possibilidades de combinações de carnes, pães, queijos, molhos e acompanhamentos, ele se adapta a todos os estilos e preferências.</p>";
-                    mensagem += "<a href=hamburguer.html>Ver mais</a>";
-                }
-                else if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    (perguntas[2] == 3 || perguntas[2] == 2) &&
-                    (perguntas[3] == 2 || perguntas[3] == 1) &&
-                    (perguntas[4] == 1 || perguntas[4] == 2) &&
-                    (perguntas[5] == 3 || perguntas[5] == 4) &&
-                    perguntas[6] == 1 &&
-                    (perguntas[7] == 2 || perguntas[7] == 3) &&
-                    perguntas[8] == 1
-                ) {
-                    mensagem = "<h2>Empadão de Frango</h2>";
-                    mensagem += "<p>O empadão é uma receita prática e deliciosa, perfeita para servir em almoços, jantares ou até em ocasiões especiais. Com uma massa macia e recheios variados como frango, palmito, carne ou legumes, ele agrada a todos e é uma ótima opção para quem busca uma refeição caseira e reconfortante</p>";
-                    mensagem += "<a href=Empadao.html>Ver mais</a>";
-                }
-                else if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    (perguntas[2] == 1 || perguntas[2] == 2) &&
-                    (perguntas[3] == 2 || perguntas[3] == 1) &&
-                    (perguntas[4] == 3 || perguntas[4] == 2) &&
-                    (perguntas[5] == 3 || perguntas[5] == 4) &&
-                    perguntas[6] == 1 &&
-                    (perguntas[7] == 2 || perguntas[7] == 1) &&
-                    perguntas[8] == 1
-                ) {
-                    mensagem = "<h2>Bife à Parmegiana</h2>";
-                    mensagem += "<p>O bife à parmegiana é um prato clássico e muito apreciado, perfeito para um almoço caprichado ou um jantar especial. Com carne empanada,molho de tomate e bastante queijo gratinado, ele combina sabor, crocância e cremosidade em uma única refeição que agrada a todos.</p>";
-                    mensagem += "<a href=parmediana-de-carne.html>Ver mais</a>";
-                }
-                else if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    perguntas[2] == 1 &&
-                    (perguntas[3] == 2 || perguntas[3] == 1) &&
-                    (perguntas[4] == 1 || perguntas[4] == 2) &&
-                    (perguntas[5] == 1 || perguntas[5] == 6 || perguntas[5] == 2) &&
-                    (perguntas[6] == 1 || perguntas[6] == 6) &&
-                    (perguntas[7] == 3 || perguntas[7] == 1) &&
-                    perguntas[8] == 1
+                if (perguntas[0] == 1) {//valida se é salgado
+                    if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        perguntas[2] == 3 &&
+                        perguntas[3] == 2 &&
+                        perguntas[4] == 3 &&
+                        (perguntas[5] == 3 || perguntas[5] == 4) &&
+                        perguntas[6] == 3 &&
+                        (perguntas[7] == 2 || perguntas[7] == 3) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2>Feijoada</h2>";
+                        mensagem += "<p>A feijoada é um prato completo e cheio de sabor, muito apreciado em todo o Brasil. Com acompanhamentos como arroz, couve, farofa, laranja e torresmo, ela é ideal para reunir a família ou amigos em uma refeição especial.</p>";
+                        mensagem += "<a href=feijoada.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        perguntas[2] == 3 &&
+                        (perguntas[3] == 2 || perguntas[3] == 3) &&
+                        (perguntas[4] == 3 || perguntas[4] == 2) &&
+                        (perguntas[5] == 3 || perguntas[5] == 4 || perguntas[5] == 2) &&
+                        perguntas[6] == 1 &&
+                        (perguntas[7] == 1 || perguntas[7] == 3) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2>Pizza de calabresa</h2>";
+                        mensagem += "<p>A pizza é uma das opções mais versáteis e adoradas, perfeita para qualquer ocasião, seja um jantarem família, encontro comamigos ou um lanche especial. Com infinitas combinações de massas, molhos erecheios, ela agrada a todos os gostos e é sempre uma escolha certeira.</p>";
+                        mensagem += "<a href=pizza-de-calabresa.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        (perguntas[2] == 2 || perguntas[2] == 1) &&
+                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        (perguntas[4] == 1 || perguntas[4] == 2) &&
+                        (perguntas[5] == 3 || perguntas[5] == 4 || perguntas[5] == 2) &&
+                        perguntas[6] == 1 &&
+                        (perguntas[7] == 2 || perguntas[7] == 3) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2>Hambúrguer Caseiro</h2>";
+                        mensagem += "<p>O hambúrguer é uma escolha prática, saborosa e sempre irresistível, ideal para um almoço rápido, um jantar descontraído ou até um lanche especial com amigos. Com diversas possibilidades de combinações de carnes, pães, queijos, molhos e acompanhamentos, ele se adapta a todos os estilos e preferências.</p>";
+                        mensagem += "<a href=hamburguer.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        (perguntas[2] == 3 || perguntas[2] == 2) &&
+                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        (perguntas[4] == 1 || perguntas[4] == 2) &&
+                        (perguntas[5] == 3 || perguntas[5] == 4) &&
+                        perguntas[6] == 1 &&
+                        (perguntas[7] == 2 || perguntas[7] == 3) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2>Empadão de Frango</h2>";
+                        mensagem += "<p>O empadão é uma receita prática e deliciosa, perfeita para servir em almoços, jantares ou até em ocasiões especiais. Com uma massa macia e recheios variados como frango, palmito, carne ou legumes, ele agrada a todos e é uma ótima opção para quem busca uma refeição caseira e reconfortante</p>";
+                        mensagem += "<a href=Empadao.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        (perguntas[2] == 1 || perguntas[2] == 2) &&
+                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        (perguntas[4] == 3 || perguntas[4] == 2) &&
+                        (perguntas[5] == 3 || perguntas[5] == 4) &&
+                        perguntas[6] == 1 &&
+                        (perguntas[7] == 2 || perguntas[7] == 1) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2>Bife à Parmegiana</h2>";
+                        mensagem += "<p>O bife à parmegiana é um prato clássico e muito apreciado, perfeito para um almoço caprichado ou um jantar especial. Com carne empanada,molho de tomate e bastante queijo gratinado, ele combina sabor, crocância e cremosidade em uma única refeição que agrada a todos.</p>";
+                        mensagem += "<a href=parmediana-de-carne.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        perguntas[2] == 1 &&
+                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        (perguntas[4] == 1 || perguntas[4] == 2) &&
+                        (perguntas[5] == 1 || perguntas[5] == 6 || perguntas[5] == 2) &&
+                        (perguntas[6] == 1 || perguntas[6] == 6) &&
+                        (perguntas[7] == 3 || perguntas[7] == 1) &&
+                        perguntas[8] == 1
 
-                ) {
-                    mensagem = "<h2>Pão de Queijo</h2>";
-                    mensagem += "<p>O pão de queijo é uma delícia típica, leve por fora e macio por dentro, perfeito para o café da manhã, lanche da tarde ou qualquer momento em que bate aquela vontade de um quitute quentinho e saboroso. Feito com polvilho e queijo, é simples, mas conquista pelo sabor</p>";
-                    mensagem += "<a href=pao-queijo-salgado.html>Ver mais</a>";
+                    ) {
+                        mensagem = "<h2>Pão de Queijo</h2>";
+                        mensagem += "<p>O pão de queijo é uma delícia típica, leve por fora e macio por dentro, perfeito para o café da manhã, lanche da tarde ou qualquer momento em que bate aquela vontade de um quitute quentinho e saboroso. Feito com polvilho e queijo, é simples, mas conquista pelo sabor</p>";
+                        mensagem += "<a href=pao-queijo-salgado.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        perguntas[2] == 1 &&
+                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        (perguntas[4] == 1 || perguntas[4] == 2) &&
+                        (perguntas[5] == 3 || perguntas[5] == 4) &&
+                        perguntas[6] == 3 &&
+                        (perguntas[7] == 3 || perguntas[7] == 1) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2>Macarrão Carbonara</h2>";
+                        mensagem += "<p>A carbonara é um prato clássico da culinária italiana, simples e saboroso, ideal para quem quer uma refeição rápida, mas cheia de sabor. Feita com poucos ingredientes como ovos, queijo, pancetta (ou bacon) e massa, ela conquista pelo equilíbrio entre cremosidade e sabor marcante.</p>";
+                        mensagem += "<a href=carbonara.html>Ver mais</a>";
+                    }
+                    else if (
+                        perguntas[0] == 1 &&
+                        perguntas[1] == 0 &&
+                        perguntas[2] == 1 &&
+                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        (perguntas[4] == 1 || perguntas[4] == 2) &&
+                        (perguntas[5] == 3 || perguntas[5] == 4) &&
+                        perguntas[6] == 3 &&
+                        (perguntas[7] == 3 || perguntas[7] == 1) &&
+                        perguntas[8] == 1
+                    ) {
+                        mensagem = "<h2Lasanha de carne</h2>";
+                        mensagem += "<p>A lasanha de carne é um prato clássico, reconfortante e cheio de sabor, perfeito para almoços em família ou ocasiões especiais. Com camadas generosas de massa, molho de carne bem temperado, molho branco e bastante queijo, ela agrada a todos e é sinônimo de comida caseira e caprichada.</p>";
+                        mensagem += "<a href=lasanha-de-carne.html>Ver mais</a>";
+                    }
                 }
-                else if (
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    perguntas[2] == 1 &&
-                    (perguntas[3] == 2 || perguntas[3] == 1) &&
-                    (perguntas[4] == 1 || perguntas[4] == 2) &&
-                    (perguntas[5] == 3 || perguntas[5] == 4) &&
-                    perguntas[6] == 3 &&
-                    (perguntas[7] == 3 || perguntas[7] == 1) &&
-                    perguntas[8] == 1
-                ) {
-                    mensagem = "<h2>Macarrão Carbonara</h2>";
-                    mensagem += "<p>A carbonara é um prato clássico da culinária italiana, simples e saboroso, ideal para quem quer uma refeição rápida, mas cheia de sabor. Feita com poucos ingredientes como ovos, queijo, pancetta (ou bacon) e massa, ela conquista pelo equilíbrio entre cremosidade e sabor marcante.</p>";
-                    mensagem += "<a href=carbonara.html>Ver mais</a>";
-                }
-                else if (
-<<<<<<< HEAD
-                    respostas[0] == 1 &&
-                    respostas[1] == 0 &&
-                    respostas[2] == 2 &&
-                    respostas[3] == 2 &&
-                    (respostas[4] == 3 || respostas[4] == 2) &&
-                    (respostas[5] == 3 || respostas[5] == 4) &&
-                    (respostas[6] == 1 || respostas[6] == 6) &&
-                    respostas[7] == 3 &&
-                    respostas[8] == 1
-                ) {
-                    mensagem = "<h2Lasanha de carne</h2>";
-                    mensagem += "<p>A lasanha de carne é um prato clássico, reconfortante e cheio de sabor, perfeito para almoços em família ou ocasiões especiais. Com camadas generosas de massa, molho de carne bem temperado, molho branco e bastante queijo, ela agrada a todos e é sinônimo de comida caseira e caprichada.</p>";
-                    mensagem += "<a href=lasanha-de-carne.html>Ver mais</a>";
-                }
-                // Estamos fazendo essa parte!!
-=======
-                    perguntas[0] == 1 &&
-                    perguntas[1] == 0 &&
-                    perguntas[2] == 1 &&
-                    (perguntas[3] == 2 || perguntas[3] == 1) &&
-                    (perguntas[4] == 1 || perguntas[4] == 2) &&
-                    (perguntas[5] == 3 || perguntas[5] == 4) &&
-                    perguntas[6] == 3 &&
-                    (perguntas[7] == 3 || perguntas[7] == 1) &&
-                    perguntas[8] == 1
-                )
-                    // Estamos fazendo essa parte!!
->>>>>>> 87034775079bddc2f42b6213d806f8035d8530e9
-
-
-
-
-<<<<<<< HEAD
-                if (respostas[0] == 2 && respostas[2] == 1) {
-                    pergunta
-                    mensagem += "<h3>Você está comendo saudável!</h3>";
-                }
-=======
-                    //========================DOCE==========================
+                else if (perguntas[0] == 2) {//valida se é doce
                     if (
                         (perguntas[0] == 0 || perguntas[0] == 2) &&
                         (perguntas[1] == 0 || perguntas[1] == 1 || perguntas[1] == 2) &&
@@ -213,12 +190,22 @@
                         mensagem += "<p></p>"
                         mensagem += "<p></p>"
                     }
->>>>>>> 87034775079bddc2f42b6213d806f8035d8530e9
 
-                if (perguntas[0] == 2 && perguntas[2] == 1) {
-                    pergunta
-                    mensagem += "<h3>Você está comendo saudável!</h3>";
                 }
+                else {
+                    mensagem = "<h2>Nenhuma Receita encontrada</h2>";
+                    mensagem += "<p>Provavelmente sua receita dos sonhos não está no catálogo ainda.</p>";
+                    mensagem += "<button onclick='location.reload()'>Reiniciar Página</button>";
+                    mensagem += "<button onclick=\"window.location.href='index.html'\">Fechar quiz</button>";
+                }
+
+                // Estamos fazendo essa parte!!
+
+
+
+
+                //========================DOCE==========================
+
 
                 document.getElementById("resumo").innerHTML = mensagem;
             }
