@@ -13,6 +13,7 @@ a {
 p {
     color: white;
 }
+
 header nav ul li {
     position: relative;
 }
@@ -22,17 +23,18 @@ header nav ul li:hover ul {
 }
 
 
-header  nav ul li ul {
+header nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#D96F32;
+    background-color: #D96F32;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
 
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #B692C2;
     display: inline-block;
 }
@@ -50,16 +52,19 @@ header nav ul li ul li:hover {
 nav ul li ul li a {
     color: #561C24;
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #997C70;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     background-color: #694F8E;
     border-bottom: 24px solid #B692C2;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -67,27 +72,32 @@ header h1 {
     width: 30%;
     height: 30%;
 }
+
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
 }
+
 header div nav ul li {
     padding: 20px;
     color: #C7B7A3;
     font-size: 20px;
 }
+
 header div img {
     width: 4%;
     height: 4%;
 }
+
 /*TOPO*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     background-color: #F8B259;
     border-bottom: 24px solid #F3E9DC;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -95,43 +105,52 @@ header h1 {
     width: 30%;
     height: 30%;
 }
+
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
 }
+
 header div nav ul li {
     padding: 20px;
     color: #F3E9DC;
     font-size: 20px;
 }
+
 header div img {
     width: 4%;
     height: 4%;
 }
-section.inicio{
+
+section.inicio {
     background-color: #D96F32;
 }
-section.inicio h2{
+
+section.inicio h2 {
     text-align: center;
     font-size: 5rem;
     font-family: "Wendy One", sans-serif;
     font-weight: bold;
 }
-section.inicio h3{
+
+section.inicio h3 {
     text-align: right;
     font-size: 3rem;
     font-family: "Wendy One", sans-serif;
     color: white;
-    padding: 0 3vw 0 0 ;
+    padding: 0 3vw 0 0;
 }
-section.inicio div{
+
+section.inicio div {
     display: flex;
     justify-content: space-between;
 }
-section.inicio div.texto{
+
+section.inicio div.texto {
     padding: 3vw;
 }
-section.inicio div.texto ul{
+
+section.inicio div.texto ul {
     background-color: #F8B259;
     line-height: 3vw;
     padding: 4vw;
@@ -139,52 +158,61 @@ section.inicio div.texto ul{
     border-radius: 3vw;
     list-style: disc;
 }
-section.inicio ul{
+
+section.inicio ul {
     background-color: #F8B259;
     line-height: 3vw;
     padding: 4vw;
     font-size: 2rem;
     list-style: disc;
 }
-section.inicio div.img{
+
+section.inicio div.img {
     padding: 2vw 0 2vw 2vw;
-        width: 40
-  
+    width: 40
 }
-section.preparo{
+
+section.preparo {
     background-color: #D96F32;
     padding: 6vw;
 }
-section.preparo h2{
+
+section.preparo h2 {
     font-size: 4rem;
     padding: 2vw;
     font-family: "Wendy One", sans-serif;
 }
-section.preparo ul{
+
+section.preparo ul {
     font-size: 1.5rem;
     padding: 2vw;
     background-color: #F8B259;
     border-radius: 3vw;
     margin: 2vw 4vw 0 4vw;
 }
-section.preparo ul li{
+
+section.preparo ul li {
     line-height: 2vw;
 }
-section.espe{
+
+section.espe {
     background-color: #FFDFD6;
     padding: 6vw;
 }
-section.espe p{
+
+section.espe p {
     color: black;
     padding: 1vw;
     font-size: 1.5rem;
 }
-section.espe h2{
+
+section.espe h2 {
     font-size: 4rem;
     padding: 2vw;
     font-family: "Wendy One", sans-serif;
 }
-section.espe ul{
+
+section.espe ul {
     font-size: 1.5rem;
     padding: 2vw 2vw 2vw 2vw;
     background-color: #F8B259;
@@ -368,12 +396,20 @@ body {
     width: 100%;
 
 
-}   
+}
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         align-items: flex-start;
         padding: 2vw;
+    }
+
+    header nav ul li ul {
+        display: block;
+
+        position: static;
+
     }
 
     header h1 {

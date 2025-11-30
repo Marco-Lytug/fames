@@ -3,11 +3,12 @@ root {
     font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-section.membros ul li p img{
+
+section.membros ul li p img {
     width: 15%;
     height: 15%;
     border-radius: 50%;
-        
+
 }
 
 a {
@@ -28,11 +29,11 @@ header nav ul li:hover ul {
 }
 
 
-header  nav ul li ul {
+header nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#C7B7A3;
+    background-color: #C7B7A3;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
@@ -48,6 +49,7 @@ header nav ul li ul li:hover {
     text-align: center;
     transition: 0.3s;
 }
+
 nav ul li ul li a {
     color: #561C24;
 }
@@ -80,7 +82,8 @@ header div nav ul li {
     color: #C7B7A3;
     font-size: 20px;
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #997C70;
     display: inline-block;
 }
@@ -89,64 +92,77 @@ header div img {
     width: 4%;
     height: 4%;
 }
+
 section.banner {
     background-color: #E8D8C4;
-    border-bottom:30px solid #561C24;
+    border-bottom: 30px solid #561C24;
 }
+
 section.banner h2 {
     text-align: center;
     padding: 0.5vw 0 0.5vw 3vw;
     font-size: 6rem;
     color: black;
 }
-section.banner div{
+
+section.banner div {
     margin: 2vw;
 }
-section.banner div.nos h3{
+
+section.banner div.nos h3 {
     font-size: 3rem;
 
 }
-section.banner div.nos p{
+
+section.banner div.nos p {
     background-color: #561C24;
     border-radius: 15px;
     padding: 1vw;
     font-size: 3rem;
     margin: 2vw 50vw 0 0;
 }
-section.banner div.receitas h3{
+
+section.banner div.receitas h3 {
     font-size: 3rem;
     text-align: right;
 }
-section.banner div.receitas p{
+
+section.banner div.receitas p {
     background-color: #561C24;
     border-radius: 15px;
     padding: 1vw;
     font-size: 3rem;
     margin: 2vw 0 0 50vw;
-    
+
 }
-section.membros{
+
+section.membros {
     background-color: #E8D8C4;
 }
-section.membros h2{
+
+section.membros h2 {
     font-size: 10rem;
     padding: 0.5vw 0 0 1vw;
     border-bottom: 30px solid #561C24;
 }
-section.membros ul li h3{
+
+section.membros ul li h3 {
     font-size: 5rem;
     margin: 3vw;
     padding: 1vw;
     background-color: #561C24;
     border-radius: 30px;
     color: white;
-}section.membros ul li p{
+}
+
+section.membros ul li p {
     font-size: 2rem;
     text-align: center;
     color: black;
     line-height: 100px;
-     font-family: 'Trade Winds', cursive;
+    font-family: 'Trade Winds', cursive;
 }
+
 footer {
     background-color: #561C24;
 }
@@ -325,6 +341,7 @@ body {
 
 
 }
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -342,6 +359,13 @@ body {
         flex-direction: column;
         margin: 0;
         width: 100%;
+    }
+
+    header nav ul li ul {
+        display: block;
+
+        position: static;
+
     }
 
     header div nav ul li {

@@ -11,7 +11,7 @@ a {
 }
 
 
-    
+
 /*TOPO*/
 header nav ul li {
     position: relative;
@@ -22,17 +22,18 @@ header nav ul li:hover ul {
 }
 
 
-header  nav ul li ul {
+header nav ul li ul {
     position: absolute;
     display: none;
     left: 0;
-    background-color:#B692C2;
+    background-color: #B692C2;
     border-radius: 20px;
     margin: 0;
     padding: 0.5vw;
 
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #B692C2;
     display: inline-block;
 }
@@ -50,16 +51,19 @@ header nav ul li ul li:hover {
 nav ul li ul li a {
     color: #561C24;
 }
-header nav ul li a.atual{
+
+header nav ul li a.atual {
     border-bottom: 3px solid #997C70;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     background-color: #694F8E;
     border-bottom: 24px solid #B692C2;
     align-items: center;
 }
+
 header h1 {
     font-size: 2.0rem;
     margin: 1.5vw 0 1.5vw 3vw;
@@ -67,108 +71,124 @@ header h1 {
     width: 30%;
     height: 30%;
 }
+
 header div nav ul {
     display: flex;
     margin: 0.5vw 2vw 0.5vw 3vw;
 }
+
 header div nav ul li {
     padding: 20px;
     color: #C7B7A3;
     font-size: 20px;
 }
+
 header div img {
     width: 4%;
     height: 4%;
 }
+
 /*Banner*/
-section.banner{
+section.banner {
     background-color: #FFDFD6;
     border-bottom: 30px solid #EA7AB7;
 }
 
-section.banner img{
- margin: 9vw;
- background-color:#EA7AB7 ;
- padding: 3vw;
+section.banner img {
+    margin: 9vw;
+    background-color: #EA7AB7;
+    padding: 3vw;
     border-radius: 20px;
- 
+
 }
-section.destaque{
+
+section.destaque {
     background-color: #E3A5C7;
     display: flex;
     border-bottom: 30px solid #F8CABD;
-    
-}
-section.destaque div{
-    text-align: center;
-    
-}
-section.destaque h2{
-    font-size: 6em;
-      font-family: "Wendy One", sans-serif;
 
 }
-section.destaque div{
-    padding: 3.5vw;
-    
+
+section.destaque div {
+    text-align: center;
+
 }
-section.destaque div h3{
+
+section.destaque h2 {
+    font-size: 6em;
+    font-family: "Wendy One", sans-serif;
+
+}
+
+section.destaque div {
+    padding: 3.5vw;
+
+}
+
+section.destaque div h3 {
     font-size: 2.5rem;
     padding: 1vw;
 }
-section.destaque  ul{
+
+section.destaque ul {
     list-style: disc;
     margin: 13vw 0 0 14vw;
     font-size: 3rem;
 }
 
-section.destaque  ul li{
-    margin: 15px 0 0 0; 
+section.destaque ul li {
+    margin: 15px 0 0 0;
 
 }
-section.destaque div ul li h3{
-        font-size: 3rem;
-        margin: 0 0 0 15vw;
+
+section.destaque div ul li h3 {
+    font-size: 3rem;
+    margin: 0 0 0 15vw;
 }
 
-section.destaque div ul li img{
+section.destaque div ul li img {
     margin: 3vw;
 }
-section.doces{
+
+section.doces {
     background-color: #FFDFD6;
     padding: 6vw;
 }
-section.doces h2{
-font-size: 10rem;
-padding: 2vw 0 6vw 4vw;
-  font-family: "Wendy One", sans-serif;
+
+section.doces h2 {
+    font-size: 10rem;
+    padding: 2vw 0 6vw 4vw;
+    font-family: "Wendy One", sans-serif;
 
 }
 
-section.doces ul li{
+section.doces ul li {
     position: relative;
     padding: 0 30vw 0 0;
     text-align: center;
 }
-section.doces ul li img{
-      position: absolute;
+
+section.doces ul li img {
+    position: absolute;
     right: 0;
     margin: 0 3vw 0 0;
     width: 30%;
     height: 60%;
 
-    
+
 }
-section.doces ul li h3{
+
+section.doces ul li h3 {
     margin: 1vw;
     font-size: 6rem;
     color: #694F8E;
     border-bottom: 2px solid #694F8E;
     display: inline-block;
     font-family: "ZCOOL KuaiLe", sans-serif;
-    
+
 }
-section.doces div p{
+
+section.doces div p {
     background-color: #694F8E;
     font-size: 3rem;
     border-radius: 60px;
@@ -177,15 +197,16 @@ section.doces div p{
     padding: 3vw;
     text-align: left;
 }
-section.doces div p span:hover{
+
+section.doces div p span {
     background-color: #FFDFD6;
     border-radius: 13px;
     padding: 0.5vw;
     color: #B692C2;
     line-height: 100px;
-    transition: 0.3s;
-    
+
 }
+
 footer {
     background-color: #561C24;
 }
@@ -364,6 +385,7 @@ body {
 
 
 }
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -381,6 +403,13 @@ body {
         flex-direction: column;
         margin: 0;
         width: 100%;
+    }
+
+    header nav ul li ul {
+        display: block;
+
+        position: static;
+
     }
 
     header div nav ul li {
@@ -448,6 +477,12 @@ body {
         padding: 0;
         text-align: center;
         display: block;
+    }
+
+    section.doces div p span {
+        line-height: 2vw;
+        padding: 3px;
+
     }
 
     section.doces ul li img {
