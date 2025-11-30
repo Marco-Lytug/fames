@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sistema de perguntas</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let respostas = [];
+        let qtdPerguntas = 9;
+
+        function analisarResposta(pergunta, resposta) {
+            let itemMostrar = "pergunta" + (pergunta + 1); // (pergunta1 -> "pergunta1")
+            document.getElementById("pergunta" + pergunta).style.display = "none";
+            respostas.push(resposta);
+            if (pergunta + 1 > qtdPerguntas) {
+                itemMostrar = "feedback";
+
+                if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    respostas[2] == 3 &&
+                    respostas[3] == 2 &&
+                    respostas[4] == 3 &&
+                    (respostas[5] == 3 || respostas[5] == 4) &&
+                    respostas[6] == 3 &&
+                    (respostas[7] == 2 || respostas[7] == 3) &&
+                    respostas[8] == 1
+                ) {
+                    mensagem = "<h2>Feijoada</h2>";
+                    mensagem += "<p>A feijoada é um prato completo e cheio de sabor, muito apreciado em todo o Brasil. Com acompanhamentos como arroz, couve, farofa, laranja e torresmo, ela é ideal para reunir a família ou amigos em uma refeição especial.</p>";
+                    mensagem += "<a href=feijoada.html>Ver mais</a>";
+                }
+                else if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    respostas[2] == 3 &&
+                    (respostas[3] == 2 || respostas[3] == 3) &&
+                    (respostas[4] == 3 || respostas[4] == 2) &&
+                    (respostas[5] == 3 || respostas[5] == 4 || respostas[5] == 2) &&
+                    respostas[6] == 1 &&
+                    (respostas[7] == 1 || respostas[7] == 3) &&
+                    respostas[8] == 1
+                ) {
+                    mensagem = "<h2>Pizza de calabresa</h2>";
+                    mensagem += "<p>A pizza é uma das opções mais versáteis e adoradas, perfeita para qualquer ocasião, seja um jantarem família, encontro comamigos ou um lanche especial. Com infinitas combinações de massas, molhos erecheios, ela agrada a todos os gostos e é sempre uma escolha certeira.</p>";
+                    mensagem += "<a href=pizza-de-calabresa.html>Ver mais</a>";
+                }
+                else if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    (respostas[2] == 2 || respostas[2] == 1) &&
+                    (respostas[3] == 2 || respostas[3] == 1) &&
+                    (respostas[4] == 1 || respostas[4] == 2) &&
+                    (respostas[5] == 3 || respostas[5] == 4 || respostas[5] == 2) &&
+                    respostas[6] == 1 &&
+                    (respostas[7] == 2 || respostas[7] == 3) &&
+                    respostas[8] == 1
+                ) {
+                    mensagem = "<h2>Hambúrguer Caseiro</h2>";
+                    mensagem += "<p>O hambúrguer é uma escolha prática, saborosa e sempre irresistível, ideal para um almoço rápido, um jantar descontraído ou até um lanche especial com amigos. Com diversas possibilidades de combinações de carnes, pães, queijos, molhos e acompanhamentos, ele se adapta a todos os estilos e preferências.</p>";
+                    mensagem += "<a href=hamburguer.html>Ver mais</a>";
+                }
+                else if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    (respostas[2] == 3 || respostas[2] == 2) &&
+                    (respostas[3] == 2 || respostas[3] == 1) &&
+                    (respostas[4] == 1 || respostas[4] == 2) &&
+                    (respostas[5] == 3 || respostas[5] == 4) &&
+                    respostas[6] == 1 &&
+                    (respostas[7] == 2 || respostas[7] == 3) &&
+                    respostas[8] == 1
+                ) {
+                    mensagem = "<h2>Empadão de Frango</h2>";
+                    mensagem += "<p>O empadão é uma receita prática e deliciosa, perfeita para servir em almoços, jantares ou até em ocasiões especiais. Com uma massa macia e recheios variados como frango, palmito, carne ou legumes, ele agrada a todos e é uma ótima opção para quem busca uma refeição caseira e reconfortante</p>";
+                    mensagem += "<a href=Empadao.html>Ver mais</a>";
+                }
+                else if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    (respostas[2] == 1 || respostas[2] == 2) &&
+                    (respostas[3] == 2 || respostas[3] == 1) &&
+                    (respostas[4] == 3 || respostas[4] == 2) &&
+                    (respostas[5] == 3 || respostas[5] == 4) &&
+                    respostas[6] == 1 &&
+                    (respostas[7] == 2 || respostas[7] == 1) &&
+                    respostas[8] == 1
+                ) {
+                    mensagem = "<h2>Bife à Parmegiana</h2>";
+                    mensagem += "<p>O bife à parmegiana é um prato clássico e muito apreciado, perfeito para um almoço caprichado ou um jantar especial. Com carne empanada,molho de tomate e bastante queijo gratinado, ele combina sabor, crocância e cremosidade em uma única refeição que agrada a todos.</p>";
+                    mensagem += "<a href=parmediana-de-carne.html>Ver mais</a>";
+                }
+                else if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    respostas[2] == 1 &&
+                    (respostas[3] == 2 || respostas[3] == 1) &&
+                    (respostas[4] == 1 || respostas[4] == 2) &&
+                    (respostas[5] == 1 || respostas[5] == 6 || respostas[5] == 2) &&
+                    (respostas[6] == 1 || respostas[6] == 6) &&
+                    (respostas[7] == 3 || respostas[7] == 1) &&
+                    respostas[8] == 1
+
+                ) {
+                    mensagem = "<h2>Pão de Queijo</h2>";
+                    mensagem += "<p>O pão de queijo é uma delícia típica, leve por fora e macio por dentro, perfeito para o café da manhã, lanche da tarde ou qualquer momento em que bate aquela vontade de um quitute quentinho e saboroso. Feito com polvilho e queijo, é simples, mas conquista pelo sabor</p>";
+                    mensagem += "<a href=pao-queijo-salgado.html>Ver mais</a>";
+                }
+                else if (
+                    respostas[0] == 1 &&
+                    respostas[1] == 0 &&
+                    respostas[2] == 1 &&
+                    (respostas[3] == 2 || respostas[3] == 1) &&
+                    (respostas[4] == 1 || respostas[4] == 2) &&
+                    (respostas[5] == 1 || respostas[5] == 6 || respostas[5] == 2) &&
+                    (respostas[6] == 1 || respostas[6] == 6) &&
+                    (respostas[7] == 3 || respostas[7] == 1) &&
+                    respostas[8] == 1
+                )
+                    // Estamos fazendo essa parte!!
+
+
+
+
+                    if (respostas[0] == 2 && respostas[2] == 1) {
+                        pergunta
+                        mensagem += "<h3>Você está comendo saudável!</h3>";
+                    }
+
+                document.getElementById("resumo").innerHTML = mensagem;
+            }
+            document.getElementById(itemMostrar).style.display = "block";
+
+
+
+
+            console.log(respostas);
+            //console.log("foi");
+
+            Crocante
+
+        }
+
+        function esconderItem(item) {
+            document.getElementById(item).style.display = "none";
+        }
+
+
+    </script>
+
+    <main>
+        <div onclick="analisarResposta();">Teste</div>
+        <section id="pergunta1">
+            <h2>1. Estilo de comida?</h2>
+            <ul>
+                <li onclick="analisarResposta(1,1);">Salgado</li>
+                <li onclick="analisarResposta(1,2);">Doce</li>
+                <li onclick="analisarResposta(1,0);">Nenhuma</li>
+            </ul>
+        </section>
+
+        <section id="pergunta2">
+            <h2>2. Possui alguma preferência ou restrição alimentar?</h2>
+            <ul>
+                <li onclick="analisarResposta(2,1);">Sem lactose</li>
+                <li onclick="analisarResposta(2,2);">Sem Gluten</li>
+                <li onclick="analisarResposta(2,3);">Vegana</li>
+                <li onclick="analisarResposta(2,4);">Vegetariana</li>
+                <li onclick="analisarResposta(2,5);">Outros</li>
+                <li onclick="analisarResposta(2,0);">Nenhuma</li>
+            </ul>
+        </section>
+
+        <section id="pergunta3">
+            <h2>3. Tempo de preparo desejado?</h2>
+            <ul>
+                <li onclick="analisarResposta(3,1);">Rapido</li>
+                <li onclick="analisarResposta(3,2);">Médio</li>
+                <li onclick="analisarResposta(3,3);">Lento</li>
+                <li onclick="analisarResposta(3,0);">Nenhuma</li>
+            </ul>
+        </section>
+
+        <section id="pergunta4">
+            <h2>4. Nível de dificuldade?</h2>
+            <ul>
+                <li onclick="analisarResposta(4,1);">Prático</li>
+                <li onclick="analisarResposta(4,2);">Moderado</li>
+                <li onclick="analisarResposta(4,3);">Difícil</li>
+                <li onclick="analisarResposta(4,0);">Qualquer dificuldade</li>
+            </ul>
+        </section>
+
+        <section id="pergunta5">
+            <h2>5. Preferência de sabor?</h2>
+            <ul>
+                <li onclick="analisarResposta(5,1);">Suave</li>
+                <li onclick="analisarResposta(5,2);">Médio</li>
+                <li onclick="analisarResposta(5,3);">Forte / Intenso</li>
+                <li onclick="analisarResposta(5,4);">Apimentado</li>
+                <li onclick="analisarResposta(5,5);">Agridoce</li>
+                <li onclick="analisarResposta(5,0);">Nenhuma preferência</li>
+            </ul>
+        </section>
+
+        <section id="pergunta6">
+            <h2>6. Para qual refeição?</h2>
+            <ul>
+                <li onclick="analisarResposta(6,1);">Café da manhã</li>
+                <li onclick="analisarResposta(6,2);">Lanche</li>
+                <li onclick="analisarResposta(6,3);">Almoço</li>
+                <li onclick="analisarResposta(6,4);">Jantar</li>
+                <li onclick="analisarResposta(6,5);">Sobremesa</li>
+                <li onclick="analisarResposta(6,6);">Petisco</li>
+            </ul>
+        </section>
+
+        <section id="pergunta7">
+            <h2>7. Modo de preparo?</h2>
+            <ul>
+                <li onclick="analisarResposta(7,1);">Assado</li>
+                <li onclick="analisarResposta(7,2);">Frito</li>
+                <li onclick="analisarResposta(7,3);">Cozido</li>
+                <li onclick="analisarResposta(7,4);">Grelhado</li>
+                <li onclick="analisarResposta(7,5);">Cru</li>
+                <li onclick="analisarResposta(7,6);">Airfryer</li>
+                <li onclick="analisarResposta(7,7);">Micro-ondas</li>
+            </ul>
+        </section>
+
+        <section id="pergunta8">
+            <h2>8. Preferência de textura?</h2>
+            <ul>
+                <li onclick="analisarResposta(8,1);">Crocante</li>
+                <li onclick="analisarResposta(8,2);">Cremoso</li>
+                <li onclick="analisarResposta(8,3);">Macio</li>
+                <li onclick="analisarResposta(8,4);">Seco</li>
+                <li onclick="analisarResposta(8,0);">Nenhuma</li>
+            </ul>
+        </section>
+
+        <section id="pergunta9">
+            <h2>9. Temperatura da refeição?</h2>
+            <ul>
+                <li onclick="analisarResposta(9,1);">Quente</li>
+                <li onclick="analisarResposta(9,2);">Frio</li>
+                <li onclick="analisarResposta(9,0);">Nenhuma preferência</li>
+            </ul>
+        </section>
+
+        <section id="feedback" onclick="esconderItem('feedback');">
+            <div>
+                <h2>Suas resposta</h2>
+                <div id="resumo"></div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+    <style>
+        main section {
+            display: none;
+        }
+
+        main section#pergunta1 {
+            display: block;
+        }
+
+
+        #feedback {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        #feedback>div {
+            background: white;
+            height: auto;
+            width: auto;
+            margin: 35vh auto 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+
+</body>
+
+</html>
