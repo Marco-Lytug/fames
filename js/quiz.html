@@ -129,23 +129,27 @@
                 else if (
                     respostas[0] == 1 &&
                     respostas[1] == 0 &&
-                    respostas[2] == 1 &&
-                    (respostas[3] == 2 || respostas[3] == 1) &&
-                    (respostas[4] == 1 || respostas[4] == 2) &&
+                    respostas[2] == 2 &&
+                    respostas[3] == 2 &&
+                    (respostas[4] == 3 || respostas[4] == 2) &&
                     (respostas[5] == 3 || respostas[5] == 4) &&
-                    respostas[6] == 3 &&
-                    (respostas[7] == 3 || respostas[7] == 1) &&
+                    (respostas[6] == 1 || respostas[6] == 6) &&
+                    respostas[7] == 3 &&
                     respostas[8] == 1
-                )
-                    // Estamos fazendo essa parte!!
+                ) {
+                    mensagem = "<h2Lasanha de carne</h2>";
+                    mensagem += "<p>A lasanha de carne é um prato clássico, reconfortante e cheio de sabor, perfeito para almoços em família ou ocasiões especiais. Com camadas generosas de massa, molho de carne bem temperado, molho branco e bastante queijo, ela agrada a todos e é sinônimo de comida caseira e caprichada.</p>";
+                    mensagem += "<a href=lasanha-de-carne.html>Ver mais</a>";
+                }
+                // Estamos fazendo essa parte!!
 
 
 
 
-                    if (respostas[0] == 2 && respostas[2] == 1) {
-                        pergunta
-                        mensagem += "<h3>Você está comendo saudável!</h3>";
-                    }
+                if (respostas[0] == 2 && respostas[2] == 1) {
+                    pergunta
+                    mensagem += "<h3>Você está comendo saudável!</h3>";
+                }
 
                 document.getElementById("resumo").innerHTML = mensagem;
             }
