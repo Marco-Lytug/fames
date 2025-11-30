@@ -131,18 +131,24 @@
                     }
                     else if (
                         perguntas[0] == 1 &&
-                        perguntas[1] == 0 &&
-                        perguntas[2] == 1 &&
-                        (perguntas[3] == 2 || perguntas[3] == 1) &&
+                        perguntas[1] == 2 &&
+                        (perguntas[2] == 1 || perguntas[2] == 2) &&
+                        perguntas[3] == 2 &&
                         (perguntas[4] == 1 || perguntas[4] == 2) &&
-                        (perguntas[5] == 3 || perguntas[5] == 4) &&
-                        perguntas[6] == 3 &&
+                        (perguntas[5] == 6 || perguntas[5] == 2) &&
+                        (perguntas[6] == 2 || perguntas[6] == 6) &&
                         (perguntas[7] == 3 || perguntas[7] == 1) &&
                         perguntas[8] == 1
                     ) {
-                        mensagem = "<h2Lasanha de carne</h2>";
+                        mensagem = "<h2>Coxinha de Mandioca sem Glúten</h2>";
                         mensagem += "<p>A lasanha de carne é um prato clássico, reconfortante e cheio de sabor, perfeito para almoços em família ou ocasiões especiais. Com camadas generosas de massa, molho de carne bem temperado, molho branco e bastante queijo, ela agrada a todos e é sinônimo de comida caseira e caprichada.</p>";
-                        mensagem += "<a href=lasanha-de-carne.html>Ver mais</a>";
+                        mensagem += "<a href=coxinha-de-mandioca-semGLuten.html>Ver mais</a>";
+                    }
+                    else {
+                        mensagem = "<h2>Nenhuma Receita encontrada</h2>";
+                        mensagem += "<p>Provavelmente sua receita dos sonhos não está no catálogo ainda.</p>";
+                        mensagem += "<button onclick='location.reload()'>Reiniciar Página</button>";
+                        mensagem += "<button onclick=\"window.location.href='index.html'\">Fechar quiz</button>";
                     }
                 }
                 else if (perguntas[0] == 2) {//valida se é doce
@@ -190,14 +196,15 @@
                         mensagem += "<p></p>"
                         mensagem += "<p></p>"
                     }
+                    else {
+                        mensagem = "<h2>Nenhuma Receita encontrada</h2>";
+                        mensagem += "<p>Provavelmente sua receita dos sonhos não está no catálogo ainda.</p>";
+                        mensagem += "<button onclick='location.reload()'>Reiniciar Página</button>";
+                        mensagem += "<button onclick=\"window.location.href='index.html'\">Fechar quiz</button>";
+                    }
 
                 }
-                else {
-                    mensagem = "<h2>Nenhuma Receita encontrada</h2>";
-                    mensagem += "<p>Provavelmente sua receita dos sonhos não está no catálogo ainda.</p>";
-                    mensagem += "<button onclick='location.reload()'>Reiniciar Página</button>";
-                    mensagem += "<button onclick=\"window.location.href='index.html'\">Fechar quiz</button>";
-                }
+
 
                 // Estamos fazendo essa parte!!
 
