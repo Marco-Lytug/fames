@@ -4,362 +4,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sistema de perguntas</title>
+    <title>Páginas Salgadas</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/principal-salgado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kdam+Thmor+Pro&family=Trade+Winds&family=Unbounded:wght@200..900&family=Wendy+One&family=ZCOOL+KuaiLe&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
+ <link rel="shortcut icon" href="src/IconeFamestransparente14.png" type="image/x-icon">
 </head>
 
 <body>
-    <script type="text/javascript">
+    <header>
+        <p><a href="index.html"><img src="src/Fames.png" alt=""></a></p>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Principal</a>
+                    </li>
+                    <li>
+                        <a href="#">Comidas</a>
+                        <ul>
+                            <li>
+                                <a href="principal-salgado.html">Salgados</a>
+                            </li>
 
-        let perguntas = [];
-        let qtdPerguntas = 9;
+                            <li>
+                                <a href="principal-semGluten.html">S/Glúten</a>
+                            </li>
 
-        function analisarResposta(pergunta, resposta) {
-            let itemMostrar = "pergunta" + (pergunta + 1); // (pergunta1 -> "pergunta1")
-            document.getElementById("pergunta" + pergunta).style.display = "none";
-            perguntas.push(resposta);
-            if (pergunta + 1 > qtdPerguntas) {
-                itemMostrar = "feedback";
+                            <li>
+                                <a href="principal-vegano.html">Vegano</a>
+                            </li>
 
-
-                //====================SALGADOS===========================
-                // if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     perguntas[2] == 3 &&
-                //     perguntas[3] == 2 &&
-                //     perguntas[4] == 3 &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4) &&
-                //     perguntas[6] == 3 &&
-                //     (perguntas[7] == 2 || perguntas[7] == 3) &&
-                //     perguntas[8] == 1
-                // ) {
-                //     mensagem = "<h2>Feijoada</h2>";
-                //     mensagem += "<p>A feijoada é um prato completo e cheio de sabor, muito apreciado em todo o Brasil. Com acompanhamentos como arroz, couve, farofa, laranja e torresmo, ela é ideal para reunir a família ou amigos em uma refeição especial.</p>";
-                //     mensagem += "<a href=feijoada.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     perguntas[2] == 3 &&
-                //     (perguntas[3] == 2 || perguntas[3] == 3) &&
-                //     (perguntas[4] == 3 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4 || perguntas[5] == 2) &&
-                //     perguntas[6] == 1 &&
-                //     (perguntas[7] == 1 || perguntas[7] == 3) &&
-                //     perguntas[8] == 1
-                // ) {
-                //     mensagem = "<h2>Pizza de calabresa</h2>";
-                //     mensagem += "<p>A pizza é uma das opções mais versáteis e adoradas, perfeita para qualquer ocasião, seja um jantarem família, encontro comamigos ou um lanche especial. Com infinitas combinações de massas, molhos erecheios, ela agrada a todos os gostos e é sempre uma escolha certeira.</p>";
-                //     mensagem += "<a href=pizza-de-calabresa.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     (perguntas[2] == 2 || perguntas[2] == 1) &&
-                //     (perguntas[3] == 2 || perguntas[3] == 1) &&
-                //     (perguntas[4] == 1 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4 || perguntas[5] == 2) &&
-                //     perguntas[6] == 1 &&
-                //     (perguntas[7] == 2 || perguntas[7] == 3) &&
-                //     perguntas[8] == 1
-                // ) {
-                //     mensagem = "<h2>Hambúrguer Caseiro</h2>";
-                //     mensagem += "<p>O hambúrguer é uma escolha prática, saborosa e sempre irresistível, ideal para um almoço rápido, um jantar descontraído ou até um lanche especial com amigos. Com diversas possibilidades de combinações de carnes, pães, queijos, molhos e acompanhamentos, ele se adapta a todos os estilos e preferências.</p>";
-                //     mensagem += "<a href=hamburguer.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     (perguntas[2] == 3 || perguntas[2] == 2) &&
-                //     (perguntas[3] == 2 || perguntas[3] == 1) &&
-                //     (perguntas[4] == 1 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4) &&
-                //     perguntas[6] == 1 &&
-                //     (perguntas[7] == 2 || perguntas[7] == 3) &&
-                //     perguntas[8] == 1
-                // ) {
-                //     mensagem = "<h2>Empadão de Frango</h2>";
-                //     mensagem += "<p>O empadão é uma receita prática e deliciosa, perfeita para servir em almoços, jantares ou até em ocasiões especiais. Com uma massa macia e recheios variados como frango, palmito, carne ou legumes, ele agrada a todos e é uma ótima opção para quem busca uma refeição caseira e reconfortante</p>";
-                //     mensagem += "<a href=Empadao.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     (perguntas[2] == 1 || perguntas[2] == 2) &&
-                //     (perguntas[3] == 2 || perguntas[3] == 1) &&
-                //     (perguntas[4] == 3 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4) &&
-                //     perguntas[6] == 1 &&
-                //     (perguntas[7] == 2 || perguntas[7] == 1) &&
-                //     perguntas[8] == 1
-                // ) {
-                //     mensagem = "<h2>Bife à Parmegiana</h2>";
-                //     mensagem += "<p>O bife à parmegiana é um prato clássico e muito apreciado, perfeito para um almoço caprichado ou um jantar especial. Com carne empanada,molho de tomate e bastante queijo gratinado, ele combina sabor, crocância e cremosidade em uma única refeição que agrada a todos.</p>";
-                //     mensagem += "<a href=parmediana-de-carne.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     perguntas[2] == 1 &&
-                //     (perguntas[3] == 2 || perguntas[3] == 1) &&
-                //     (perguntas[4] == 1 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 1 || perguntas[5] == 6 || perguntas[5] == 2) &&
-                //     (perguntas[6] == 1 || perguntas[6] == 6) &&
-                //     (perguntas[7] == 3 || perguntas[7] == 1) &&
-                //     perguntas[8] == 1
-
-                // ) {
-                //     mensagem = "<h2>Pão de Queijo</h2>";
-                //     mensagem += "<p>O pão de queijo é uma delícia típica, leve por fora e macio por dentro, perfeito para o café da manhã, lanche da tarde ou qualquer momento em que bate aquela vontade de um quitute quentinho e saboroso. Feito com polvilho e queijo, é simples, mas conquista pelo sabor</p>";
-                //     mensagem += "<a href=pao-queijo-salgado.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     perguntas[2] == 1 &&
-                //     (perguntas[3] == 2 || perguntas[3] == 1) &&
-                //     (perguntas[4] == 1 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4) &&
-                //     perguntas[6] == 3 &&
-                //     (perguntas[7] == 3 || perguntas[7] == 1) &&
-                //     perguntas[8] == 1
-                // ) {
-                //     mensagem = "<h2>Macarrão Carbonara</h2>";
-                //     mensagem += "<p>A carbonara é um prato clássico da culinária italiana, simples e saboroso, ideal para quem quer uma refeição rápida, mas cheia de sabor. Feita com poucos ingredientes como ovos, queijo, pancetta (ou bacon) e massa, ela conquista pelo equilíbrio entre cremosidade e sabor marcante.</p>";
-                //     mensagem += "<a href=carbonara.html>Ver mais</a>";
-                // }
-                // else if (
-                //     perguntas[0] == 1 &&
-                //     perguntas[1] == 0 &&
-                //     perguntas[2] == 1 &&
-                //     (perguntas[3] == 2 || perguntas[3] == 1) &&
-                //     (perguntas[4] == 1 || perguntas[4] == 2) &&
-                //     (perguntas[5] == 3 || perguntas[5] == 4) &&
-                //     perguntas[6] == 3 &&
-                //     (perguntas[7] == 3 || perguntas[7] == 1) &&
-                //     perguntas[8] == 1
-                // )
-                //     // Estamos fazendo essa parte!!
-
-
-
-
-                    //========================DOCE==========================
-                    if (
-                        (perguntas[0] == 0 || perguntas[0] == 2) &&
-                        (perguntas[1] == 0 || perguntas[1] == 1 || perguntas[1] == 2) &&
-                        (perguntas[2] == 0 || perguntas[2] == 1 || perguntas[2] == 2) &&
-                        (perguntas[3] == 0 || perguntas[3] == 1) &&
-                        (perguntas[4] == 0 || perguntas[4] == 1 || perguntas[4] == 2) &&
-                        (perguntas[5] == 2 || perguntas[5] == 5 || perguntas[5] == 6) &&
-                        (perguntas[6] == 5 || perguntas[6] == 6) &&
-                        (perguntas[7] == 0 || perguntas[7] == 1 || perguntas[7] == 2) &&
-                        (perguntas[8] == 0 || perguntas[8] == 2 || perguntas[8] == 0)
-                    ) {
-                        mensagem = "<h2>Bombom de Morango sem Glúten</h2>"
-                        mensagem += "<p>Precisa fazer ainda</p>"
-                        mensagem += "<p>...</p>"
-                        // Precisa fazer!
-                    } else if (
-                        (perguntas[0] == 0 || perguntas[0] == 2) &&
-                        (perguntas[1] == 0 || perguntas[1] == 1 || perguntas[1] == 2 || perguntas[1] == 4) &&
-                        (perguntas[2] == 0 || perguntas[2] == 1) &&
-                        (perguntas[3] == 0 || perguntas[3] == 1) &&
-                        (perguntas[4] == 0 || perguntas[4] == 2) &&
-                        (perguntas[5] == 2 || perguntas[5] == 2 || perguntas[5] == 5) &&
-                        perguntas[6] == 1 &&
-                        (perguntas[7] == 0 || perguntas[7] == 3) &&
-                        (perguntas[8] == 0 || perguntas[8] == 1)
-                    ) {
-                        mensagem = "<h2>Torta de Banana sem Glúten</h2>"
-                        mensagem += "<p>A torta de banana sem lactose é uma sobremesa deliciosa e leve, perfeita para quem quer saborear esse clássico sem restrições. Preparada com bananas maduras e massa macia feita com ingredientes livres de lactose, ela combina sabor, praticidade e um toque caseiro, sendo ideal para cafés, lanches da tarde ou para adoçar qualquer momento especial.</p>"
-                        mensagem += "<p>torta-de-banana-semGluten.html</p>"
-                    } else if (
-                        (perguntas[0] == 0 || perguntas[0] == 2) &&
-                        (perguntas[1] == 0 || perguntas[1] == 1 || perguntas[1] == 2 || perguntas[1] == 4) &&
-                        (perguntas[2] == 0 || perguntas[2] == 1) &&
-                        (perguntas[3] == 0 || perguntas[3] == 1) &&
-                        (perguntas[4] == 0 || perguntas[4] == 2) &&
-                        (perguntas[5] == 2 || perguntas[5] == 2 || perguntas[5] == 5) &&
-                        perguntas[6] == 1 &&
-                        (perguntas[7] == 0 || perguntas[7] == 3) &&
-                        (perguntas[8] == 0 || perguntas[8] == 1)
-                    ) {
-                        mensagem = "<h2></h2>"
-                        mensagem += "<p></p>"
-                        mensagem += "<p></p>"
-                    }
-
-                if (perguntas[0] == 2 && perguntas[2] == 1) {
-                    pergunta
-                    mensagem += "<h3>Você está comendo saudável!</h3>";
-                }
-
-                document.getElementById("resumo").innerHTML = mensagem;
-            }
-            document.getElementById(itemMostrar).style.display = "block";
-
-
-
-
-            console.log(perguntas);
-            //console.log("foi");
-
-            Crocante
-
-        }
-
-        function esconderItem(item) {
-            document.getElementById(item).style.display = "none";
-        }
-
-
-    </script>
-
+                            <li>
+                                <a href="principal-doces.html">Doces</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Loja</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre Nós</a>
+                        <ul>
+                            <li>
+                                <a href="referencias.html">Referências</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#"><span class="fa-solid fa-bars"></span></a>
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <div onclick="analisarResposta();">Teste</div>
-        <section id="pergunta1">
-            <h2>1. Estilo de comida?</h2>
-            <ul>
-                <li onclick="analisarResposta(1,1);">Salgado</li>
-                <li onclick="analisarResposta(1,2);">Doce</li>
-                <li onclick="analisarResposta(1,0);">Nenhuma</li>
-            </ul>
+        <section class="banner">
+            <img src="src/Pratos Salgados.png" alt="">
         </section>
 
-        <section id="pergunta2">
-            <h2>2. Possui alguma preferência ou restrição alimentar?</h2>
-            <ul>
-                <li onclick="analisarResposta(2,1);">Sem lactose</li>
-                <li onclick="analisarResposta(2,2);">Sem Gluten</li>
-                <li onclick="analisarResposta(2,3);">Vegana</li>
-                <li onclick="analisarResposta(2,4);">Vegetariana</li>
-                <li onclick="analisarResposta(2,5);">Outros</li>
-                <li onclick="analisarResposta(2,0);">Nenhuma</li>
-            </ul>
-        </section>
-
-        <section id="pergunta3">
-            <h2>3. Tempo de preparo desejado?</h2>
-            <ul>
-                <li onclick="analisarResposta(3,1);">Rapido</li>
-                <li onclick="analisarResposta(3,2);">Médio</li>
-                <li onclick="analisarResposta(3,3);">Lento</li>
-                <li onclick="analisarResposta(3,0);">Nenhuma</li>
-            </ul>
-        </section>
-
-        <section id="pergunta4">
-            <h2>4. Nível de dificuldade?</h2>
-            <ul>
-                <li onclick="analisarResposta(4,1);">Prático</li>
-                <li onclick="analisarResposta(4,2);">Moderado</li>
-                <li onclick="analisarResposta(4,3);">Difícil</li>
-                <li onclick="analisarResposta(4,0);">Qualquer dificuldade</li>
-            </ul>
-        </section>
-
-        <section id="pergunta5">
-            <h2>5. Preferência de sabor?</h2>
-            <ul>
-                <li onclick="analisarResposta(5,1);">Suave</li>
-                <li onclick="analisarResposta(5,2);">Médio</li>
-                <li onclick="analisarResposta(5,3);">Forte / Intenso</li>
-                <li onclick="analisarResposta(5,4);">Apimentado</li>
-                <li onclick="analisarResposta(5,5);">Agridoce</li>
-                <li onclick="analisarResposta(5,0);">Nenhuma preferência</li>
-            </ul>
-        </section>
-
-        <section id="pergunta6">
-            <h2>6. Para qual refeição?</h2>
-            <ul>
-                <li onclick="analisarResposta(6,1);">Café da manhã</li>
-                <li onclick="analisarResposta(6,2);">Lanche</li>
-                <li onclick="analisarResposta(6,3);">Almoço</li>
-                <li onclick="analisarResposta(6,4);">Jantar</li>
-                <li onclick="analisarResposta(6,5);">Sobremesa</li>
-                <li onclick="analisarResposta(6,6);">Petisco</li>
-            </ul>
-        </section>
-
-        <section id="pergunta7">
-            <h2>7. Modo de preparo?</h2>
-            <ul>
-                <li onclick="analisarResposta(7,1);">Assado</li>
-                <li onclick="analisarResposta(7,2);">Frito</li>
-                <li onclick="analisarResposta(7,3);">Cozido</li>
-                <li onclick="analisarResposta(7,4);">Grelhado</li>
-                <li onclick="analisarResposta(7,5);">Cru</li>
-                <li onclick="analisarResposta(7,6);">Airfryer</li>
-                <li onclick="analisarResposta(7,7);">Micro-ondas</li>
-            </ul>
-        </section>
-
-        <section id="pergunta8">
-            <h2>8. Preferência de textura?</h2>
-            <ul>
-                <li onclick="analisarResposta(8,1);">Crocante</li>
-                <li onclick="analisarResposta(8,2);">Cremoso</li>
-                <li onclick="analisarResposta(8,3);">Macio</li>
-                <li onclick="analisarResposta(8,4);">Seco</li>
-                <li onclick="analisarResposta(8,0);">Nenhuma</li>
-            </ul>
-        </section>
-
-        <section id="pergunta9">
-            <h2>9. Temperatura da refeição?</h2>
-            <ul>
-                <li onclick="analisarResposta(9,1);">Quente</li>
-                <li onclick="analisarResposta(9,2);">Frio</li>
-                <li onclick="analisarResposta(9,0);">Nenhuma preferência</li>
-            </ul>
-        </section>
-
-        <section id="feedback" onclick="esconderItem('feedback');">
+        <section class="destaque">
             <div>
-                <h2>Suas resposta</h2>
-                <div id="resumo"></div>
+                <h2>
+                    Receita destaque
+                </h2>
+
+                <h3>
+                    Carbonara
+                </h3>
+                <img src="src/Carbonara.png" alt="">
+
+            </div>
+            <ul>
+
+                <li>Bacon picado a gosto</li>
+                <li>Queijo ralado a gosto</li>
+                <li>3 ovos</li>
+                <li>Sal</li>
+                <li>Pimenta-do-reino a gosto</li>
+                <li>Macarrão de sua escolha </li>
+                <li>Creme de leite se quiser dar um toque diferente à receita</li>
+
+            </ul>
+
+        </section>
+        <section class="salgado">
+            <h2>
+                Salgados
+            </h2>
+            <ul>
+                <li>
+                    <h3>
+                        Feijoada
+                    </h3>
+                    <img src="src/Feijoada.png" alt="Feijoada">
+                    <div>
+
+                        <p>
+                            A feijoada é um prato completo e
+                            cheio de sabor, muito apreciado em
+                            todo
+                            o Brasil. Com acompanhamentos
+                            como arroz, couve, farofa,
+                            laranja e torresmo, ela é ideal para reunir a família ou amigos em uma refeição
+                            especial. <br>
+
+                            <span><a href="feijoada.html">Ver Mais</a></span>
+                        </p>
+
+
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Pizza
+                    </h3>
+                    <img src="src/Pizza.png" alt="foto de Pizza">
+                    <div>
+                        <p>
+                            A pizza é uma das opções mais
+                            versáteis e adoradas, perfeita para
+                            qualquer ocasião, seja um jantarem
+                            família, encontro comamigos ou um
+                            lanche especial. Com infinitas
+                            combinações de massas, molhos erecheios, ela agrada a todos os gostos e é sempre uma
+                            escolha certeira.<br>
+
+                            <span><a href="ptml">izza-de-calabresa.hVer Mais</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Hambúrguer
+                    </h3>
+                    <img src="src/Hamburguer.png" alt="Foto de Hamburguer">
+                    <div>
+                        <p>
+                            O hambúrguer é uma escolha prática,
+                            saborosa e sempre irresistível, ideal
+                            para um almoço rápido, um jantar
+                            descontraído ou até um lanche
+                            especial com amigos. Com diversas
+                            possibilidades de combinações de carnes, pães, queijos, molhos e acompanhamentos, ele se
+                            adapta a todos os estilos e preferências.<br>
+
+                            <span><a href="hamburguer.html">Ver Mais</a></span>
+                        </p>
+
+
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Empadão
+                    </h3>
+                    <img src="src/Empadão.png" alt="Foto de um Empadao ">
+                    <div>
+                        <p>
+                            O empadão é uma receita prática e deliciosa,
+                            perfeita para servir em almoços, jantares ou
+                            até em ocasiões especiais. Com uma massa
+                            macia e recheios variados como frango,
+                            palmito, carne ou legumes, ele agrada a
+                            todos e é uma ótima opção para quem busca uma refeição caseira e reconfortante. <br>
+
+                            <span><a href="Empadao.html">Ver Mais</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Bife à Parmegiana
+                    </h3>
+                    <img src="src/Parmediana.png" alt="Foto de Brigadeiro">
+                    <div>
+                        <p>
+                            O bife à parmegiana é um prato
+                            clássico e muito apreciado, perfeito
+                            para um almoço caprichado ou um
+                            jantar especial. Com carne empanada,molho de tomate e bastante queijo
+                            gratinado, ele combina sabor,
+                            crocância e cremosidade em uma única
+                            refeição que agrada a todos.
+                            <br>
+
+                            <span><a href="parmediana-de-carne.html">Ver Mais</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Pão de queijo
+                    </h3>
+                    <img src="src/Pao-de-queijo.png" alt="Foto de pao de quijo">
+                    <div>
+                        <p>
+                            O pão de queijo é uma delícia típica, leve por fora e macio por dentro,
+                            perfeito para o café da manhã, lanche
+                            da tarde ou qualquer momento em que bate aquela vontade de um quitute quentinho e
+                            saboroso. Feito com polvilho e queijo, é simples, mas conquista pelo sabor. <br>
+
+                            <span><a href="pao-queijo-salgado.html">Ver Mais</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Carbonara
+                    </h3>
+                    <img src="src/Carbonara.png" alt="Foto de um carbonara">
+                    <div>
+                        <p>
+                            A carbonara é um prato clássico da
+                            culinária italiana, simples e
+                            saboroso, ideal para quem quer
+                            uma refeição rápida, mas cheia de
+                            sabor. Feita com poucos
+                            ingredientes como ovos, queijo, pancetta (ou bacon) e massa, ela conquista pelo
+                            equilíbrio entre cremosidade e sabor marcante. <br>
+
+                            <span><a href="carbonara.html">Ver Mais</a></span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>
+                        Lasanha de carne
+                    </h3>
+                    <img src="src/Lasanha-de-carne.png" alt="Foto de Lasanha de carne">
+                    <div>
+                        <p>
+                            A lasanha de carne é um prato clássico,
+                            reconfortante e cheio de sabor, perfeito para
+                            almoços em família ou ocasiões especiais. Com
+                            camadas generosas de massa, molho de carne
+                            bem temperado, molho branco e bastante queijo,
+                            ela agrada a todos e é sinônimo de comida caseira
+                            e caprichada. <br>
+
+                            <span><a href="lasanha-de-carne.html">Ver Mais</a></span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer class="footer">
+
+
+        <div class="footer-section">
+
+
+            <h3>Siga e acompanhe</h3>
+
+
+            <div class="social-icons">
+
+                <a href="https://www.instagram.com/famesrevenues"><img src="src/insta.png" alt="Instagram"></a>
+
+
+                <a href="https://x.com/Fames_revenues"><img src="src/x.png" alt="X"></a>
+
+
             </div>
 
-        </section>
+
+        </div>
 
 
 
 
-    </main>
+
+        <div class="footer-section logo-container">
+
+
+            <img src="src/favicon.png" alt="Fames Flames Logo">
+            <p>Fames Revenues</p>
+
+
+            <p class="copyright">© 2025, Fames Revenues </p>
+
+
+        </div>
 
 
 
-    <style>
-        main section {
-            display: none;
-        }
-
-        main section#pergunta1 {
-            display: block;
-        }
 
 
-        #feedback {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-        }
+        <div class="footer-section">
 
-        #feedback>div {
-            background: white;
-            height: auto;
-            width: auto;
-            margin: 35vh auto 0 auto;
-            padding: 20px;
-            border-radius: 10px;
-        }
-    </style>
 
+            <h3>Contatos</h3>
+
+
+            <p>(47) 98916-1573</p>
+
+
+            <p><a href="mailto:fames.contato@gmail.com">fames.contato@gmail.com</a></p>
+
+
+        </div>
+
+
+    </footer>
 
 </body>
 
