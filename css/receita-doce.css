@@ -150,7 +150,7 @@ section.inicio h3.esquerda {
     padding: 0 0 0 3vw;
 }
 
-section.inicio div {
+section.inicio > div {
     display: flex;
     justify-content: space-between;
 }

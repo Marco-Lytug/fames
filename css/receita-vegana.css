@@ -143,13 +143,13 @@ section.inicio h3 {
     padding: 0 3vw 0 0;
 }
 
-section.inicio div {
+section.inicio > div {
     display: flex;
     justify-content: space-between;
 }
 
 section.inicio div.texto {
-    padding: 1vw 0 0 0;
+    padding: 3vw;
 }
 
 section.inicio div.texto ul {
