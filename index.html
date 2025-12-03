@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fames1</title>
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/pagina-principal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,13 +13,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kdam+Thmor+Pro&family=Trade+Winds&family=Unbounded:wght@200..900&family=Wendy+One&family=ZCOOL+KuaiLe&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="src/Icone_Fames_transparente14.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/IconeFamestransparente14.png" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
-        <h1>"<a href=""><img src="src/Fames.png" alt=""></a></h1>
+        <h1><a href=""><img src="src/Fames.png" alt="Logo Fames"></a></h1>
         <div>
             <nav>
                 <ul>
@@ -31,349 +32,261 @@
                             <li>
                                 <a href="principal-salgado.html">Salgados</a>
                             </li>
-
                             <li>
                                 <a href="principal-semGluten.html">S/Glúten</a>
                             </li>
-
                             <li>
                                 <a href="principal-vegano.html">Vegano</a>
                             </li>
-
                             <li>
                                 <a href="principal-doces.html">Doces</a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">Loja</a>
-                    </li>
+                    <li><a href="#">Loja</a></li>
                     <li>
                         <a href="sobre.html">Sobre Nós</a>
                         <ul>
-                            <li>
-                                <a href="referencias.html">Referências</a>
-                            </li>
+                            <li><a href="referencias.html">Referências</a></li>
                         </ul>
                     </li>
                     <li>
-                        <p>
-                            <a href="#"><span class="fa-solid fa-bars"></span></a>
-                        </p>
+                        <p><a href="#"><span class="fa-solid fa-bars"></span></a></p>
                     </li>
-                    <li>
-                        <a href="dicas.html">Dicas</a>
-                    </li>
+                    <li><a href="dicas.html">Dicas</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-</body>
-<main>
-    <section class="banner">
-        <h2>
-            Está com fome? Então sacie-se com o sabor <br/> de nossas receitas!
-        </h2>
 
-        <div>
-            <img src="src/favicon.png" alt="">
-            <a href="#" id="abrirQuiz">
-                <img src="src/BotaoCardapio.png" alt="Descubra sua Receita Ideal" />
-            </a>
-        </div>
-    </section>
+    <main>
+        <section class="banner">
+            <h2>
+                Está com fome? Então sacie-se com o sabor <br> de nossas receitas!
+            </h2>
 
-    <!---Quiz--->
-    <section class="quiz-container" id="quiz-container" style="display: none;">
-        <div id="quiz">
-            <h2 id="quiz-question">Pergunta aparecerá aqui</h2>
-            <div id="quiz-options"></div>
-        </div>
+            <div>
+                <img src="src/favicon.png" alt="Ícone">
+                <a href="#" id="abrirQuiz">
+                    <img src="src/BotaoCardapio.png" alt="Descubra sua Receita Ideal">
+                </a>
+            </div>
+        </section>
 
-        <div id="quiz-result" style="display: none;">
-            <h2>🍽️ Sua Receita Ideal</h2>
-            <div id="recipe-result"></div>
-            <button id="refazer">Refazer Quiz</button>
-            <button id="fecharQuiz">Fechar</button>
-        </div>
-    </section>
-
-    <script src="js/index.js"> </script>
-
-    
-
-     <section class="foods">
-
-        <ul>
-            <li class="laranja">
-                <a href="pizza-de-calabresa.html"><img src="src/pizzaIndex.png" alt="#"></a>
-            </li>
-            <li class="amarelo">
-                <a href="pao-sem-gluten.html"><img src="src/paoSemGlutenIndex.png" alt="#">
-            </li></a>
-            <li class="cinza">
-                <a href="lasanha-vegana.html"><img src="src/lasanhaVeganaIndex.png" alt="#"></a>
-            </li>
-            <li class="bege">
-                <a href="bombom-de-morango-semGluten.html"><img src="src/BombomQuadrado.png" alt="#"></a>
-            </li>
-        </ul>
-
- </section>
-
-
-    <section class="salgados">
-
-        <h2>
-            <a href="principal-salgado.html"><img src="src/PratosSalgados.png" alt=""></a>
-        </h2>
-
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Carrossel Automático</title>
-        </head>
-
-</html>
-</section>
-
-
-
-<section class="Carrossel">
-
-
-    <div class="fod">
-        <div class="slides" id="slides-salgados">
-            <img src="src/Feijoada.png">
-            <img src="src/Pizza.png">
-            <img src="src/Hamburguer.png">
-            <img src="src/Empadão.png">
-            <img src="src/Parmediana.png">
-            <img src="src/Pao-de-queijo.png">
-            <img src="src/Carbonara.png">
-            <img src="src/Lasanha-de-carne.png">
-        </div>
-
-        <button id="prev-salgados" class="btn">❮</button>
-        <button id="next-salgados" class="btn">❯</button>
-    </div>
-
-
-    <script>
-        const slides1 = document.getElementById("slides-salgados");
-        const total1 = slides1.children.length;
-        let index1 = 0;
-
-        function showSlide1(i) {
-            index1 = (i + total1) % total1;
-            slides1.style.transform = `translateX(${-index1 * 124}px)`;
-        }
-
-        document.getElementById("next-salgados").onclick = () => showSlide1(index1 + 1);
-        document.getElementById("prev-salgados").onclick = () => showSlide1(index1 - 1);
-
-        setInterval(() => showSlide1(index1 + 1), 900);
-
-
-    </script>
-
-</section>
-
-
-<section class="gluten">
-
-    <h2>
-        <a href="principal-semGluten.html"><img src="src/Glúten.png" alt=""></a>
-    </h2>
-
-   
-        <div class="foda">
-            <div class="slides" id="slides-gluten">
-                <img src="src/coxinhaMandioca.png">
-                <img src="src/bombomMorango.png">
-                <img src="src/Torta-liquidificador.jpg">
-                <img src="src/Pao-de-queijo.png">
-                <img src="src/Torta-de-banana.png">
-                <img src="src/bololaranja.png">
-                <img src="src/red-velvet.png">
-                <img src="src/cookie.png">
+        <!-- Quiz -->
+        <section class="quiz-container" id="quiz-container" style="display: none;">
+            <div id="quiz">
+                <h2 id="quiz-question">Pergunta aparecerá aqui</h2>
+                <div id="quiz-options"></div>
             </div>
 
-            <button id="prev-gluten" class="btn">❮</button>
-            <button id="next-gluten" class="btn">❯</button>
-            
+            <div id="quiz-result" style="display: none;">
+                <h2>🍽️ Sua Receita Ideal</h2>
+                <div id="recipe-result"></div>
+                <button id="refazer">Refazer Quiz</button>
+                <button id="fecharQuiz">Fechar</button>
+            </div>
+        </section>
+
+        <script src="js/index.js"></script>
+
+        <section class="foods">
+            <div>
+                <ul>
+                    <li class="laranja">
+                        <a href="pizza-de-calabresa.html"><img src="src/pizzaIndex.png" alt="Pizza"></a>
+                    </li>
+                    <li class="amarelo">
+                        <a href="pao-sem-gluten.html"><img src="src/paoSemGlutenIndex.png"
+                                alt="Pão s/ glúten"></a>
+                    </li>
+                    <li class="cinza">
+                        <a href="lasanha-vegana.html"><img src="src/lasanhaVeganaIndex.png"
+                                alt="Lasanha vegana"></a>
+                    </li>
+                    <li class="bege">
+                        <a href="bombom-de-morango-semGluten.html"><img src="src/BombomQuadrado.png"
+                                alt="Bombom de morango"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="salgados">
+            <h2><a href="principal-salgado.html"><img src="src/PratosSalgados.png" alt="Pratos salgados"></a></h2>
+            <!-- removi <head> duplicado que estava aqui no original -->
+        </section>
+
+        <!-- Carrossel SALGADOS -->
+        <section class="Carrossel">
+            <div class="fod">
+                <div class="slides" id="slides-salgados">
+                    <img src="src/Feijoada.png" alt="Feijoada">
+                    <img src="src/Pizza.png" alt="Pizza">
+                    <img src="src/Hamburguer.png" alt="Hamburguer">
+                    <img src="src/Empadão.png" alt="Empadão">
+                    <img src="src/Parmediana.png" alt="Parmegiana">
+                    <img src="src/Pao-de-queijo.png" alt="Pão de queijo">
+                    <img src="src/Carbonara.png" alt="Carbonara">
+                    <img src="src/Lasanha-de-carne.png" alt="Lasanha de carne">
+                </div>
+
+                <button id="prev-salgados" class="btn"></button>
+                <button id="next-salgados" class="btn"></button>
+            </div>
+
+            <script>
+                const slides1 = document.getElementById("slides-salgados");
+                const total1 = slides1.children.length;
+                let index1 = 0;
+
+                function showSlide1(i) {
+                    index1 = (i + total1) % total1;
+                    slides1.style.transform = `translateX(${-index1 * 124}px)`;
+                }
+
+                document.getElementById("next-salgados").onclick = () => showSlide1(index1 + 1);
+                document.getElementById("prev-salgados").onclick = () => showSlide1(index1 - 1);
+
+                setInterval(() => showSlide1(index1 + 1), 900);
+            </script>
+        </section>
+
+        <!-- Seção GLÚTEN -->
+        <section class="gluten">
+            <h2><a href="principal-semGluten.html"><img src="src/Glúten.png" alt="Sem Glúten"></a></h2>
+
+            <div class="foda">
+                <div class="slides" id="slides-gluten">
+                    <img src="src/coxinhaMandioca.png" alt="Coxinha de mandioca">
+                    <img src="src/bombomMorango.png" alt="Bombom morango">
+                    <img src="src/Torta-liquidificador.jpg" alt="Torta liquidificador">
+                    <img src="src/Pao-de-queijo.png" alt="Pão de queijo">
+                    <img src="src/Torta-de-banana.png" alt="Torta de banana">
+                    <img src="src/bololaranja.png" alt="Bolo de laranja">
+                    <img src="src/red-velvet.png" alt="Red velvet">
+                    <img src="src/cookie.png" alt="Cookie">
+                </div>
+
+                <button id="prev-gluten" class="btn">❮</button>
+                <button id="next-gluten" class="btn">❯</button>
+            </div>
+
+            <script>
+                const slides2 = document.getElementById("slides-gluten");
+                const total2 = slides2.children.length;
+                let index2 = 0;
+
+                function showSlide2(i) {
+                    index2 = (i + total2) % total2;
+                    slides2.style.transform = `translateX(${-index2 * 133}px)`;
+                }
+
+                document.getElementById("next-gluten").onclick = () => showSlide2(index2 + 1);
+                document.getElementById("prev-gluten").onclick = () => showSlide2(index2 - 1);
+
+                setInterval(() => showSlide2(index2 + 1), 900);
+            </script>
+        </section>
+
+        <!-- VEGANO -->
+        <section class="vegano">
+            <h2><a href="principal-vegano.html"><img src="src/PratosVegano.png" alt="Pratos vegano"></a></h2>
+
+            <div class="carrossel" id="carrossel-vegano">
+                <div class="slides">
+                    <img src="src/bifeaparmediana.png" alt="Bife a parmegiana">
+                    <img src="src/sushi.png" alt="Sushi">
+                    <img src="src/Lasanha-vegana.png" alt="Lasanha vegana">
+                    <img src="src/Torta-liquidificador.png" alt="Torta">
+                    <img src="src/Sonho-vegano.png" alt="Sonho vegano">
+                    <img src="src/bolochocolate.png" alt="Bolo de chocolate">
+                    <img src="src/cookieAmendoim.png" alt="Cookie de amendoim">
+                    <img src="src/iogurtecoco.png" alt="Iogurte de coco">
+                </div>
+
+                <button class="prev btn">❮</button>
+                <button class="next btn">❯</button>
+            </div>
+
+            <script>
+                const vegSlides = document.querySelector("#carrossel-vegano .slides");
+                const vegImgs = vegSlides.children.length;
+                let vegIndex = 0;
+
+                function showVegano(i) {
+                    vegIndex = (i + vegImgs) % vegImgs;
+                    vegSlides.style.transform = `translateX(${-vegIndex * 115}px)`;
+                }
+
+                document.querySelector("#carrossel-vegano .next").onclick = () => showVegano(vegIndex + 1);
+                document.querySelector("#carrossel-vegano .prev").onclick = () => showVegano(vegIndex - 1);
+
+                setInterval(() => showVegano(vegIndex + 1), 900);
+            </script>
+        </section>
+
+        <!-- DOCES -->
+        <section class="doces">
+            <h2><a href="principal-doces.html"><img src="src/PratosDoce.png" alt="Pratos doces"></a></h2>
+
+            <div class="carrossel" id="carrossel-doces">
+                <div class="slides">
+                    <img src="src/bolochocolate.png" alt="Bolo chocolate">
+                    <img src="src/cookie.png" alt="Cookie">
+                    <img src="src/Torta-limão.png" alt="Torta de limão">
+                    <img src="src/Pudim-de-leite.png" alt="Pudim">
+                    <img src="src/Brigadeiro.png" alt="Brigadeiro">
+                    <img src="src/palhaItaliana.png" alt="Palha italiana">
+                    <img src="src/pavedeChocolate.png" alt="Pavê de chocolate">
+                    <img src="src/brownie.png" alt="Brownie">
+                </div>
+
+                <button class="prev btn">❮</button>
+                <button class="next btn">❯</button>
+            </div>
+
+            <script>
+                const docSlides = document.querySelector("#carrossel-doces .slides");
+                const docImgs = docSlides.children.length;
+                let docIndex = 0;
+
+                function showDoces(i) {
+                    docIndex = (i + docImgs) % docImgs;
+                    docSlides.style.transform = `translateX(${-docIndex * 115}px)`;
+                }
+
+                document.querySelector("#carrossel-doces .next").onclick = () => showDoces(docIndex + 1);
+                document.querySelector("#carrossel-doces .prev").onclick = () => showDoces(docIndex - 1);
+
+                setInterval(() => showDoces(docIndex + 1), 900);
+            </script>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Siga e acompanhe</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/famesrevenues"><img src="src/insta.png" alt="Instagram"></a>
+                <a href="https://x.com/Fames_revenues"><img src="src/x.png" alt="X"></a>
+            </div>
         </div>
 
-
-        <script>
-            const slides2 = document.getElementById("slides-gluten");
-            const total2 = slides2.children.length;
-            let index2 = 0;
-
-            function showSlide2(i) {
-                index2 = (i + total2) % total2;
-                slides2.style.transform = `translateX(${-index2 * 133}px)`;
-            }
-
-            document.getElementById("next-gluten").onclick = () => showSlide2(index2 + 1);
-            document.getElementById("prev-gluten").onclick = () => showSlide2(index2 - 1);
-
-            setInterval(() => showSlide2(index2 + 1), 900);
-
-        </script>
-
-</section>
-
-
-
-<section class="vegano">
-    <h2>
-        <a href="principal-vegano.html"><img src="src/PratosVegano.png" alt=""></a>
-    </h2>
-
-    <div class="carrossel" id="carrossel-vegano">
-        <div class="slides">
-            <img src="src/bifeaparmediana.png">
-            <img src="src/sushi.png">
-            <img src="src/Lasanha-vegana.png">
-            <img src="src/Torta-liquidificador.png">
-            <img src="src/Sonho-vegano.png">
-            <img src="src/bolochocolate.png">
-            <img src="src/cookieAmendoim.png">
-            <img src="src/iogurtecoco.png">
-            
+        <div class="footer-section logo-container">
+            <img src="src/IconeFamesTransparente.png" alt="Fames Flames Logo">
+            <p>Fames Revenues</p>
+            <p class="copyright">© 2025, Fames Revenues </p>
         </div>
 
-        <button class="prev btn">❮</button>
-        <button class="next btn">❯</button>
-    </div>
-
-
-    <script>
-        const vegSlides = document.querySelector("#carrossel-vegano .slides");
-        const vegImgs = vegSlides.children.length;
-        let vegIndex = 0;
-
-        function showVegano(i) {
-            vegIndex = (i + vegImgs) % vegImgs;
-            vegSlides.style.transform = `translateX(${-vegIndex * 115}px)`;
-        }
-
-        document.querySelector("#carrossel-vegano .next").onclick = () => showVegano(vegIndex + 1);
-        document.querySelector("#carrossel-vegano .prev").onclick = () => showVegano(vegIndex - 1);
-
-        setInterval(() => showVegano(vegIndex + 1), 900);
-
-    </script>
-
-</section>
-
-<section class="doces">
-    <h2>
-        <a href="principal-doces.html"><img src="src/PratosDoce.png" alt=""></a>
-    </h2>
-
-
-    <div class="carrossel" id="carrossel-doces">
-        <div class="slides">
-           
-            <img src="src/bolochocolate.png">
-            <img src="src/cookie.png">
-            <img src="src/Torta-limão.png">
-            <img src="src/Pudim-de-leite.png">
-            <img src="src/Brigadeiro.png">
-            <img src="src/palhaItaliana.png">
-            <img src="src/pavedeChocolate.png">
-            <img src="src/brownie.png">
-            
-            
+        <div class="footer-section">
+            <h3>Contatos</h3>
+            <p>(47) 98916-1573</p>
+            <p><a href="mailto:fames.contato@gmail.com">fames.contato@gmail.com</a></p>
         </div>
+    </footer>
 
-        <button class="prev btn">❮</button>
-        <button class="next btn">❯</button>
-    </div>
-
-
-    <script>
-        const docSlides = document.querySelector("#carrossel-doces .slides");
-        const docImgs = docSlides.children.length;
-        let docIndex = 0;
-
-        function showDoces(i) {
-            docIndex = (i + docImgs) % docImgs;
-            docSlides.style.transform = `translateX(${-docIndex * 115}px)`;
-        }
-
-        document.querySelector("#carrossel-doces .next").onclick = () => showDoces(docIndex + 1);
-        document.querySelector("#carrossel-doces .prev").onclick = () => showDoces(docIndex - 1);
-
-        setInterval(() => showDoces(docIndex + 1), 900);
-    </script>
-
-
-</section>
-
-</main>
-<footer class="footer">
-
-
-    <div class="footer-section">
-
-
-        <h3>Siga e acompanhe</h3>
-
-
-        <div class="social-icons">
-
-
-            <a href="https://www.instagram.com/famesrevenues"><img src="src/insta.png" alt="Instagram"></a>
-
-
-            <a href="https://x.com/Fames_revenues"><img src="src/x.png" alt="X"></a>
-
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-    <div class="footer-section logo-container">
-
-
-        <img src="src/IconeFamesTransparente.png" alt="Fames Flames Logo">
-        <p>Fames Revenues</p>
-
-
-        <p class="copyright">© 2025, Fames Revenues </p>
-
-
-    </div>
-
-
-
-
-
-    <div class="footer-section">
-
-
-        <h3>Contatos</h3>
-
-
-        <p>(47) 98916-1573</p>
-
-
-        <p><a href="mailto:fames.contato@gmail.com">fames.contato@gmail.com</a></p>
-
-
-    </div>
-
-
-</footer>
 </body>
-
 
 </html>
