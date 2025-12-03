@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
       textura: ["macio"],
       temperatura: "quente",
       nome: "Pão de Queijo sem Lactose e Sem Glúten",
-      link: "pao-queijo-semGluten.html",
+      link: "pao-queijo-semGluten.",
     },
     {
       tipo: "doce",
