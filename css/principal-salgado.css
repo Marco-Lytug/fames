@@ -123,11 +123,11 @@ header div img {
 }
 
 /*Banner*/
-section.banner {
+.banner {
     background-color: #C75D2C;
 }
 
-section.banner img {
+.banner img {
     margin: 9vw;
     background-color: #F8B259;
     padding: 3vw;
