@@ -172,6 +172,13 @@ section.inicio div.img {
     width: 40%;
 }
 
+.preparo video{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    display: block;
+}
+
 section.preparo {
     background-color: #D96F32;
     padding: 6vw;
