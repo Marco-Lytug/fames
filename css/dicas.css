@@ -4,24 +4,19 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 a {
     text-decoration: none;
-    /* remove o sublinhado dos links */
 }
 
 p {
     color: white;
 }
 
+/*TOPO*/
+
 header nav ul li {
     position: relative;
 }
-
-header nav ul li:hover ul {
-    display: block;
-}
-
 
 header nav ul li ul {
     position: absolute;
@@ -29,13 +24,14 @@ header nav ul li ul {
     left: 0;
     background-color: #777C6D;
     border-radius: 20px;
-    margin: 0;
     padding: 0.5vw;
+}
 
+header nav ul li:hover ul {
+    display: block;
 }
 
 header nav ul li ul li:hover {
-    margin: 0.5vw;
     padding: 0.5vw;
     border-bottom: 1px solid #F3E9DC;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -52,41 +48,32 @@ header nav ul li a.atual {
     border-bottom: 3px solid #997C70;
 }
 
-/*TOPO*/
-
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #777C6D;
     border-bottom: 24px solid #CBCBCB;
-    align-items: center;
+    padding: 10px 20px;
 }
 
-header h1 {
-    font-size: 2.0rem;
-    margin: 1.5vw 0 1.5vw 3vw;
-    color: white;
-    width: 30%;
-    height: 30%;
+header img {
+    width: 60px;
 }
 
-header div nav ul {
+header nav ul {
     display: flex;
-    margin: 0.5vw 2vw 0.5vw 3vw;
+    gap: 30px;
 }
 
-header div nav ul li {
+header nav ul li {
     padding: 20px;
     color: #F3E9DC;
     font-size: 20px;
 }
 
-header div img {
-    width: 4%;
-    height: 4%;
-}
+/*CORPO*/
 
-/*MAIN*/
 .saudavel {
     margin: 6vw;
 }
@@ -112,7 +99,6 @@ header div img {
     letter-spacing: 1px;
     font-size: 3rem;
     padding: 0.7rem;
-    font-weight: bold;
 }
 
 .saudavel div p {
@@ -139,11 +125,9 @@ header div img {
     border-radius: 3vw;
     font-size: 2rem;
     font-weight: bold;
-
-
 }
 
-/*IMC*/
+/*CALCULADORAS*/
 
 .container {
     background-color: white;
@@ -151,6 +135,7 @@ header div img {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     width: 600px;
+    max-width: 90%;
 }
 
 h2 {
@@ -164,8 +149,7 @@ label {
     margin-top: 15px;
 }
 
-input[type="number"],
-button {
+input[type="number"],button,select {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -177,8 +161,11 @@ button {
 button {
     cursor: pointer;
     background-color: white;
-    color: black;
     transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e3e3e3;
 }
 
 .result {
@@ -187,39 +174,15 @@ button {
     font-size: 24px;
 }
 
-.calculadoraIMC {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-/*ÁGUA*/
-
-.calculadoraAgua {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-.calculadoraAgua {
-    margin-top: 40px;
-}
-
-/*PROTEÍNAS*/
-
+.calculadoraIMC,
+.calculadoraAgua,
 .calculadoraProteina {
     display: grid;
     justify-items: center;
-    align-items: center;
-}
-
-.calculadoraProteina {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 /*FOOTER*/
-
 
 .footer {
     background-color: #777C6D;
@@ -232,67 +195,137 @@ button {
     flex-wrap: wrap;
 }
 
-
 .footer-section {
     margin: 10px 20px;
     flex: 1;
     min-width: 200px;
-    color: #F3E9DC;
 }
-
 
 .footer-section h3 {
-    margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.2rem;
-    color: #F3E9DC;
 }
-
 
 .footer-section p,
 .footer-section a {
-    margin: 5px 0;
     font-size: 1.2rem;
-    text-decoration: none;
     color: #F3E9DC;
 }
-
 
 .social-icons img {
     width: 30px;
-    height: 30px;
     margin: 0 5px;
-    vertical-align: middle;
 }
-
-
-.logo-container {
-    text-align: center;
-}
-
 
 .logo-container img {
     width: 50px;
-    height: 50px;
 }
-
-
-.footer-section p {
-    color: #F3E9DC;
-    font-family: 'Trade Winds', cursive;
-}
-
-
-.footer-section p a {
-    color: #F3E9DC;
-}
-
 
 .copyright {
-        font-size: 0.8em;
-        margin-top: 15px;
-        width: 100%;
+    font-size: 0.8em;
+    margin-top: 15px;
+    width: 100%;
 }
 
-/* Responsive - Tablet / Mobile */
+/*RESPONSIVIDADE MOBILE*/
 
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    header nav ul li {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .saudavel h2,
+    .calculo h2 {
+        font-size: 3rem;
+    }
+
+    .saudavel div h3 {
+        font-size: 2.3rem;
+    }
+
+    .saudavel div p,
+    .calculo div p {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+}
+
+
+/*CELULAR PEQUENO*/
+
+@media (max-width: 600px) {
+
+    header img {
+        width: 45px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header nav ul li {
+        padding: 5px;
+    }
+
+    
+    header nav ul li ul {
+        position: static;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    .saudavel h2,
+    .calculo h2 {
+        font-size: 2.2rem;
+    }
+
+    .saudavel div h3 {
+        font-size: 1.8rem;
+    }
+
+    .saudavel div p,
+    .calculo div p {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 25px;
+        width: 95%;
+    }
+
+    input,
+    button,
+    select {
+        font-size: 1rem;
+    }
+
+    .result {
+        font-size: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
